@@ -219,7 +219,7 @@ export default function Home() {
           {/* Social links - center */}
           <div className="flex items-center gap-2">
             <a
-              href="https://twitter.com"
+              href="https://x.com/i/communities/2018812340485919164"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
