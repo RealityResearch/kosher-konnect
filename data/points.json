@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-02-03T21:42:27.485Z",
+    "generated": "2026-02-03T21:48:25.789Z",
     "purpose": "Heat map visualization",
     "note": "Weight represents number of establishments in area"
   },
@@ -13944,8 +13944,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 101",
+        "category": "Tunnels",
+        "name": "Entry Point 1",
         "weight": 1
       },
       "geometry": {
@@ -13959,8 +13959,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 111",
+        "category": "Tunnels",
+        "name": "Entry Point 2",
         "weight": 1
       },
       "geometry": {
@@ -13974,8 +13974,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 13",
+        "category": "Tunnels",
+        "name": "Entry Point 3",
         "weight": 1
       },
       "geometry": {
@@ -13989,8 +13989,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 76",
+        "category": "Tunnels",
+        "name": "Entry Point 4",
         "weight": 1
       },
       "geometry": {
@@ -14004,8 +14004,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 22",
+        "category": "Tunnels",
+        "name": "Entry Point 5",
         "weight": 1
       },
       "geometry": {
@@ -14019,8 +14019,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 87",
+        "category": "Tunnels",
+        "name": "Entry Point 6",
         "weight": 1
       },
       "geometry": {
@@ -14034,8 +14034,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 21",
+        "category": "Tunnels",
+        "name": "Entry Point 7",
         "weight": 1
       },
       "geometry": {
@@ -14049,8 +14049,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 34",
+        "category": "Tunnels",
+        "name": "Entry Point 8",
         "weight": 1
       },
       "geometry": {

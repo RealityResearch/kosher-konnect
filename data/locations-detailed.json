@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "merged": "2026-02-03T21:42:27.477Z",
+    "merged": "2026-02-03T21:48:25.781Z",
     "sources": [
       "OpenStreetMap",
       "Manual additions"
@@ -62291,8 +62291,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 101",
+        "category": "Tunnels",
+        "name": "Entry Point 1",
         "address": "Washington D.C.",
         "website": null,
         "phone": null,
@@ -62309,8 +62309,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 111",
+        "category": "Tunnels",
+        "name": "Entry Point 2",
         "address": "Boston, MA",
         "website": null,
         "phone": null,
@@ -62327,8 +62327,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 13",
+        "category": "Tunnels",
+        "name": "Entry Point 3",
         "address": "Los Angeles, CA",
         "website": null,
         "phone": null,
@@ -62345,8 +62345,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 76",
+        "category": "Tunnels",
+        "name": "Entry Point 4",
         "address": "West Virginia",
         "website": null,
         "phone": null,
@@ -62363,8 +62363,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 22",
+        "category": "Tunnels",
+        "name": "Entry Point 5",
         "address": "Las Vegas, NV",
         "website": null,
         "phone": null,
@@ -62381,8 +62381,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 87",
+        "category": "Tunnels",
+        "name": "Entry Point 6",
         "address": "Baltimore, MD",
         "website": null,
         "phone": null,
@@ -62399,8 +62399,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 21",
+        "category": "Tunnels",
+        "name": "Entry Point 7",
         "address": "New York, NY",
         "website": null,
         "phone": null,
@@ -62417,8 +62417,8 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "vaults",
-        "name": "Vault 34",
+        "category": "Tunnels",
+        "name": "Entry Point 8",
         "address": "Houston, TX",
         "website": null,
         "phone": null,
