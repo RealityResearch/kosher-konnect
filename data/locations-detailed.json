@@ -62431,6 +62431,78 @@
           29.7604
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "Philadelphia Mint",
+        "address": "151 N Independence Mall E, Philadelphia, PA 19106",
+        "website": "https://www.usmint.gov",
+        "phone": null,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1487,
+          39.9535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "Denver Mint",
+        "address": "320 W Colfax Ave, Denver, CO 80204",
+        "website": "https://www.usmint.gov",
+        "phone": null,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9925,
+          39.7392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "San Francisco Mint",
+        "address": "155 Hermann St, San Francisco, CA 94102",
+        "website": "https://www.usmint.gov",
+        "phone": null,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4265,
+          37.7701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "West Point Mint",
+        "address": "West Point, NY 10996",
+        "website": "https://www.usmint.gov",
+        "phone": null,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9654,
+          41.3915
+        ]
+      }
     }
   ]
 }

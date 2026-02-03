@@ -26,6 +26,7 @@ const categories = [
   { id: "groceries", name: "Kosher Groceries", nameHe: "מכולות כשרות", color: "#68d391" },
   { id: "judaica", name: "Judaica Shops", nameHe: "חנויות יודאיקה", color: "#fc8181" },
   { id: "Tunnels", name: "Entry Points", nameHe: "נקודות כניסה", color: "#fbbf24" },
+  { id: "mints", name: "US Mints", nameHe: "מטבעות ארה״ב", color: "#22c55e" },
 ];
 
 // Check if it's Shabbat (Friday sunset to Saturday sunset)

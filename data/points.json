@@ -14060,6 +14060,66 @@
           29.7604
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "Philadelphia Mint",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1487,
+          39.9535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "Denver Mint",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9925,
+          39.7392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "San Francisco Mint",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4265,
+          37.7701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mints",
+        "name": "West Point Mint",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9654,
+          41.3915
+        ]
+      }
     }
   ]
 }
