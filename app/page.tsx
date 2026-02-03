@@ -202,54 +202,36 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Announcement bar with Noticing meter and links */}
+      {/* Announcement bar with links */}
       <div className={`flex-shrink-0 border-b ${shabbatMode ? 'bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 border-amber-700/50' : 'bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-cyan-900/50'}`}>
-        <div className="flex items-center justify-between px-4 py-2 gap-3">
-          {/* Social links - left */}
-          <div className="flex items-center gap-2">
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
-            >
-              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-              <span className="hidden sm:inline">Twitter</span>
-            </a>
-            <a
-              href="https://pump.fun"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 rounded bg-gradient-to-r from-green-600/80 to-emerald-600/80 hover:from-green-500 hover:to-emerald-500 transition-colors text-xs text-white font-medium"
-            >
-              <span>🚀</span>
-              <span className="hidden sm:inline">Pump.fun</span>
-            </a>
-          </div>
+        <div className="flex items-center justify-center px-4 py-2 gap-3">
+          {/* Social links */}
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>Twitter</span>
+          </a>
+          <a
+            href="https://pump.fun"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gradient-to-r from-green-600/80 to-emerald-600/80 hover:from-green-500 hover:to-emerald-500 transition-colors text-xs text-white font-medium"
+          >
+            <span>🚀</span>
+            <span>Pump.fun</span>
+          </a>
 
-          {/* Noticing meter - center */}
-          <div className="flex-1 max-w-xs mx-auto">
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-gray-400 whitespace-nowrap hidden sm:inline">👁️</span>
-              <div className="flex-1 h-2.5 bg-gray-700 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-full transition-all duration-1000"
-                  style={{ width: '80%' }}
-                />
-              </div>
-              <span className="text-xs font-medium text-cyan-400 whitespace-nowrap">Noticing</span>
-            </div>
-          </div>
-
-          {/* Shabbat message - right (only on Shabbat) */}
-          {shabbatMode ? (
+          {/* Shabbat message (only on Shabbat) */}
+          {shabbatMode && (
             <span className="text-amber-400 text-xs whitespace-nowrap">
               ✡️ {hebrewUI.shabbatShalom}
             </span>
-          ) : (
-            <span className="text-xs text-gray-500 hidden sm:inline">80%</span>
           )}
         </div>
       </div>
