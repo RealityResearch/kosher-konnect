@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import dynamic from "next/dynamic";
 import pointData from "@/data/points.json";
 import type { Feature } from "@/components/LeafletHeatmap";
@@ -29,6 +29,19 @@ const categories = [
 export default function Home() {
   const [activeCategories, setActiveCategories] = useState<string[]>(["synagogues"]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [musicPlaying, setMusicPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (musicPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setMusicPlaying(!musicPlaying);
+    }
+  };
 
   // Toggle category selection
   const toggleCategory = (categoryId: string) => {
@@ -75,8 +88,25 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stats + Filter toggle for mobile */}
+          {/* Stats + Controls */}
           <div className="flex items-center gap-3">
+            {/* Music toggle */}
+            <button
+              onClick={toggleMusic}
+              className="p-2 rounded-lg bg-gray-800 border border-gray-700 text-white hover:bg-gray-700 transition-colors"
+              title={musicPlaying ? "Pause music" : "Play music"}
+            >
+              {musicPlaying ? (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M12 18.75a.75.75 0 01-.75-.75V6a.75.75 0 011.5 0v12a.75.75 0 01-.75.75zM8.25 15V9" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+              )}
+            </button>
+
             <div className="text-right">
               <div className="text-xl font-bold text-white">{totalLocations.toLocaleString()}</div>
               <div className="text-xs text-gray-400">locations</div>
@@ -225,6 +255,9 @@ export default function Home() {
           </aside>
         </>
       </div>
+
+      {/* Background music */}
+      <audio ref={audioRef} src="/music.mp4" loop />
     </div>
   );
 }
