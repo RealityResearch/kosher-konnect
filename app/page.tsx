@@ -118,14 +118,14 @@ export default function Home() {
           {/* Mobile overlay backdrop */}
           {sidebarOpen && (
             <div
-              className="lg:hidden fixed inset-0 bg-black/60 z-30"
+              className="lg:hidden fixed inset-0 bg-black/60 z-[1100]"
               onClick={() => setSidebarOpen(false)}
             />
           )}
 
           {/* Sidebar */}
           <aside className={`
-            fixed lg:relative top-0 right-0 h-full z-40
+            fixed lg:relative top-0 right-0 h-full z-[1200]
             w-72 lg:w-64 flex-shrink-0
             bg-[#0f1117] lg:bg-gray-900/80 backdrop-blur
             border-l border-gray-800
