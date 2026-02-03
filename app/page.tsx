@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import pointData from "@/data/points.json";
 import type { Feature } from "@/components/MapboxMap";
+import { useNoticers } from "@/hooks/useNoticers";
 
 // Dynamic import to avoid SSR issues with Mapbox
 const MapboxMap = dynamic(() => import("@/components/MapboxMap"), {
@@ -67,6 +68,7 @@ export default function Home() {
   const [showPopulation, setShowPopulation] = useState(false);
   const [shabbatMode, setShabbatMode] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const noticersCount = useNoticers();
 
   // Check for Shabbat on mount
   useEffect(() => {
@@ -204,34 +206,47 @@ export default function Home() {
 
       {/* Announcement bar with links */}
       <div className={`flex-shrink-0 border-b ${shabbatMode ? 'bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 border-amber-700/50' : 'bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-cyan-900/50'}`}>
-        <div className="flex items-center justify-center px-4 py-2 gap-3">
-          {/* Social links */}
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
-          >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-            <span>Twitter</span>
-          </a>
-          <a
-            href="https://pump.fun"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gradient-to-r from-green-600/80 to-emerald-600/80 hover:from-green-500 hover:to-emerald-500 transition-colors text-xs text-white font-medium"
-          >
-            <span>🚀</span>
-            <span>Pump.fun</span>
-          </a>
+        <div className="flex items-center justify-between px-4 py-2 gap-3">
+          {/* Noticers counter - left */}
+          <div className="flex items-center gap-2 min-w-[100px]">
+            <span className="text-cyan-400">👁️</span>
+            <span className="text-xs text-gray-300">
+              <span className="text-cyan-400 font-semibold">{noticersCount.toLocaleString()}</span>
+              {" "}{shabbatMode ? "משגיחים" : "Noticers"}
+            </span>
+          </div>
 
-          {/* Shabbat message (only on Shabbat) */}
-          {shabbatMode && (
-            <span className="text-amber-400 text-xs whitespace-nowrap">
+          {/* Social links - center */}
+          <div className="flex items-center gap-2">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a
+              href="https://pump.fun"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gradient-to-r from-green-600/80 to-emerald-600/80 hover:from-green-500 hover:to-emerald-500 transition-colors text-xs text-white font-medium"
+            >
+              <span>🚀</span>
+              <span>Pump.fun</span>
+            </a>
+          </div>
+
+          {/* Shabbat message - right (only on Shabbat) */}
+          {shabbatMode ? (
+            <span className="text-amber-400 text-xs whitespace-nowrap min-w-[100px] text-right">
               ✡️ {hebrewUI.shabbatShalom}
             </span>
+          ) : (
+            <div className="min-w-[100px]" />
           )}
         </div>
       </div>
