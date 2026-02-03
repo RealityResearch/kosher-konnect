@@ -166,7 +166,7 @@ export default function Home() {
           />
 
           {/* Legend - bottom left */}
-          <div className="absolute bottom-4 left-4 z-[1000] flex items-center gap-2 px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs">
+          <div className="absolute bottom-4 left-4 z-[1000] flex items-center gap-2 px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs safe-bottom">
             <span className="text-gray-400">Less</span>
             <div className="h-2 w-16 rounded-full bg-gradient-to-r from-transparent via-white/50 to-white" />
             <span className="text-gray-400">More</span>
