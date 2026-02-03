@@ -16,23 +16,67 @@ const MapboxMap = dynamic(() => import("@/components/MapboxMap"), {
 });
 
 const categories = [
-  { id: "synagogues", name: "Synagogues", color: "#4ea8de" },
-  { id: "restaurants", name: "Kosher Restaurants", color: "#48bb78" },
-  { id: "chabad", name: "Chabad Houses", color: "#f6ad55" },
-  { id: "jcc", name: "JCCs", color: "#ed64a6" },
-  { id: "schools", name: "Day Schools", color: "#9f7aea" },
-  { id: "mikvahs", name: "Mikvahs", color: "#4fd1c5" },
-  { id: "groceries", name: "Kosher Groceries", color: "#68d391" },
-  { id: "judaica", name: "Judaica Shops", color: "#fc8181" },
-  { id: "Tunnels", name: "Entry Points", color: "#fbbf24" },
+  { id: "synagogues", name: "Synagogues", nameHe: "בתי כנסת", color: "#4ea8de" },
+  { id: "restaurants", name: "Kosher Restaurants", nameHe: "מסעדות כשרות", color: "#48bb78" },
+  { id: "chabad", name: "Chabad Houses", nameHe: "בתי חב״ד", color: "#f6ad55" },
+  { id: "jcc", name: "JCCs", nameHe: "מרכזים קהילתיים", color: "#ed64a6" },
+  { id: "schools", name: "Day Schools", nameHe: "בתי ספר", color: "#9f7aea" },
+  { id: "mikvahs", name: "Mikvahs", nameHe: "מקוואות", color: "#4fd1c5" },
+  { id: "groceries", name: "Kosher Groceries", nameHe: "מכולות כשרות", color: "#68d391" },
+  { id: "judaica", name: "Judaica Shops", nameHe: "חנויות יודאיקה", color: "#fc8181" },
+  { id: "Tunnels", name: "Entry Points", nameHe: "נקודות כניסה", color: "#fbbf24" },
 ];
+
+// Check if it's Shabbat (Friday sunset to Saturday sunset)
+function isShabbat(): boolean {
+  const now = new Date();
+  const day = now.getDay();
+  const hour = now.getHours();
+
+  // Friday after 6pm (approximate sunset)
+  if (day === 5 && hour >= 18) return true;
+  // All day Saturday until 9pm (approximate havdalah)
+  if (day === 6 && hour < 21) return true;
+
+  return false;
+}
+
+const hebrewUI = {
+  title: "JPS",
+  subtitle: "מערכת מיקום יהודית",
+  locations: "מיקומים",
+  categories: "קטגוריות",
+  all: "הכל",
+  reset: "איפוס",
+  jewishPopulation: "אוכלוסייה יהודית",
+  metroArea: "צפיפות במטרופולין",
+  selected: "נבחרו",
+  of: "מתוך",
+  less: "פחות",
+  more: "יותר",
+  filters: "מסננים",
+  shabbatShalom: "שבת שלום!",
+  shabbatMessage: "מנוחה טובה",
+  showingLocations: "מציג מיקומים בודדים",
+};
 
 export default function Home() {
   const [activeCategories, setActiveCategories] = useState<string[]>(categories.map(c => c.id));
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [showPopulation, setShowPopulation] = useState(false);
+  const [shabbatMode, setShabbatMode] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  // Check for Shabbat on mount
+  useEffect(() => {
+    setShabbatMode(isShabbat());
+    // Check every minute
+    const interval = setInterval(() => {
+      setShabbatMode(isShabbat());
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   const toggleMusic = () => {
     if (audioRef.current) {
@@ -94,7 +138,7 @@ export default function Home() {
   );
 
   return (
-    <div className="h-screen bg-[#0f1117] flex flex-col overflow-hidden">
+    <div className={`h-screen bg-[#0f1117] flex flex-col overflow-hidden ${shabbatMode ? 'rtl' : 'ltr'}`} dir={shabbatMode ? 'rtl' : 'ltr'}>
       {/* Header */}
       <header className="flex-shrink-0 px-4 py-3 border-b border-gray-800 bg-[#0f1117]/95 backdrop-blur z-20">
         <div className="flex items-center justify-between">
@@ -105,13 +149,24 @@ export default function Home() {
               className="w-9 h-9 rounded-lg object-cover"
             />
             <div>
-              <h1 className="text-lg font-bold text-white leading-tight">JPS</h1>
-              <p className="text-xs text-gray-400 hidden sm:block">Jewish Positioning System</p>
+              <h1 className="text-lg font-bold text-white leading-tight">{hebrewUI.title}</h1>
+              <p className="text-xs text-gray-400 hidden sm:block">
+                {shabbatMode ? hebrewUI.subtitle : "Jewish Positioning System"}
+              </p>
             </div>
           </div>
 
           {/* Stats + Controls */}
           <div className="flex items-center gap-3">
+            {/* Shabbat mode toggle */}
+            <button
+              onClick={() => setShabbatMode(!shabbatMode)}
+              className={`p-2 rounded-lg border transition-colors ${shabbatMode ? 'bg-amber-600 border-amber-500 text-white' : 'bg-gray-800 border-gray-700 text-white hover:bg-gray-700'}`}
+              title={shabbatMode ? "Exit Shabbat Mode" : "Enter Shabbat Mode"}
+            >
+              <span className="text-sm">✡️</span>
+            </button>
+
             {/* Music toggle */}
             <button
               onClick={toggleMusic}
@@ -129,9 +184,9 @@ export default function Home() {
               )}
             </button>
 
-            <div className="text-right">
+            <div className={shabbatMode ? "text-left" : "text-right"}>
               <div className="text-xl font-bold text-white">{totalLocations.toLocaleString()}</div>
-              <div className="text-xs text-gray-400">locations</div>
+              <div className="text-xs text-gray-400">{shabbatMode ? hebrewUI.locations : "locations"}</div>
             </div>
 
             {/* Mobile filter toggle */}
@@ -148,9 +203,11 @@ export default function Home() {
       </header>
 
       {/* Announcement bar */}
-      <div className="flex-shrink-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-cyan-900/50">
+      <div className={`flex-shrink-0 border-b ${shabbatMode ? 'bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 border-amber-700/50' : 'bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-cyan-900/50'}`}>
         <div className="flex items-center justify-center py-2 text-xs tracking-widest">
-          <span className="text-cyan-400">COMING SOON</span>
+          <span className={shabbatMode ? "text-amber-400 text-sm" : "text-cyan-400"}>
+            {shabbatMode ? `✡️ ${hebrewUI.shabbatShalom} ${hebrewUI.shabbatMessage} ✡️` : "COMING SOON"}
+          </span>
         </div>
       </div>
 
@@ -166,10 +223,10 @@ export default function Home() {
           />
 
           {/* Legend - bottom left */}
-          <div className="absolute bottom-4 left-4 z-[1000] flex items-center gap-2 px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs safe-bottom">
-            <span className="text-gray-400">Less</span>
-            <div className="h-2 w-16 rounded-full bg-gradient-to-r from-transparent via-white/50 to-white" />
-            <span className="text-gray-400">More</span>
+          <div className={`absolute bottom-4 ${shabbatMode ? 'right-4' : 'left-4'} z-[1000] flex items-center gap-2 px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs safe-bottom`}>
+            <span className="text-gray-400">{shabbatMode ? hebrewUI.less : "Less"}</span>
+            <div className={`h-2 w-16 rounded-full bg-gradient-to-r ${shabbatMode ? 'from-white via-white/50 to-transparent' : 'from-transparent via-white/50 to-white'}`} />
+            <span className="text-gray-400">{shabbatMode ? hebrewUI.more : "More"}</span>
           </div>
         </main>
 
@@ -195,7 +252,7 @@ export default function Home() {
           `}>
             {/* Mobile close button */}
             <div className="lg:hidden flex items-center justify-between p-4 border-b border-gray-800">
-              <span className="text-white font-semibold">Filters</span>
+              <span className="text-white font-semibold">{shabbatMode ? hebrewUI.filters : "Filters"}</span>
               <button
                 onClick={() => setSidebarOpen(false)}
                 className="p-1 text-gray-400 hover:text-white"
@@ -210,12 +267,12 @@ export default function Home() {
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
-                  Categories
+                  {shabbatMode ? hebrewUI.categories : "Categories"}
                 </h2>
                 <div className="flex gap-2 text-xs">
-                  <button onClick={selectAll} className="text-blue-400 hover:text-blue-300">All</button>
+                  <button onClick={selectAll} className="text-blue-400 hover:text-blue-300">{shabbatMode ? hebrewUI.all : "All"}</button>
                   <span className="text-gray-600">|</span>
-                  <button onClick={selectNone} className="text-gray-400 hover:text-gray-300">Reset</button>
+                  <button onClick={selectNone} className="text-gray-400 hover:text-gray-300">{shabbatMode ? hebrewUI.reset : "Reset"}</button>
                 </div>
               </div>
 
@@ -252,8 +309,8 @@ export default function Home() {
                       />
                       <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: category.color }} />
                       <div className="flex-1 min-w-0 flex items-center justify-between">
-                        <span className="text-sm text-white">{category.name}</span>
-                        <span className="text-xs text-gray-500 ml-2">{total.toLocaleString()}</span>
+                        <span className="text-sm text-white">{shabbatMode ? category.nameHe : category.name}</span>
+                        <span className={`text-xs text-gray-500 ${shabbatMode ? 'mr-2' : 'ml-2'}`}>{total.toLocaleString()}</span>
                       </div>
                     </label>
                   );
@@ -281,8 +338,8 @@ export default function Home() {
                   />
                   <span className="w-2.5 h-2.5 rounded-full flex-shrink-0 bg-amber-500" />
                   <div className="flex-1 min-w-0">
-                    <span className="text-sm text-white">Jewish Population</span>
-                    <div className="text-xs text-gray-500">Metro area density</div>
+                    <span className="text-sm text-white">{shabbatMode ? hebrewUI.jewishPopulation : "Jewish Population"}</span>
+                    <div className="text-xs text-gray-500">{shabbatMode ? hebrewUI.metroArea : "Metro area density"}</div>
                   </div>
                 </label>
               </div>
@@ -290,7 +347,10 @@ export default function Home() {
               {/* Selected summary */}
               <div className="mt-4 pt-4 border-t border-gray-700">
                 <div className="text-xs text-gray-500 mb-2">
-                  {activeCategories.length} of {categories.length} selected
+                  {shabbatMode
+                    ? `${activeCategories.length} ${hebrewUI.of} ${categories.length} ${hebrewUI.selected}`
+                    : `${activeCategories.length} of ${categories.length} selected`
+                  }
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {activeCategories.map((catId) => {
@@ -302,7 +362,7 @@ export default function Home() {
                         style={{ backgroundColor: `${cat?.color}30`, color: cat?.color }}
                       >
                         <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: cat?.color }} />
-                        {cat?.name.split(" ")[0]}
+                        {shabbatMode ? cat?.nameHe?.split(" ")[0] : cat?.name.split(" ")[0]}
                       </span>
                     );
                   })}
