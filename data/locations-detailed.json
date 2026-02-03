@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "merged": "2026-02-03T20:43:41.062Z",
+    "merged": "2026-02-03T20:48:28.139Z",
     "sources": [
       "OpenStreetMap",
       "Manual additions"
@@ -56168,16 +56168,3880 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "synagogues",
-        "name": "Kew Gardens Synagogue",
-        "address": "Kew Gardens, NY",
+        "category": "restaurants",
+        "name": "Grand Plaza Liquours and Wines",
+        "address": null,
+        "website": "https://grandplazaliquors.com",
+        "phone": "+1-718-789-3975",
+        "cuisine": null,
+        "osmId": 1640916373,
         "weight": 1
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.831322,
-          40.7071624
+          -73.9634258,
+          40.6751621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Katz's Delicatessen",
+        "address": "205, East Houston Street, New York, NY",
+        "website": "https://www.katzsdelicatessen.com",
+        "phone": "+1-212-254-2246",
+        "cuisine": "deli",
+        "osmId": 1915398676,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.987353,
+          40.7223431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "West Side Wok & Konata Sushi",
+        "address": "691, Amsterdam Avenue, New York, NY",
+        "website": "https://www.westsidewok.com",
+        "phone": "+1-212-222-2373",
+        "cuisine": "chinese;sushi",
+        "osmId": 2111692824,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9713503,
+          40.7923619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "535;535A, Amsterdam Avenue, New York, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/new-york/535-amsterdam-ave/347934",
+        "phone": "+1 212-595-1682",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 2129919007,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9749495,
+          40.7874464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "KD 46",
+        "address": "10, West 46th Street, New York, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2176936529,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9799651,
+          40.7562938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Kosher Marketplace",
+        "address": "2442, Broadway, New York, NY",
+        "website": "http://www.thekoshermarketplace.com/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2312065780,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9741523,
+          40.7909404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "L'Amour Glatt Kosher",
+        "address": "102-11, Queens Boulevard, Forest Hills",
+        "website": null,
+        "phone": "+1-718-459-8800",
+        "cuisine": null,
+        "osmId": 2518012487,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8510054,
+          40.726023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nadezhda",
+        "address": "64-06, 108th Street, Forest Hills",
+        "website": null,
+        "phone": "+1 718 380 6666",
+        "cuisine": null,
+        "osmId": 2518047695,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8497439,
+          40.7327069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Kosher Bagel Hole",
+        "address": "1423, Avenue J",
+        "website": "https://kosherbagelhole.com",
+        "phone": "+1 718-258-4150",
+        "cuisine": null,
+        "osmId": 2547688756,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9615588,
+          40.6252876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hummus Kitchen",
+        "address": "444, 3rd Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": "middle_eastern",
+        "osmId": 2549933023,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979838,
+          40.7436918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Fortune Glatt Kosher Chinese Take Out",
+        "address": "180-26, Union Turnpike",
+        "website": null,
+        "phone": null,
+        "cuisine": "chinese",
+        "osmId": 2550990467,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7872782,
+          40.7270514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Uncle Edik's Pickles",
+        "address": "176-37, Union Turnpike",
+        "website": null,
+        "phone": null,
+        "cuisine": "pickles",
+        "osmId": 2551141562,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7922751,
+          40.7258239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hapisgah",
+        "address": "147-25, Union Turnpike",
+        "website": null,
+        "phone": null,
+        "cuisine": "steak_house",
+        "osmId": 2551250629,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8145273,
+          40.7186894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Turnpike Burgers Grill",
+        "address": "147-41, Union Turnpike",
+        "website": null,
+        "phone": "+1 347 494 4000",
+        "cuisine": "burger",
+        "osmId": 2551250649,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8139805,
+          40.7187109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cafe Musscat",
+        "address": "178-07, Union Turnpike",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2551696571,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.789793,
+          40.7265425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Turquoise Kosher Fish Restaurant",
+        "address": "189-23, Union Turnpike, Queens, NY",
+        "website": null,
+        "phone": "+1-718-776-7775",
+        "cuisine": "fish",
+        "osmId": 2552779066,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7796637,
+          40.7297834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Crazy Meat NYC",
+        "address": "189-09, Union Turnpike",
+        "website": "https://www.crazymeatnyc.getsauce.com/",
+        "phone": null,
+        "cuisine": "barbecue",
+        "osmId": 2552779070,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7799957,
+          40.7296969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Union Bistro",
+        "address": "190-11, Union Turnpike",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2552779071,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7789618,
+          40.7299715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "179, Avenue U, Brooklyn, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/brooklyn/179-avenue-u/363517",
+        "phone": "+1 718-265-3015",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 2556091815,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9777421,
+          40.5966063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "1597, McDonald Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": "donut;coffee_shop",
+        "osmId": 2557732493,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.973785,
+          40.6139452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Maison Valero",
+        "address": "501, Avenue M, Brooklyn, NY",
+        "website": "https://www.maisonvalero.com/",
+        "phone": "+1 718-924-2414",
+        "cuisine": null,
+        "osmId": 2557818995,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9703624,
+          40.6169996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Milk Crate Coffee",
+        "address": "1278, 49th Street",
+        "website": "https://www.milkcratecoffee.com/",
+        "phone": "+19144857135",
+        "cuisine": "coffee_shop",
+        "osmId": 2561344025,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.992456,
+          40.6351048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "2501, Avenue U, Brooklyn, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/brooklyn/2501-avenue-u/349734",
+        "phone": "+1 718-332-8918",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 2563014043,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9464932,
+          40.6000431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Manhattanville Coffee",
+        "address": "167, Rogers Avenue, Brooklyn, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": "coffee_shop",
+        "osmId": 2567902023,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9529601,
+          40.6716506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Unknown",
+        "address": "684, Myrtle Avenue",
+        "website": null,
+        "phone": "+1-718-522-2210",
+        "cuisine": null,
+        "osmId": 2568175977,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9563565,
+          40.6944377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "O's Natural Food",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2568198182,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9558988,
+          40.6947293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Chocolatte Espresso Bar",
+        "address": "800, Franklin Avenue",
+        "website": "https://www.choco-latte.com",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2568867307,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9579423,
+          40.6711649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Yafa",
+        "address": "63-32, 108th Street",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 2569964217,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8503564,
+          40.7340385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Kailash Parbat",
+        "address": "99, Lexington Avenue",
+        "website": "http://www.kailashparbatny.com",
+        "phone": null,
+        "cuisine": "indian",
+        "osmId": 2704131545,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9826947,
+          40.7420659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Holy Schnitzel",
+        "address": "654, Amsterdam Avenue, New York, NY",
+        "website": "https://holyschnitzel.com/",
+        "phone": "+1-212-362-4659",
+        "cuisine": null,
+        "osmId": 2759235699,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9724809,
+          40.7914735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Talia's Steakhouse",
+        "address": "668, Amsterdam Avenue",
+        "website": "https://taliassteakhouse.com/",
+        "phone": null,
+        "cuisine": "steak_house",
+        "osmId": 2759235829,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9721475,
+          40.7919611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Vegan Quick Bites by Next Stop Vegan",
+        "address": "1636, Saint Nicholas Avenue, New York, NY",
+        "website": null,
+        "phone": "+1-917-261-2323",
+        "cuisine": null,
+        "osmId": 2797659824,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9286418,
+          40.8559656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Yummy Thai",
+        "address": "4959, Broadway",
+        "website": "https://yummythainy.com",
+        "phone": "+1-917-529-0811",
+        "cuisine": "thai",
+        "osmId": 2797789439,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9204967,
+          40.8680756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Buddha Bodai",
+        "address": "5, Mott Street",
+        "website": "https://www.buddha-bodai.com",
+        "phone": "+1-212-566-8388",
+        "cuisine": "chinese",
+        "osmId": 2825288972,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9987984,
+          40.713865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mama Kitchen NY Queens",
+        "address": "67-25, Main Street",
+        "website": null,
+        "phone": "+1-347-970-2304",
+        "cuisine": "israeli",
+        "osmId": 2870994860,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8250311,
+          40.7335725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Smash House",
+        "address": "69-44, Main Street",
+        "website": "https://www.smashhouseburgers.com/locations/new-york/queens-flushing/",
+        "phone": null,
+        "cuisine": "burger;sandwich;salad",
+        "osmId": 2871010404,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8237787,
+          40.7301686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Alenbi Kitchen",
+        "address": "889, Nostrand Avenue",
+        "website": "https://www.alenbikitchen.com",
+        "phone": "+1-347-529-3739",
+        "cuisine": "mediterranean",
+        "osmId": 2943984204,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9506618,
+          40.6664097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Upper East Side",
+        "address": "419, East 77th Street, New York, NY",
+        "website": "https://www.chabaduppereastside.com/",
+        "phone": "+1 212 717 4613",
+        "cuisine": null,
+        "osmId": 3142944155,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.952767,
+          40.7708919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Sheepshead Bay",
+        "address": "1315, Avenue Y, Brooklyn, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 3427199927,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9560445,
+          40.5901312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "65, East 34th Street, New York, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/new-york/10-park-ave/358650",
+        "phone": "+1 646-974-9114",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 3792542074,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9815137,
+          40.7473275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Vatan",
+        "address": "409, 3rd Avenue",
+        "website": "https://vatanny.com",
+        "phone": "+1-212-689-5666",
+        "cuisine": "indian",
+        "osmId": 3832910158,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9803456,
+          40.742351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Chloe",
+        "address": "185, Bleecker Street, New York, NY",
+        "website": "https://www.chloeonbleecker.com/",
+        "phone": null,
+        "cuisine": "burger;salad",
+        "osmId": 3938479924,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.001033,
+          40.7292022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Beyond Sushi",
+        "address": "62, West 56th Street, New York, NY",
+        "website": "https://beyondsushi.com/",
+        "phone": "+1 646-964-5097",
+        "cuisine": "sushi;asian",
+        "osmId": 4085364218,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9772025,
+          40.7633124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Saravanaa Bhavan",
+        "address": "81, Lexington Avenue",
+        "website": "https://saravanabhavan.com/",
+        "phone": "+1-212-684-7755",
+        "cuisine": "indian",
+        "osmId": 4442221391,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9831543,
+          40.7414379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "JCC Chabad of LIC",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 4768241541,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9524569,
+          40.7440264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "3701, Nostrand Avenue, Brooklyn, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/brooklyn/3701-nostrand-ave/340439",
+        "phone": "+1 718-743-6555",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 4993626957,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9403834,
+          40.5937043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cafe Mocha",
+        "address": "96-40, Queens Boulevard, Rego Park",
+        "website": null,
+        "phone": "+1 718 685 2927",
+        "cuisine": null,
+        "osmId": 5123325421,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8613206,
+          40.7294074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Liebman's Kosher Delicatessen",
+        "address": "552, West 235th Street",
+        "website": "https://liebmansdeli.com/",
+        "phone": "+1 718-548-4534",
+        "cuisine": null,
+        "osmId": 5123352623,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9095179,
+          40.8854268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Victory Wines & Liquor Inc.",
+        "address": "1989, Victory Boulevard",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5155828970,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.130181,
+          40.6126869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Pongal",
+        "address": null,
+        "website": "https://www.pongalnyc.com",
+        "phone": null,
+        "cuisine": "indian",
+        "osmId": 5218361627,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9828108,
+          40.7424205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nuts Factory",
+        "address": "100, Smith Street",
+        "website": "https://nutsfactorynyc.com",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5333329245,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9894097,
+          40.6884972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Pahal Zan Kosher Falafel",
+        "address": "106-12, 71st Avenue",
+        "website": "https://pahal-zan.com/",
+        "phone": "+1-718-793-7177",
+        "cuisine": "mediterranean",
+        "osmId": 5344122640,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8448734,
+          40.7197455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Upper West Side",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5519209554,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9694123,
+          40.7943415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Midtown Manhattan",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5520770925,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9803397,
+          40.753786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Olive Brooklyn",
+        "address": null,
+        "website": "https://olivebrooklyn.com",
+        "phone": "+1-718-783-1680",
+        "cuisine": null,
+        "osmId": 5534566021,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9791359,
+          40.6786157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Johnny's Grand Cafe",
+        "address": "1001, Castle Hill Avenue, Bronx, NY",
+        "website": "https://www.jimmysgrandcafe.com",
+        "phone": "+1-718-319-1200",
+        "cuisine": null,
+        "osmId": 5552408327,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8502782,
+          40.8277423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Eddie's Deli",
+        "address": "3165, Bainbridge Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5564028981,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8796556,
+          40.8752572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Oneg Heimishe Bakery",
+        "address": "188, Lee Avenue",
+        "website": "https://www.onegbakery.com",
+        "phone": "+1 718-797-0971",
+        "cuisine": null,
+        "osmId": 5842993606,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9562199,
+          40.7022103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Giant Bagel",
+        "address": "480, Rockaway Turnpike, Lawrence, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5860948172,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7371445,
+          40.6289542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Benjys",
+        "address": "72-72, Main Street",
+        "website": null,
+        "phone": "+1-718-268-0791",
+        "cuisine": "pizza;sushi",
+        "osmId": 5892946645,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8211145,
+          40.7248021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Wok Tov",
+        "address": "596, Central Avenue, Cedarhurst, NY",
+        "website": null,
+        "phone": "+1-516-295-3843",
+        "cuisine": "sushi",
+        "osmId": 5905405486,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.721642,
+          40.6233947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sushi Tokyo",
+        "address": "337, Central Avenue, Lawrence, NY",
+        "website": null,
+        "phone": "+1-516-882-2244",
+        "cuisine": "sushi",
+        "osmId": 5947664594,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7294553,
+          40.6176472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "5 Towns Jerusalem II",
+        "address": "Central Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 5949062192,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7290643,
+          40.6181582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nish Nush",
+        "address": null,
+        "website": "https://nishnushnyc.com/",
+        "phone": "+1-848-294-1690",
+        "cuisine": "mediterranean",
+        "osmId": 5950163185,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0076362,
+          40.715602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Holy Schnitzl",
+        "address": "688, Central Avenue, Cedarhurst, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5968721433,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7189056,
+          40.6253685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Benny's Pizzeria & Dairy Restaurant",
+        "address": "181-30, Union Turnpike",
+        "website": null,
+        "phone": "+1-718-969-1928",
+        "cuisine": null,
+        "osmId": 5980563957,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7863878,
+          40.7273499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Bravo Pizzeria",
+        "address": "69-28, Main Street",
+        "website": "https://www.bravopizzaqueens.com/",
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 5990969716,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8239579,
+          40.730559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Carlos & Gabby's Glatt Kosher Mexican Grill",
+        "address": "69-44, Main Street",
+        "website": "https://www.mexikoshernyc.com/",
+        "phone": "+1-212-580-2800",
+        "cuisine": "mexican",
+        "osmId": 5990969991,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8237652,
+          40.7301292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Suhag Wine & Liquor",
+        "address": "69-30, Main Street",
+        "website": null,
+        "phone": "+1-718-793-9929",
+        "cuisine": null,
+        "osmId": 5990970507,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8239378,
+          40.7305111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Grill Point",
+        "address": "Main Street",
+        "website": null,
+        "phone": null,
+        "cuisine": "kebab",
+        "osmId": 5990998867,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8236035,
+          40.7298532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Robusta Espresso Bar",
+        "address": "44, West 47th Street, New York, NY",
+        "website": "https://www.robustaigt.com",
+        "phone": "+1-212-302-0242",
+        "cuisine": "coffee_shop;sandwich;soup",
+        "osmId": 6030389800,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9807255,
+          40.7572238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Oma's Sushi",
+        "address": "492, Hempstead Avenue, West Hempstead, NY",
+        "website": null,
+        "phone": "+1-516-481-3781",
+        "cuisine": "sushi",
+        "osmId": 6063716977,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6540315,
+          40.6963122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "375° Chicken 'n Fries",
+        "address": "124, Ludlow Street, New York, NY",
+        "website": "https://www.375chicken.com/",
+        "phone": "+1 646-682-7578",
+        "cuisine": "chicken",
+        "osmId": 6233803804,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9884415,
+          40.7196774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "16 Handles",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "frozen_yogurt;health_food",
+        "osmId": 6362867801,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9802602,
+          40.7431214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Geffen",
+        "address": "Mill Road",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6369282229,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7042073,
+          40.6432279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Plant Made",
+        "address": "65, 2nd Avenue",
+        "website": "https://plantmadenyc.com",
+        "phone": "+1-212-777-6965",
+        "cuisine": "mexican;italian;pizza",
+        "osmId": 6407882846,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9897726,
+          40.7260386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Coletta Italian Vegan Restaurant",
+        "address": "365, 3rd Avenue, New York, NY",
+        "website": "https://www.colettanyc.com",
+        "phone": "+1-646-861-2889",
+        "cuisine": "italian",
+        "osmId": 6412293526,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981374,
+          40.7409361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "B&H Dairy",
+        "address": "127, 2nd Avenue, New York, NY",
+        "website": null,
+        "phone": "+1-212-505-8065",
+        "cuisine": "breakfast;sandwich;eastern_european;jewish",
+        "osmId": 6434573686,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.988016,
+          40.7284226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Coney Island",
+        "address": "2115, Surf Avenue",
+        "website": null,
+        "phone": "+1-718-598-7283",
+        "cuisine": null,
+        "osmId": 6517040645,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9883795,
+          40.5745904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ahimsa",
+        "address": null,
+        "website": "https://ahimsanyc.com",
+        "phone": "+1-212-228-2022",
+        "cuisine": "indian",
+        "osmId": 6542803859,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9758207,
+          40.7479448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Wine Wisdom",
+        "address": null,
+        "website": null,
+        "phone": "+1-212-944-9463",
+        "cuisine": null,
+        "osmId": 6615272820,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9800287,
+          40.7566017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ample Hill Creamery",
+        "address": "141, Beard Street",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6680718941,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0154554,
+          40.6749597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "K Sushi",
+        "address": "888, Bedford Avenue, Brooklyn, NY",
+        "website": null,
+        "phone": "+1-718-645-6227",
+        "cuisine": "sushi",
+        "osmId": 6682052621,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956242,
+          40.6942437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Juice Press",
+        "address": "194, Joralemon Street",
+        "website": "https://order.juicepress.com/eqx-brooklyn-heights/menu",
+        "phone": null,
+        "cuisine": "juice;health_food",
+        "osmId": 6896325800,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9914268,
+          40.6924916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ahimsa",
+        "address": null,
+        "website": "https://ahimsagarden.com",
+        "phone": "+1-212-533-7290",
+        "cuisine": "indian",
+        "osmId": 6910758321,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.983236,
+          40.7283918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Saba's Pizza",
+        "address": "1217, Lexington Avenue",
+        "website": "https://www.sabaspizzanyc.com/",
+        "phone": "+1 212-987-9130",
+        "cuisine": "pizza;italian",
+        "osmId": 6979980085,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9571567,
+          40.7770944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Art Of Grill",
+        "address": "97-13, Queens Boulevard",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 7644295716,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8606356,
+          40.7298394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "AO Organic Japanese",
+        "address": "1385, Broadway",
+        "website": "https://www.aobowl.com",
+        "phone": "+1-646-682-9100",
+        "cuisine": "japanese",
+        "osmId": 8062702032,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9875518,
+          40.7527533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Heartland Hot Bagels",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "bagel",
+        "osmId": 8262422489,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1639465,
+          40.5913327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Holy Schnitzel",
+        "address": "438, Nome Avenue, Staten Island, NY",
+        "website": "https://holyschnitzel.com/holy-finder/holy-schnitzel-staten-island/",
+        "phone": "+1 718-761-4659",
+        "cuisine": null,
+        "osmId": 8263092688,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1644648,
+          40.5896716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Center-Lubavitch",
+        "address": "194, Ratzer Road, Wayne, NJ",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 8305075700,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2702073,
+          40.9464949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Red Mango",
+        "address": "111, Fulton Street, New York, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 8333740851,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0067165,
+          40.7098174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Zen Garden",
+        "address": "1, Great Neck Road, Great Neck, NY",
+        "website": "http://zengardenny.com",
+        "phone": "+1-516-829-0038",
+        "cuisine": null,
+        "osmId": 8783482554,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7270525,
+          40.7867587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Smash House",
+        "address": "594, Central Avenue, Cedarhurst, NY",
+        "website": "https://www.smashhouseburgers.com/locations/new-york/5-towns-ny/",
+        "phone": "+1-347-937-6274",
+        "cuisine": "burger;sandwich;salad",
+        "osmId": 8783507049,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7216898,
+          40.6233613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Subway",
+        "address": "11, Palisade Avenue, Yonkers, NY",
+        "website": "https://restaurants.subway.com/united-states/ny/yonkers/11a-palisades-avenue",
+        "phone": "+1 914-423-7827",
+        "cuisine": "sandwich",
+        "osmId": 8805913062,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8971239,
+          40.9342497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Da Mikelle II",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 8904932601,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8503758,
+          40.7255032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ganey Orly",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 8904949381,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8549009,
+          40.7286604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Emack & Bolio's",
+        "address": "825, Surf Avenue, Brooklyn, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9146399218,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9770848,
+          40.5755479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Häagen-Dazs",
+        "address": "Montague Street, Brooklyn, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9330613467,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9946547,
+          40.6947524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ras",
+        "address": null,
+        "website": "https://www.rasplantbased.com",
+        "phone": "+1-718-622-6220",
+        "cuisine": "ethiopian",
+        "osmId": 9518146176,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9568169,
+          40.6734302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Cottage by Colbeh",
+        "address": "1, The Intervale, Roslyn, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9538451200,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6535989,
+          40.7910368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Persian Grill",
+        "address": "210, Mineola Avenue, Roslyn Heights, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": "persian",
+        "osmId": 9556654388,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6488164,
+          40.7861097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Myrtle Plaza Kosher Supermarket",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9588355984,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957382,
+          40.6945576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "418, East 2nd Street, Brooklyn, NY",
+        "website": "https://locations.dunkindonuts.com/en/ny/brooklyn/418-avenue-p/359458",
+        "phone": "+1 718-513-1668",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 9609973481,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9720148,
+          40.6087777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Brooklyn Bagel",
+        "address": "7, Heyward Street, Brooklyn, NY",
+        "website": "https://www.brooklynbagelny.com",
+        "phone": "+13476783928",
+        "cuisine": "bagel;sandwich;pizza;sushi",
+        "osmId": 9775295982,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9596142,
+          40.6995939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Dumbo",
+        "address": null,
+        "website": "https://www.chabadofdumbo.com",
+        "phone": "+1-718-362-0682",
+        "cuisine": null,
+        "osmId": 9797307324,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9851496,
+          40.703777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Willow Vegan Bistro",
+        "address": "199, 8th Avenue, New York, NY",
+        "website": "https://willownewyork.com/",
+        "phone": "+1-212-929-2889",
+        "cuisine": "bistro;american",
+        "osmId": 9845565310,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9999237,
+          40.7436499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nuts Factory",
+        "address": null,
+        "website": "https://nutsfactorynyc.com",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 10093589147,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981308,
+          40.6754153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Michaeli Bakery",
+        "address": "401, East 90th Street",
+        "website": "https://wwe.michaelibakery.com",
+        "phone": "+1 646-360-2284",
+        "cuisine": "israeli",
+        "osmId": 10107120017,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9471385,
+          40.7793968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Bay Cafe",
+        "address": "2, Neptune Avenue, Brooklyn, NY",
+        "website": "https://baycafebk.com/",
+        "phone": "+1 347-554-8811",
+        "cuisine": "mediterranean",
+        "osmId": 10136292572,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.954431,
+          40.5828543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Zam Zam Halal",
+        "address": "102, Saratoga Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 10155740451,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9174055,
+          40.6831499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Snaxit",
+        "address": "475, Route 4 West, Englewood, NJ",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 10172379135,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9727135,
+          40.8686513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Meal Mart",
+        "address": null,
+        "website": "https://www.mealmartavem.com",
+        "phone": "+1-718-998-0800",
+        "cuisine": null,
+        "osmId": 10653350279,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9554394,
+          40.6183855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Greenfeld's",
+        "address": "128, Lee Avenue",
+        "website": "https://greenfelds.com",
+        "phone": "+1-718-852-3906",
+        "cuisine": "eastern_european;breakfast;pastry",
+        "osmId": 10698428406,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9580252,
+          40.7038318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Fortune",
+        "address": "63rd Drive",
+        "website": null,
+        "phone": "+1 718 397 5096",
+        "cuisine": "chinese",
+        "osmId": 10929770312,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8651468,
+          40.7260654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nargila Grill",
+        "address": "1599, York Avenue",
+        "website": "https://www.nargilagrill.com/",
+        "phone": "+1 212-535-3700",
+        "cuisine": "middle_eastern; steak_house",
+        "osmId": 11012810126,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9480553,
+          40.7749808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cinnabon",
+        "address": "1048, Coney Island Avenue",
+        "website": "https://locations.cinnabon.com/ny/brooklyn/1050-coney-island-ave",
+        "phone": null,
+        "cuisine": "dessert",
+        "osmId": 11036281573,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.966902,
+          40.6320022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Carvel",
+        "address": "1048, Coney Island Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": "ice_cream",
+        "osmId": 11036322283,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9669172,
+          40.6320591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hot Bagels",
+        "address": "4704, 13th Avenue, Brooklyn, NY",
+        "website": null,
+        "phone": "+1-718-633-4009",
+        "cuisine": "bagel;coffee_shop;sandwich",
+        "osmId": 11079619805,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9912411,
+          40.6361226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Anixi Mediterranean Vegan Restaurant",
+        "address": "290, 8th Avenue, New York, NY",
+        "website": "https://www.anixinyc.com/",
+        "phone": "+1-646-410-0946",
+        "cuisine": "mediterranean",
+        "osmId": 11088424818,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9975223,
+          40.7462748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Upper Crust Queens",
+        "address": "67-11, Main Street, Queens, NY",
+        "website": "https://grazebrands.com/uppercrust-queens",
+        "phone": "+1-585-312-7878",
+        "cuisine": "pizza",
+        "osmId": 11342852370,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8250685,
+          40.7337354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Amalia Grocery",
+        "address": "68-22, Main Street",
+        "website": null,
+        "phone": null,
+        "cuisine": "chinese",
+        "osmId": 11342852373,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8252444,
+          40.7327307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Fortune Sushi",
+        "address": "181-24, Union Turnpike, Fresh Meadows, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": "sushi",
+        "osmId": 11504858107,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7865378,
+          40.7272992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Posh Cafe",
+        "address": "190-21, Union Turnpike, Fresh Meadows, NY",
+        "website": "https://www.poshcafeny.com/",
+        "phone": "+1-718-268-7777",
+        "cuisine": "pizza;japanese",
+        "osmId": 11504858127,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7787079,
+          40.7300388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Reverie",
+        "address": "135, Metropolitan Avenue, Brooklyn, NY",
+        "website": "https://reveriebrooklyn.com/",
+        "phone": "+13473842513",
+        "cuisine": null,
+        "osmId": 11512084768,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9622509,
+          40.7162748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Beyond Sushi - Vegan Restaurant",
+        "address": "134, West 37th Street, New York, NY",
+        "website": "https://beyondsushi.com/locations/w-37th-street/",
+        "phone": "+1 212-564-0869",
+        "cuisine": "asian",
+        "osmId": 11558119422,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9884545,
+          40.7524663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Food Expo",
+        "address": "502, Broadway",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 11576827467,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9505388,
+          40.7054528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Annex",
+        "address": "672, Amsterdam Avenue, New York, NY",
+        "website": "https://www.chabadwestside.org",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 11628123693,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9720797,
+          40.7920556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Li-Lac Chocolates",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 11753614458,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0073392,
+          40.6566896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Green Olive",
+        "address": "271-11, Union Turnpike, New Hyde Park, NY",
+        "website": null,
+        "phone": "+1-718-962-2365",
+        "cuisine": "pizza",
+        "osmId": 11786190333,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7031073,
+          40.752057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "My Grill Bar",
+        "address": "1022, Avenue P, Brooklyn, NY",
+        "website": "https://mygrillbar.com/",
+        "phone": "+1 718-975-7272",
+        "cuisine": "israeli",
+        "osmId": 11907690086,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9628181,
+          40.6097889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Crawford's Coffee Bar & Cafe",
+        "address": "1942, Coney Island Avenue",
+        "website": null,
+        "phone": "+1 718-998-7002",
+        "cuisine": null,
+        "osmId": 11907690088,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9625378,
+          40.6098296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Patis Bakery",
+        "address": "323, Ridge Rd, Lyndhurst, NJ",
+        "website": "https://patis.com/",
+        "phone": "+1-201-438-4004",
+        "cuisine": null,
+        "osmId": 11923489248,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1194197,
+          40.8078436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Malka",
+        "address": "161, West 72nd Street, New York, NY",
+        "website": "https://www.malka.nyc",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12042873186,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9807875,
+          40.7784392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Noi Due",
+        "address": "491, Columbus Avenue, New York, NY",
+        "website": "https://www.noiduecafe.com",
+        "phone": "+1-212-712-2222",
+        "cuisine": "italian",
+        "osmId": 12081310371,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9731089,
+          40.7848847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Fat Choy",
+        "address": "52, East Palisade Avenue, Englewood, NJ",
+        "website": "https://www.fatchoyworld.com",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12094414981,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9734301,
+          40.8928076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Morelia Paletas",
+        "address": "932, Washington Street, Hoboken, NJ",
+        "website": "https://www.paletasmorelia.com/location/hoboken-ice-cream/",
+        "phone": "+1-732-358-7132",
+        "cuisine": null,
+        "osmId": 12116929032,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0277915,
+          40.7483186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cinnabon",
+        "address": "509, Brighton Beach Avenue",
+        "website": "https://locations.cinnabon.com/ny/brooklyn/509-brighton-beach-ave",
+        "phone": "+1 347-312-6977",
+        "cuisine": "dessert",
+        "osmId": 12117659415,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9621166,
+          40.5776365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "KH Glatt Butchery & Market",
+        "address": "497, Kings Highway",
+        "website": "https://khglatt.com",
+        "phone": "+1 718-382-7655",
+        "cuisine": null,
+        "osmId": 12292233744,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9711991,
+          40.6044221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Grandmas Pizza",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 12310154145,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9282261,
+          40.8514681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Lutali",
+        "address": "1111, Avenue K",
+        "website": "https://lutali.com/",
+        "phone": "+1 718-551-5390",
+        "cuisine": null,
+        "osmId": 12366377236,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9644152,
+          40.6225322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Le Basque French Vegan Restaurant",
+        "address": "15, Union Square West, New York, NY",
+        "website": "https://lebasquenyc.com/",
+        "phone": "+1 212 457 6261",
+        "cuisine": "french;spanish",
+        "osmId": 12373675569,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9918636,
+          40.736072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mocha Burger",
+        "address": "4, East 46th Street",
+        "website": "https://mochaburgertimessquare.com/",
+        "phone": "+1-212-517-6353",
+        "cuisine": "burger",
+        "osmId": 12374906401,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9784746,
+          40.7556853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "1621, Avenue U",
+        "website": null,
+        "phone": null,
+        "cuisine": "donut;coffee_shop",
+        "osmId": 12423262682,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.954791,
+          40.5991337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mabat",
+        "address": "1809, East 7th Street",
+        "website": null,
+        "phone": "+1 718-339-3300",
+        "cuisine": "steak_house",
+        "osmId": 12534596173,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9655878,
+          40.6065012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sushi Tokyo",
+        "address": "627, Kings Highway",
+        "website": null,
+        "phone": "+1 718-434-2444",
+        "cuisine": "japanese",
+        "osmId": 12534620325,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9657804,
+          40.6062074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Kosher Hut Of Brooklyn",
+        "address": "709, Kings Highway",
+        "website": null,
+        "phone": "+1 718-376-8996",
+        "cuisine": "pizza",
+        "osmId": 12534620326,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9653289,
+          40.6063748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The North End Grill",
+        "address": "1301, North Avenue, New Rochelle, NY",
+        "website": "https://thenorthendgrill.com/",
+        "phone": "+1-914-633-3224",
+        "cuisine": "soup;salad;sandwich;steak_house",
+        "osmId": 12548036250,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7953872,
+          40.9465422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Smash House",
+        "address": "33, West 47th Street, New York, NY",
+        "website": "https://www.smashhouseburgers.com/locations/new-york/manhattan-47th-st/",
+        "phone": null,
+        "cuisine": "burger;sandwich;salad",
+        "osmId": 12548036252,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9802829,
+          40.7575147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Smash House",
+        "address": "63, West 37th Street, New York, NY",
+        "website": "https://www.smashhouseburgers.com/locations/new-york/manhattan-37th-st/",
+        "phone": "+1-347-937-6274",
+        "cuisine": "burger;sandwich;salad",
+        "osmId": 12548036253,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9859621,
+          40.7516443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Chief Smokehouse",
+        "address": "180-10, Union Turnpike, Fresh Meadows, NY",
+        "website": "https://chiefsmokehouse.getsauce.com/",
+        "phone": "+1-646-375-1166",
+        "cuisine": "barbecue",
+        "osmId": 12552181139,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7876051,
+          40.7269325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sentir Vegan Mexican Restaurant",
+        "address": "37, West 19th Street, New York, NY",
+        "website": "https://sentirnyc.com/",
+        "phone": "+1 212-871-3171",
+        "cuisine": "mexican",
+        "osmId": 12662627901,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9931732,
+          40.7400275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Pie & Fries",
+        "address": "5326, 13th Avenue",
+        "website": "https://www.pieandfries.com",
+        "phone": "+1 347-365-7639",
+        "cuisine": "pizza",
+        "osmId": 12678165940,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9950736,
+          40.6323836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sesame",
+        "address": "1540, Coney Island Avenue",
+        "website": null,
+        "phone": "+1 718-427-0000",
+        "cuisine": null,
+        "osmId": 12685013259,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9644604,
+          40.6198198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Crust Co.",
+        "address": "5326, New Utrecht Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 12732221742,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9954272,
+          40.6326003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Masbia",
+        "address": "5402, New Utrecht Avenue",
+        "website": "https://www.masbiaboropark.org",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12732221751,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9954444,
+          40.6323425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cafe Chocolate",
+        "address": "1417, Avenue J",
+        "website": "https://cafechocolatny.com/",
+        "phone": "+1 718-400-1417",
+        "cuisine": "coffee_shop",
+        "osmId": 12853069140,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9616946,
+          40.6252719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Oakberry Acai",
+        "address": "986, 6th Avenue",
+        "website": "https://www.oakberry.com",
+        "phone": "+1-646-398-9330",
+        "cuisine": "health_food;juice",
+        "osmId": 12915135055,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986448,
+          40.7512648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Tiberias",
+        "address": null,
+        "website": "https://www.tiberiasnyc.com",
+        "phone": "+1-212-481-4222",
+        "cuisine": "seafood;pizza;eclectic",
+        "osmId": 13000003956,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9823057,
+          40.7476688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dairy Palace",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 13072901969,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1370773,
+          40.6119448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "King David Venue & Catering",
+        "address": "101-10, Queens Blvd, Forest Hills, NY",
+        "website": "https://www.kingdavidnyc.com/",
+        "phone": "+1 718-896-7686",
+        "cuisine": "kebab;barbecue",
+        "osmId": 13282180219,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8525133,
+          40.7261762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Playa Bowls",
+        "address": null,
+        "website": "https://playabowls.com/location/upper-east-side",
+        "phone": "+1-646-558-3292",
+        "cuisine": "açaí",
+        "osmId": 13359605121,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9563927,
+          40.7718154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "LuAnne's Wild Ginger",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 13514824809,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9964428,
+          40.7204982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ananda",
+        "address": "210, Thompson Street",
+        "website": null,
+        "phone": "+1-212-533-7290",
+        "cuisine": "indian",
+        "osmId": 13517110254,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.999252,
+          40.7287751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Bass & Bourbon",
+        "address": "113, Hamilton Avenue",
+        "website": "https://www.bassandbourbon.com",
+        "phone": "+1-718-855-2277",
+        "cuisine": "american",
+        "osmId": 248156599,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0046092,
+          40.6816012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Neshama Center",
+        "address": "2997, Ocean Parkway, Brooklyn, NY",
+        "website": "https://www.chabadneshama.com",
+        "phone": "+1 718-946-9833",
+        "cuisine": null,
+        "osmId": 248510145,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9675553,
+          40.5778741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Greenfresh Kosher Supermarket",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 250343518,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9557942,
+          40.6910133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Gramercy Park",
+        "address": "342, East 20th Street",
+        "website": "https://www.nyhebrew.org",
+        "phone": "+1-212-924-3200",
+        "cuisine": null,
+        "osmId": 264755079,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9807082,
+          40.7351548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Jewish Center",
+        "address": "569, Vanderbilt Avenue, Brooklyn, NY",
+        "website": "https://www.jewishprospectheights.com",
+        "phone": "+1-347-622-3599",
+        "cuisine": null,
+        "osmId": 265732831,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9675302,
+          40.6806484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Center of Passaic County",
+        "address": "194, Ratzer Road, Wayne, NJ",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 269698921,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2701657,
+          40.946418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Lube\\avitch of Riverdale",
+        "address": "535, West 246th Street",
+        "website": "https://www.chabadbronx.org/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 277075652,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9090251,
+          40.8933883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Loving Hut",
+        "address": "76, Bushwick Avenue",
+        "website": "https://lovinghut.us/brooklyn/",
+        "phone": null,
+        "cuisine": "international",
+        "osmId": 279664956,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9411974,
+          40.7125184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Wawa",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 376385446,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2251048,
+          40.44027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "McDonald's",
+        "address": "358, Nj-35, Cliffwood Beach, NJ",
+        "website": "https://www.mcdonalds.com/us/en-us/location/2548.html",
+        "phone": "+1 732-739-1592",
+        "cuisine": "burger",
+        "osmId": 376385451,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2230024,
+          40.4379285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Wendy's",
+        "address": "388, Highway 35, Keyport, NJ",
+        "website": "https://locations.wendys.com/united-states/nj/keyport/388-highway-35",
+        "phone": "+1 732-566-3628",
+        "cuisine": "burger",
+        "osmId": 376385453,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2216297,
+          40.4369112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Great Neck",
+        "address": "400, East Shore Road, Great Neck",
+        "website": "https://www.chabadgn.com/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 526594282,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.717764,
+          40.8084922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Bagel Mench",
+        "address": "176, Middle Neck Road, Great Neck",
+        "website": null,
+        "phone": null,
+        "cuisine": "breakfast;bagel",
+        "osmId": 554198873,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7330846,
+          40.7928701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Port Washington",
+        "address": "80, Shore Road, Port Washington, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 566265758,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7051538,
+          40.8398328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Eilat Meats",
+        "address": "497, Middle Neck Road, Great Neck, NY",
+        "website": "http://www.kabobsir.com/",
+        "phone": "+1-516-829-8181",
+        "cuisine": null,
+        "osmId": 572750581,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.73376,
+          40.7999226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cho-Sen Village",
+        "address": "505, Middle Neck Road, Great Neck",
+        "website": "http://www.cho-senvillage.com/",
+        "phone": null,
+        "cuisine": "chinese",
+        "osmId": 613566881,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7339673,
+          40.8003793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Roslyn",
+        "address": "75, Powerhouse Road, Roslyn Heights, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 770385031,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6453163,
+          40.7854566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Fort Lee",
+        "address": "808, Abbott Boulevard, Fort Lee, NJ",
+        "website": "https://www.chabadfortlee.com/",
+        "phone": "+1-201-886-1238",
+        "cuisine": null,
+        "osmId": 801714807,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9823124,
+          40.8313068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Monsey BBQ",
+        "address": "110, Route 59, Monsey, NY",
+        "website": "https://monseybbq.com/",
+        "phone": "+1 845-425-1113",
+        "cuisine": "barbecue",
+        "osmId": 10281859699,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0688317,
+          41.1079391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Chi Pizza",
+        "address": "100, Rute 59, Monsey, NY",
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza;sushi",
+        "osmId": 10281859716,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0676346,
+          41.1077479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Rt 306 BBQ",
+        "address": "455, State Highway 306, Wesley Hills, NY",
+        "website": "https://route306bbq.com/",
+        "phone": "+1-845-777-9227",
+        "cuisine": "barbecue",
+        "osmId": 10286462627,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0709963,
+          41.155598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hava Java",
+        "address": "455, State Highway 306, Wesley Hills, NY",
+        "website": "https://www.havajavaonline.com/",
+        "phone": "+1-845-362-1019",
+        "cuisine": null,
+        "osmId": 10286462628,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0708394,
+          41.1563402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "LeBrick",
+        "address": "250, Nyack Turnpike, Suffern, NY",
+        "website": "https://lebrickrestaurant.com/",
+        "phone": "+1-845-547-8300",
+        "cuisine": "mediterranean",
+        "osmId": 10289803063,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1063941,
+          41.1130169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Unknown",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 10289803071,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0633929,
+          41.1075949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House at Rutgers",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 182587721,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4533183,
+          40.5039596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Jewish Center",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 570063088,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3862435,
+          40.6396852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Giddy's Pizza & Cafe",
+        "address": "17, North 4th Avenue, Highland Park, NJ",
+        "website": "https://giddyspizzeria.com/highland-park/",
+        "phone": "+1 732-659-6898",
+        "cuisine": "italian",
+        "osmId": 921422382,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4262938,
+          40.5003732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1238874455,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3220635,
+          40.7593157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 358857149,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3467456,
+          34.0855544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Coffee Bean & Tea Leaf",
+        "address": null,
+        "website": "https://www.coffeebean.com/",
+        "phone": "+1 818 249 7848",
+        "cuisine": "coffee_shop",
+        "osmId": 617859814,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2282493,
+          34.2053424
         ]
       }
     },
@@ -56201,6 +60065,186 @@
     {
       "type": "Feature",
       "properties": {
+        "category": "restaurants",
+        "name": "Modern Bread and Bagel",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "breakfast",
+        "osmId": 3806218314,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6046844,
+          34.1847319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sandwich Bar 26",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "sandwich",
+        "osmId": 3844031634,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5232509,
+          34.1637998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Super Sal Market",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 4148069410,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5174002,
+          34.161868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Milky Way",
+        "address": "9108 W, Pico Boulevard, Los Angeles, CA",
+        "website": null,
+        "phone": "+1-310-859-0004",
+        "cuisine": null,
+        "osmId": 4402539089,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3903434,
+          34.0550289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Duty Free Store",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 4810513592,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4046525,
+          33.9409478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Rock & Brews",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 4810513601,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4046471,
+          33.9412749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hirsh Family Kosher Kitchen And Cafe",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 5104611125,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.361199,
+          34.0773338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Peet's Coffee",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "coffee_shop",
+        "osmId": 5521118046,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4017988,
+          33.941098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "One80 Pizzeria",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "pizza",
+        "osmId": 7228358856,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3770282,
+          34.0536895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "chabad",
         "name": "Chabad of Beverlywood",
         "address": "Los Angeles, CA",
@@ -56211,6 +60255,66 @@
         "coordinates": [
           -118.3866592,
           34.0430717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Starbucks",
+        "address": "30019, Hawthorne Boulevard, Rancho Palos Verdes, CA",
+        "website": "https://www.starbucks.com/store-locator/store/113438/ralphs-rancho-palos-verdes-720-30019-hawthorne-blvd-rancho-palos-verdes-ca-902755",
+        "phone": "+1 310-377-6941",
+        "cuisine": "coffee_shop",
+        "osmId": 9061319693,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3945009,
+          33.7604994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Santa Monica Kosher Market",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9559516389,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4524924,
+          34.0449601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Persian Youth Center",
+        "address": "West Pico Boulevard",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 9887832780,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.388394,
+          34.0551173
         ]
       }
     },
@@ -56250,9 +60354,393 @@
     {
       "type": "Feature",
       "properties": {
+        "category": "restaurants",
+        "name": "Borekas Sephardic Pastries",
+        "address": "5530, Van Nuys Boulevard, Van Nuys, CA",
+        "website": "https://www.bo-re-kas.com/",
+        "phone": "+1 818-688-4588",
+        "cuisine": null,
+        "osmId": 11938218934,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4484116,
+          34.171159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "chabad",
-        "name": "Chabad of Boca Raton",
-        "address": "120 NE 1st Ave, Boca Raton, FL",
+        "name": "Cong. Levi Yitschak - Chabad of Hancock Park",
+        "address": "346, North La Brea Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 423499438,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3437426,
+          34.0776923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Munchies",
+        "address": null,
+        "website": "https://lamunchies.com",
+        "phone": "+1-310-777-0221",
+        "cuisine": null,
+        "osmId": 425406316,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3850782,
+          34.0552802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Residential Treatment Center",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 427293319,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3531934,
+          34.057694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Downtown Los Angeles",
+        "address": "1035, South Olive Street, Los Angeles, CA",
+        "website": "https://www.downtownjcc.com",
+        "phone": "+1 213-488-1543",
+        "cuisine": null,
+        "osmId": 428128044,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2606636,
+          34.0416184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Schwartz Bakery & Cafe",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 429370788,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3791617,
+          34.0536442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of North Hollywood",
+        "address": "13079, Chandler Boulevard, Sherman Oaks, CA",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 431825695,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.417856,
+          34.1687589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Malibu",
+        "address": "22943, Pacific Coast Highway, Malibu, CA",
+        "website": "http://www.jewishmalibu.com",
+        "phone": "+1 310 456 6588",
+        "cuisine": null,
+        "osmId": 459110854,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6760418,
+          34.038133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "North County Chabad Center",
+        "address": "19045, Yorba Linda Boulevard, Yorba Linda, CA",
+        "website": "https://www.ocjewish.com",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1053403518,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8015856,
+          33.8890734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Miro's Food Truck",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": "mediterranean",
+        "osmId": 3404110014,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.373266,
+          25.7574835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mamale Cafe & Pizza Bar",
+        "address": "1017, Kane Concourse, Bay Harbor Islands, FL",
+        "website": null,
+        "phone": "+1-786-648-9045",
+        "cuisine": "pizza;coffee_shop",
+        "osmId": 6027892096,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1297553,
+          25.8869749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Meat Bar Miami",
+        "address": "1009-1011, Kane Concourse, Bay Harbor Islands, FL",
+        "website": "https://meatbarrestaurant.com/",
+        "phone": "+1-786-498-9577",
+        "cuisine": "mediterranean",
+        "osmId": 6027892101,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1295253,
+          25.8869923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mozart Grille",
+        "address": "18120, Collins Avenue, Sunny Isles Beach, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6029855874,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1221643,
+          25.9439014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Neya",
+        "address": "9491, Harding Avenue, Surfside, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6029885227,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1233489,
+          25.8850356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sultan Restaurant",
+        "address": "18250, Collins Avenue, Sunny Isles Beach, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6110111486,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1220715,
+          25.9450612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mozart Cafe",
+        "address": "18110, Collins Avenue, Sunny Isles Beach, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 6369567281,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1221689,
+          25.9438296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Power Smoothie",
+        "address": "20475, Biscayne Boulevard, Aventura, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": "sandwich;bowl;smoothie",
+        "osmId": 9517186490,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1435704,
+          25.9651971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Walnut Creek",
+        "address": null,
+        "website": "https://www.chabadwalnutcreek.com/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12233167701,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.239908,
+          26.0315296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Jeremiah's Italian Ice",
+        "address": "8170, Glades Road, Boca Raton, FL",
+        "website": "https://jeremiahsice.com/locations/boca-raton-fl/",
+        "phone": "+1 561-465-3274",
+        "cuisine": null,
+        "osmId": 12566766267,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1737932,
+          26.367379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad",
+        "address": "120, Northeast 1st Avenue",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12669310666,
         "weight": 1
       },
       "geometry": {
@@ -56267,16 +60755,895 @@
       "type": "Feature",
       "properties": {
         "category": "restaurants",
-        "name": "Katz's Delicatessen",
-        "address": "205 E Houston St, New York, NY",
-        "website": "https://www.facebook.com/katzsdeli",
+        "name": "Kvation Villa Golf",
+        "address": null,
+        "website": "https://kvation.com/listings/villa-golf-west-boca-raton-florida/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12974694914,
         "weight": 1
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.987353,
-          40.7223431
+          -80.1883257,
+          26.3841201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Bissli Grill",
+        "address": "12355, Hagen Ranch Road, Boynton Beach, FL",
+        "website": "https://www.bissligrill.getsauce.com",
+        "phone": "+1 561-944-3984",
+        "cuisine": "middle_eastern",
+        "osmId": 13293404117,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1658534,
+          26.4926305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Carmela's",
+        "address": "7300, West Camino Real, Boca Raton, FL",
+        "website": "https://carmelasboca.com",
+        "phone": "+1-561-367-3412",
+        "cuisine": null,
+        "osmId": 13517520432,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1552038,
+          26.3436561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Rave Pizza & Sushi",
+        "address": "7300, West Camino Real, Boca Raton, FL",
+        "website": "https://raveboca.com",
+        "phone": "+1 561-408-7283",
+        "cuisine": "pizza;sushi",
+        "osmId": 13517520433,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1552009,
+          26.3435689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad in South Beach",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 436038247,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1363163,
+          25.77279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Parkland",
+        "address": "7170, Loxahatchee Road, Parkland, FL",
+        "website": "https://chabadofparkland.com/",
+        "phone": "+1-954-970-9551",
+        "cuisine": null,
+        "osmId": 1166063795,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.220239,
+          26.331707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Israeli Center",
+        "address": "11449, Palmetto Park Road, Boca Raton, FL",
+        "website": "https://www.chabadmada.com/",
+        "phone": "+1-754-246-2479",
+        "cuisine": null,
+        "osmId": 1172887725,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2305397,
+          26.3491954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of West Boca Raton",
+        "address": "19701, State Road 7, Boca Raton, FL",
+        "website": "https://www.chabadwestboca.com/",
+        "phone": "+1-561-487-2934",
+        "cuisine": null,
+        "osmId": 1174865972,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2044517,
+          26.3831986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Alma",
+        "address": "501, Silks Run, Hallandale Beach, FL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1317634421,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1396564,
+          25.9790741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Lubavitch Chabad of Illinois",
+        "address": "2833, West Howard Street, Chicago, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 4930035216,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7009079,
+          42.0191163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Galit",
+        "address": "2429, North Lincoln Avenue, Chicago, IL",
+        "website": "https://www.galitrestaurant.com",
+        "phone": "+1-773-360-8755",
+        "cuisine": "middle_eastern;israeli",
+        "osmId": 6459324305,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6495306,
+          41.9262841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Baskin-Robbins",
+        "address": "3132, West Devon Avenue, Chicago, IL",
+        "website": "https://locations.baskinrobbins.com/il/chicago/3132-w-devon-ave-300729-br",
+        "phone": "+1 773-262-4561",
+        "cuisine": "ice_cream",
+        "osmId": 6612814081,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7083471,
+          41.9976611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Chocolate Shoppe Ice Cream",
+        "address": "4041, Dempster Street, Skokie, IL",
+        "website": "https://www.chocolateshoppeicecream.com/independent-shops#illinois",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 7851646538,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7294756,
+          42.0404752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Oberweis",
+        "address": "6469, North Lincoln Avenue, Lincolnwood, IL",
+        "website": "https://www.oberweis.com/ice-cream-and-dairy-stores/Lincolnwood",
+        "phone": "+1 847 983 4514",
+        "cuisine": "ice_cream",
+        "osmId": 8541510466,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7203148,
+          41.9986074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Shaevitz Uptown BBQ",
+        "address": "710, Central Avenue, Highland Park, IL",
+        "website": "https://shaevitzkosher.com/",
+        "phone": null,
+        "cuisine": "barbecue",
+        "osmId": 12367516754,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8025017,
+          42.1842769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "address": "3132, West Devon Avenue, Chicago, IL",
+        "website": "https://locations.dunkindonuts.com/en/il/chicago/3132-w-devon-ave/300729",
+        "phone": "+1 773-262-4561",
+        "cuisine": "donut;coffee_shop",
+        "osmId": 130802893,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7084352,
+          41.9977042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Tannenbaum Chabad House",
+        "address": "2014, Orrington Avenue, Evanston, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 207127557,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.680179,
+          42.0544696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad East Lakeview Community Center",
+        "address": "615, West Wellington Avenue, Chicago, IL",
+        "website": "https://www.jewishlakeview.com/",
+        "phone": "+1-773-495-7127",
+        "cuisine": null,
+        "osmId": 210326654,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6449425,
+          41.9362156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of the Gold Coast",
+        "address": "1236, North Dearborn Street, Chicago, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 210679410,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6304135,
+          41.905041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Wilmette",
+        "address": "2904, Old Glenview Road, Wilmette, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 383572603,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7473588,
+          42.0662161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Northbrook",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 494511855,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8577356,
+          42.1145698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House/Central Avenue",
+        "address": "874, Central Avenue, Highland Park, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1174777751,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8060599,
+          42.1828515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Northwest Suburban Chabad",
+        "address": "16296, Aptakisic Road, Prairie View, IL",
+        "website": null,
+        "phone": "+18478087770",
+        "cuisine": null,
+        "osmId": 1222799965,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9512628,
+          42.1830111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Northwest Suburban Chabad",
+        "address": "16336, Aptakisic Road, Prairie View, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1222799968,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9520874,
+          42.1829884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Lubavitch Chabad of Skokie",
+        "address": "4059, Dempster Street, Skokie, IL",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 16315482,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7298004,
+          42.0404578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House",
+        "address": "491, Commonwealth Avenue, Boston, MA",
+        "website": "https://www.chabadboston.org/",
+        "phone": "+1-617-424-1190",
+        "cuisine": null,
+        "osmId": 2350393259,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0943202,
+          42.3493074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Kosher Wok",
+        "address": "423, Harvard Street, Brookline",
+        "website": null,
+        "phone": null,
+        "cuisine": "chinese",
+        "osmId": 3015800139,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1272962,
+          42.3457015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Jewish Center",
+        "address": "472, High Rock Street, Needham",
+        "website": "https://www.jewishneedham.com/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 3311147331,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2498088,
+          42.2751573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Rosenfeld's Bagels",
+        "address": "1280, Centre Street, Newton, MA",
+        "website": "https://rosenfeldsbagels.com",
+        "phone": "+16175278080",
+        "cuisine": "bagel",
+        "osmId": 9547471970,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1945402,
+          42.3296115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cold Press Juice & Salad Bar",
+        "address": "326, Harvard Street, Brookline, MA",
+        "website": "https://www.purecoldpress.com/",
+        "phone": "+1 617 487 8948",
+        "cuisine": "juice;salad;pizza",
+        "osmId": 11450751503,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1236575,
+          42.3434323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mamaleh's Delicatessen",
+        "address": "101, South Street, Somerville, MA",
+        "website": "https://mamalehs.com/",
+        "phone": null,
+        "cuisine": "jewish;deli",
+        "osmId": 12327862264,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09106,
+          42.3747865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Harvard Chabad",
+        "address": "38;40, Banks Street",
+        "website": "https://www.harvardchabad.org/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 29631529,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1143879,
+          42.369611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Newton Centre",
+        "address": "32, Loring Street, Newton, MA",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 29812396,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.191703,
+          42.3384104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Lubavitch of the North Shore",
+        "address": "44, Burrill Street",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 201352983,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9190751,
+          42.4688901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mamilla",
+        "address": "401, Euclid Avenue, Cleveland, OH",
+        "website": "https://www.mamillacle.com/",
+        "phone": "+1-216-400-6194",
+        "cuisine": "mediterranean",
+        "osmId": 12291205184,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6903643,
+          41.500332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Lubavitch",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 358921119,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9228721,
+          39.7085176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Matsuhisa",
+        "address": "98, Steele Street, Denver, CO",
+        "website": "https://www.matsuhisarestaurants.com/denver/",
+        "phone": "+1-303-329-6628",
+        "cuisine": "sushi",
+        "osmId": 9952884925,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.949629,
+          39.7175762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of South Denver",
+        "address": "2319, South Josephine Street, Denver, CO",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 12913143646,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9583189,
+          39.6744107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House",
+        "address": null,
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 1253502156,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9017944,
+          39.5360599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "7-Eleven",
+        "address": "3000, Northside Boulevard, Richardson, TX",
+        "website": "https://www.7-eleven.com/locations/tx/richardson/3000-northside-blvd-a-100-38342",
+        "phone": "+1 469-662-4563",
+        "cuisine": null,
+        "osmId": 6532885195,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7506535,
+          32.9935225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Market",
+        "address": "13534, Preston Road, Dallas, TX",
+        "website": "https://themarkettx.com/",
+        "phone": null,
+        "cuisine": null,
+        "osmId": 220689277,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8031145,
+          32.9317713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Dallas",
+        "address": "6710, Duffield Drive",
+        "website": null,
+        "phone": null,
+        "cuisine": null,
+        "osmId": 470346794,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7923197,
+          32.9885897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Saba's Grill and Wok",
+        "address": "5413, South Braeswood Boulevard, Houston, TX",
+        "website": null,
+        "phone": "+1-832-834-5595",
+        "cuisine": "chinese",
+        "osmId": 460670072,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4775389,
+          29.6756482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Katz's",
+        "address": "2200, North Shepherd Drive, Houston, TX",
+        "website": null,
+        "phone": null,
+        "cuisine": "american;sandwich",
+        "osmId": 850656296,
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4099851,
+          29.8061346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Kew Gardens Synagogue",
+        "address": "Kew Gardens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.831322,
+          40.7071624
         ]
       }
     },

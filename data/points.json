@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-02-03T20:43:41.072Z",
+    "generated": "2026-02-03T20:48:28.147Z",
     "purpose": "Heat map visualization",
     "note": "Weight represents number of establishments in area"
   },
@@ -8666,13 +8666,13 @@
       "properties": {
         "category": "groceries",
         "name": "Green",
-        "weight": 9
+        "weight": 10
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.96852326666666,
-          40.72696052222222
+          -73.96672482,
+          40.724809750000006
         ]
       }
     },
@@ -13194,15 +13194,270 @@
     {
       "type": "Feature",
       "properties": {
+        "category": "restaurants",
+        "name": "restaurants",
+        "weight": 78
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9819949333333,
+          40.7372442871795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "L'Amour Glatt Kosher",
+        "weight": 50
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82467627599999,
+          40.75972456200001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Kosher Bagel Hole",
+        "weight": 33
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01551564242425,
+          40.59634190909091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Dunkin'",
+        "weight": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7721094888889,
+          40.61931771111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "chabad",
-        "name": "Northridge Chabad",
+        "name": "Chabad of Upper East Side",
+        "weight": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97141733333332,
+          40.75622093333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Sheepshead Bay",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97065976666666,
+          40.580865233333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Center",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.28747883333334,
+          40.8840762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Persian Grill",
         "weight": 1
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.5228416,
-          34.2392668
+          -73.6488164,
+          40.7861097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "chabad",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7773143,
+          40.847237766666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Roslyn",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6453163,
+          40.7854566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Monsey BBQ",
+        "weight": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0746815,
+          41.12470616666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House at Rutgers",
+        "weight": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4197809,
+          40.5718224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Giddy's Pizza & Cafe",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4262938,
+          40.5003732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "chabad",
+        "weight": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3452441,
+          34.08162335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Coffee Bean & Tea Leaf",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2282493,
+          34.2053424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Northridge Chabad",
+        "weight": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42057125,
+          34.13020925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Modern Bread and Bagel",
+        "weight": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42904646666669,
+          34.095161275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Duty Free Store",
+        "weight": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41161833999999,
+          33.925756039999996
         ]
       }
     },
@@ -13225,14 +13480,44 @@
       "type": "Feature",
       "properties": {
         "category": "chabad",
-        "name": "Chabad of Boca Raton",
+        "name": "chabad",
         "weight": 1
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.0855993,
-          26.3516478
+          -118.2606636,
+          34.0416184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Malibu",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6760418,
+          34.038133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "North County Chabad Center",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8015856,
+          33.8890734
         ]
       }
     },
@@ -13240,14 +13525,314 @@
       "type": "Feature",
       "properties": {
         "category": "restaurants",
-        "name": "Katz's Delicatessen",
-        "weight": 9
+        "name": "Miro's Food Truck",
+        "weight": 2
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.98108366666666,
-          40.76102701111112
+          -80.31613300000001,
+          25.75374175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mamale Cafe & Pizza Bar",
+        "weight": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.12926202857145,
+          25.917242142857145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Power Smoothie",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.15394226666668,
+          26.002823733333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Walnut Creek",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.239908,
+          26.0315296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Jeremiah's Italian Ice",
+        "weight": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1676754,
+          26.386270920000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad",
+        "weight": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.185207425,
+          26.3539372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad in South Beach",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1363163,
+          25.77279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Lubavitch Chabad of Illinois",
+        "weight": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.68893368333335,
+          42.003586066666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Galit",
+        "weight": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.70322066,
+          41.9921464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Shaevitz Uptown BBQ",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8025017,
+          42.1842769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Northbrook",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8577356,
+          42.1145698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House/Central Avenue",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.90313669999999,
+          42.18295033333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad House",
+        "weight": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.162554975,
+          42.333121524999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "The Kosher Wok",
+        "weight": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.13413847499999,
+          42.34838295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "chabad",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9190751,
+          42.4688901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mamilla",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6903643,
+          41.500332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad Lubavitch",
+        "weight": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.92766180000001,
+          39.63966273333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Matsuhisa",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.949629,
+          39.7175762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "7",
+        "weight": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.776884,
+          32.962646899999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Dallas",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7923197,
+          32.9885897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Saba's Grill and Wok",
+        "weight": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.44376199999999,
+          29.740891400000002
         ]
       }
     },
@@ -13263,66 +13848,6 @@
         "coordinates": [
           -119.1048,
           34.2159
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "restaurants",
-        "name": "Nagila Pizza",
-        "weight": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.38733333333334,
-          34.05513333333334
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "restaurants",
-        "name": "Rare Steakhouse",
-        "weight": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.259,
-          25.75
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "restaurants",
-        "name": "26 Sushi & Tapas",
-        "weight": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.1786,
-          26.0642
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "restaurants",
-        "name": "Fuego by Mana",
-        "weight": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.1558,
-          25.9289
         ]
       }
     },
