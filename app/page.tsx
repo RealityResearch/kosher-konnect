@@ -240,13 +240,15 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Shabbat message - right (only on Shabbat) */}
+          {/* Right side - data update info or Shabbat message */}
           {shabbatMode ? (
             <span className="text-amber-400 text-xs whitespace-nowrap min-w-[100px] text-right">
               ✡️ {hebrewUI.shabbatShalom}
             </span>
           ) : (
-            <div className="min-w-[100px]" />
+            <span className="text-xs text-gray-500 whitespace-nowrap min-w-[100px] text-right">
+              Data updated daily
+            </span>
           )}
         </div>
       </div>
