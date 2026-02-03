@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import pointData from "@/data/points.json";
 import type { Feature } from "@/components/MapboxMap";
@@ -28,7 +28,7 @@ const categories = [
 ];
 
 export default function Home() {
-  const [activeCategories, setActiveCategories] = useState<string[]>(["synagogues"]);
+  const [activeCategories, setActiveCategories] = useState<string[]>(categories.map(c => c.id));
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [showPopulation, setShowPopulation] = useState(false);
@@ -44,6 +44,27 @@ export default function Home() {
       setMusicPlaying(!musicPlaying);
     }
   };
+
+  // Autoplay music on first user interaction
+  useEffect(() => {
+    const playOnInteraction = () => {
+      if (audioRef.current && !musicPlaying) {
+        audioRef.current.play().then(() => {
+          setMusicPlaying(true);
+        }).catch(() => {});
+      }
+      document.removeEventListener("click", playOnInteraction);
+      document.removeEventListener("keydown", playOnInteraction);
+    };
+
+    document.addEventListener("click", playOnInteraction);
+    document.addEventListener("keydown", playOnInteraction);
+
+    return () => {
+      document.removeEventListener("click", playOnInteraction);
+      document.removeEventListener("keydown", playOnInteraction);
+    };
+  }, [musicPlaying]);
 
   // Toggle category selection
   const toggleCategory = (categoryId: string) => {
