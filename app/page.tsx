@@ -3,10 +3,10 @@
 import { useState, useRef } from "react";
 import dynamic from "next/dynamic";
 import pointData from "@/data/points.json";
-import type { Feature } from "@/components/LeafletHeatmap";
+import type { Feature } from "@/components/MapboxMap";
 
-// Dynamic import to avoid SSR issues with Leaflet
-const LeafletHeatmap = dynamic(() => import("@/components/LeafletHeatmap"), {
+// Dynamic import to avoid SSR issues with Mapbox
+const MapboxMap = dynamic(() => import("@/components/MapboxMap"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full flex items-center justify-center bg-[#0f1117]">
@@ -77,12 +77,11 @@ export default function Home() {
       <header className="flex-shrink-0 px-4 py-3 border-b border-gray-800 bg-[#0f1117]/95 backdrop-blur z-20">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Kosher Konnect"
+              className="w-9 h-9 rounded-lg object-cover"
+            />
             <div>
               <h1 className="text-lg font-bold text-white leading-tight">Kosher Konnect</h1>
               <p className="text-xs text-gray-400 hidden sm:block">Find your community</p>
@@ -137,7 +136,7 @@ export default function Home() {
       <div className="flex-1 flex overflow-hidden relative">
         {/* Map */}
         <main className="flex-1 relative">
-          <LeafletHeatmap
+          <MapboxMap
             features={pointData.features as Feature[]}
             activeCategories={activeCategories}
             categories={categories}
