@@ -126,6 +126,21 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Announcement bar */}
+      <div className="flex-shrink-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-cyan-900/50">
+        <a
+          href="https://github.com/RealityResearch/kosher-konnect"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 py-2 text-xs tracking-widest text-cyan-400 hover:text-cyan-300 transition-colors"
+        >
+          <span>SUPPORT THIS PROJECT</span>
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
+
       {/* Main content */}
       <div className="flex-1 flex overflow-hidden relative">
         {/* Map */}
