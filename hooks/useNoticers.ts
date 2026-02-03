@@ -1,23 +1,40 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createClient, RealtimeChannel } from "@supabase/supabase-js";
+import { createClient, RealtimeChannel, SupabaseClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
+// Lazy initialization of Supabase client
+let supabase: SupabaseClient | null = null;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+function getSupabase(): SupabaseClient | null {
+  if (typeof window === "undefined") return null;
+
+  if (!supabase) {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseAnonKey) {
+      return null;
+    }
+
+    supabase = createClient(supabaseUrl, supabaseAnonKey);
+  }
+
+  return supabase;
+}
 
 export function useNoticers() {
   const [count, setCount] = useState(1);
-  const [channel, setChannel] = useState<RealtimeChannel | null>(null);
 
   useEffect(() => {
+    const client = getSupabase();
+    if (!client) return;
+
     // Generate a unique user ID for this session
     const visitorId = `visitor_${Math.random().toString(36).substring(2, 15)}`;
 
     // Create a presence channel
-    const presenceChannel = supabase.channel("jps_noticers", {
+    const presenceChannel = client.channel("jps_noticers", {
       config: {
         presence: {
           key: visitorId,
@@ -48,8 +65,6 @@ export function useNoticers() {
           });
         }
       });
-
-    setChannel(presenceChannel);
 
     // Cleanup on unmount
     return () => {
