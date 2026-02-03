@@ -59,6 +59,12 @@ export default function LeafletHeatmap({
       minZoom: 3,
       maxZoom: 18,
       zoomControl: true,
+      // Smooth zooming options
+      zoomSnap: 0.25,           // Allow fractional zoom levels
+      zoomDelta: 0.5,           // Smaller zoom increments for +/- buttons
+      wheelPxPerZoomLevel: 120, // More scroll needed per zoom (smoother)
+      zoomAnimation: true,
+      fadeAnimation: true,
     });
 
     L.tileLayer(
