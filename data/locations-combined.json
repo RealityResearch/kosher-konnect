@@ -1,0 +1,2105 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": "2026-02-03T20:13:48.597Z",
+    "detailedCount": 130,
+    "pointsCount": 201
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth-El",
+        "address": "Brooklyn, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9529898,
+          40.5791224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Israel",
+        "address": "Queens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7399819,
+          40.6127417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Community Synagogue of Rye",
+        "address": "Rye, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6781841,
+          40.975098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Shaare Zedek",
+        "address": "Manhattan, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0037507,
+          40.718158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Greystone Jewish Center",
+        "address": "Yonkers, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8887467,
+          40.9548206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Sons of Israel",
+        "address": "Yonkers, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8977135,
+          40.9181546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Emanuel",
+        "address": "Yonkers, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8972417,
+          40.9215811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Pelham Jewish Center",
+        "address": "Pelham, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8134669,
+          40.8981551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Mount Eden Center Synagogue",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9091667,
+          40.8436111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Zion",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9061111,
+          40.8502778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Tiffereth Israel",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8952778,
+          40.8627778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Hunts Point Synagogue",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.887724,
+          40.8177834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Hebrew Center of the East Bronx",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8682793,
+          40.8322189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Anshe Amas of Williamsbridge",
+        "address": "Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8611111,
+          40.8858333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple B'nai Israel",
+        "address": "Queens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7142332,
+          40.6982444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Emanuel of Lynbrook",
+        "address": "Lynbrook, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.674876,
+          40.6564599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Ohr Torah",
+        "address": "Far Rockaway, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7184213,
+          40.6463612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Beth Sholom",
+        "address": "Lawrence, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7011756,
+          40.6566808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Tree of Life",
+        "address": "Queens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7133244,
+          40.6830663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Aish Kodesh",
+        "address": "Woodmere, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7138249,
+          40.6330943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Central Synagogue of Nassau County",
+        "address": "Nassau, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6227234,
+          40.6710554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Kew Gardens Jewish Center Anshe Sholom",
+        "address": "Kew Gardens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8343018,
+          40.7081006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Shaare Tova",
+        "address": "Kew Gardens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8314013,
+          40.7066412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Knesseth Israel",
+        "address": "Far Rockaway, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7442871,
+          40.6066108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Free Synagogue of Flushing",
+        "address": "Flushing, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8277779,
+          40.7572222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Sholom",
+        "address": "Flushing, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7942521,
+          40.7581196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Rosedale Jewish Center",
+        "address": "247-11 Francis Lewis Blvd, Queens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7336182,
+          40.663716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Ahavath Sholom",
+        "address": "Queens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8361003,
+          40.7191061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Young Israel of Kew Gardens Hills",
+        "address": "Kew Gardens Hills, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8184806,
+          40.7302467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Fresh Meadows Jewish Center",
+        "address": "Fresh Meadows, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7830556,
+          40.7424999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Kew Gardens Synagogue",
+        "address": "Kew Gardens, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.831322,
+          40.7071624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Ohav Zedek",
+        "address": "Belle Harbor, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8523864,
+          40.5737786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple of Israel",
+        "address": "Rockaway Beach, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8094644,
+          40.587343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "West End Temple",
+        "address": "Rockaway, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.865,
+          40.5733333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Wilshire Boulevard Temple",
+        "address": "3663 Wilshire Blvd, Los Angeles, CA",
+        "website": "http://www.wilshireboulevardtemple.org",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3049974,
+          34.0621612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth David",
+        "address": "9677 Longden Ave, Temple City, CA",
+        "website": "https://www.templebethdavidsgv.org",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0595485,
+          34.114619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "B'nai David-Judea Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.385918,
+          34.0549452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Shalom",
+        "address": "3635 Elm Ave, Long Beach, CA",
+        "website": "http://www.tbslb.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1884019,
+          33.7983506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Anavath Israel Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3072983,
+          34.0911208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Hollywood Temple Beth El",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.366275,
+          34.094843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Anshe Emet Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3838922,
+          34.0524447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Beth Jacob Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3889669,
+          34.0591767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Etz Jacob Synagogue",
+        "address": "7659 Beverly Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3566099,
+          34.0763808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Shaarei Tefila Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3484104,
+          34.0763987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Tifereth Zvi Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3547995,
+          34.0763986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Sinai",
+        "address": "Glendale, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2647594,
+          34.1637073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Pasadena Jewish Temple and Center",
+        "address": "1434 N. Altadena Dr, Pasadena, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0978899,
+          34.1705556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Adat Ari El",
+        "address": "Valley Village, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3958333,
+          34.1713889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Valley Beth Israel",
+        "address": "13060 Roscoe Blvd, Sun Valley, CA",
+        "website": "https://myvbi.net/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4186781,
+          34.2213183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Kahal Joseph Congregation",
+        "address": "10505 Santa Monica Blvd, Los Angeles, CA",
+        "website": "https://www.kahaljoseph.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.427285,
+          34.0556422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Sephardic Temple Tifereth Israel",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4318626,
+          34.0637822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Sinai Temple",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.429444,
+          34.0661111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "University Synagogue",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4739202,
+          34.0614134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Israel",
+        "address": "5711 Monte Vista St, Los Angeles, CA",
+        "website": "https://www.tbila.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1941319,
+          34.1122358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Beth Shalom of Whittier",
+        "address": "14564 Hawes St, Whittier, CA",
+        "website": "https://www.bethshalomofwhittier.net/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0205556,
+          33.9394444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Stephen S. Wise Temple",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4703746,
+          34.1275614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Hillel Center UCLA",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4384091,
+          34.07022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Northridge Chabad",
+        "address": "Northridge, CA",
+        "website": "http://www.chabadcsun.com/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5228416,
+          34.2392668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Torah",
+        "address": "16651 Rinaldi St, Granada Hills, CA",
+        "website": "https://sites.google.com/site/templebethtorahtbt/home",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4950573,
+          34.279687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Pacific Jewish Center",
+        "address": "Venice, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4790087,
+          33.993135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Beverlywood",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3866592,
+          34.0430717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Westwood Kehilla",
+        "address": "10523 Santa Monica Blvd, Los Angeles, CA",
+        "website": "https://www.kehilla.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.427676,
+          34.0553654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Knesset Israel",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3878244,
+          34.0398743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Adas Torah",
+        "address": "9040 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.388787,
+          34.0550697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Ohr HaTorah",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4268639,
+          34.0078631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Sha'Arei Am Santa Monica Synagogue",
+        "address": "Santa Monica, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4806506,
+          34.0258202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Young Israel of Beverly Hills",
+        "address": "8701 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3817807,
+          34.0546068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of South Bay",
+        "address": "Torrance, CA",
+        "website": "https://www.chabadsb.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3697397,
+          33.8744781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Brentwood South",
+        "address": "Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4622855,
+          34.0405581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Congregation Or Ami",
+        "address": "Calabasas, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6954847,
+          34.1528485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Beth David Synagogue",
+        "address": "Miami, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2081038,
+          25.7545443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Adath Yeshuruh",
+        "address": "North Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1803609,
+          25.9448268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Sinai",
+        "address": "Hollywood, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.131434,
+          26.0203677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Shalom",
+        "address": "Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1308788,
+          25.7975981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Aron Kodesh",
+        "address": "Fort Lauderdale, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2081028,
+          26.1656403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Israel of Miramar",
+        "address": "Miramar, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2261593,
+          25.9781474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Beth Torah Synagogue",
+        "address": "North Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1789357,
+          25.9264824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Sinai Aventura",
+        "address": "Aventura, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1564349,
+          25.9498148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Zion",
+        "address": "Miami, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.3261632,
+          25.7164904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Israel",
+        "address": "Miami, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.3575531,
+          25.6856583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Bet Breira Synagogue",
+        "address": "Kendall, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.3367192,
+          25.6817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Judea",
+        "address": "5500 Granada Blvd, Coral Gables, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2708338,
+          25.7184965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Kol Tikvah",
+        "address": "Parkland, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2515425,
+          26.3134011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Beth Orr",
+        "address": "2151 Riverside Dr, Coral Springs, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2373399,
+          26.2570069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Temple Dor Dorim",
+        "address": "2360 Glades Circle, Weston, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4219375,
+          26.1353236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "chabad",
+        "name": "Chabad of Boca Raton",
+        "address": "120 NE 1st Ave, Boca Raton, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0855993,
+          26.3516478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "The Harborside Kollel",
+        "address": "1108 96th St, Bay Harbor Islands, FL",
+        "website": "https://www.hskollel.org/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1316625,
+          25.886366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "synagogues",
+        "name": "Young Israel of Sunny Isles",
+        "address": "17395 NE 174th St, Sunny Isles Beach, FL",
+        "website": "https://youngisraelsib.com/",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1262259,
+          25.9364184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Katz's Delicatessen",
+        "address": "205 E Houston St, New York, NY",
+        "website": "https://www.facebook.com/katzsdeli",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.987353,
+          40.7223431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Grand Plaza Liquors and Wines",
+        "address": "Brooklyn, NY",
+        "website": "https://grandplazaliquors.com",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9634258,
+          40.6751621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Green-Ville Garden",
+        "address": "373 Myrtle Ave, Brooklyn, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9714871,
+          40.6933421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "2nd Ave Deli",
+        "address": "162 E 33rd St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9815,
+          40.7456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Ben's Kosher Deli",
+        "address": "209 W 38th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9895,
+          40.7537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Sarge's Delicatessen",
+        "address": "548 3rd Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9781,
+          40.7455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Prime Ko",
+        "address": "217 W 85th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9756,
+          40.7875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Mendy's",
+        "address": "61 E 34th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9819,
+          40.7479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Deli Kasbah",
+        "address": "251 W 85th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9773,
+          40.7878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Cafe Nana",
+        "address": "322 Amsterdam Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9794,
+          40.7798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Hummus Place",
+        "address": "305 Amsterdam Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9791,
+          40.7791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Supersol",
+        "address": "156 E 44th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9751,
+          40.7523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Kosher Marketplace",
+        "address": "2442 Broadway, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9727,
+          40.7909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Pomegranate Supermarket",
+        "address": "1507 Coney Island Ave, Brooklyn, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9617,
+          40.6236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Seasons Kosher",
+        "address": "170 Amsterdam Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9838,
+          40.7739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Tierra Sur at Herzog",
+        "address": "3201 Camino Del Sol, Oxnard, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1048,
+          34.2159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Nagila Pizza",
+        "address": "9411 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3945,
+          34.0546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Jeff's Gourmet Sausage",
+        "address": "8930 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3847,
+          34.0553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Shiloh's",
+        "address": "8861 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3828,
+          34.0555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Elat Market",
+        "address": "8730 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3801,
+          34.0557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Glatt Mart",
+        "address": "8961 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3855,
+          34.0551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Rare Steakhouse",
+        "address": "401 Miracle Mile, Coral Gables, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.259,
+          25.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "26 Sushi & Tapas",
+        "address": "3167 Stirling Rd, Fort Lauderdale, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1786,
+          26.0642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restaurants",
+        "name": "Fuego by Mana",
+        "address": "3861 NE 163rd St, North Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1558,
+          25.9289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "groceries",
+        "name": "Kosher Kingdom",
+        "address": "450 NE 167th St, North Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1691,
+          25.9338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mikvahs",
+        "name": "Mikvah of the Upper East Side",
+        "address": "309 E 81st St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9531,
+          40.7752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mikvahs",
+        "name": "Mikvah Israel of Crown Heights",
+        "address": "1690 Carroll St, Brooklyn, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9434,
+          40.6681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mikvahs",
+        "name": "Mikvah of Los Angeles",
+        "address": "522 N La Brea Ave, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3446,
+          34.0825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "mikvahs",
+        "name": "Miami Beach Community Mikvah",
+        "address": "4011 Chase Ave, Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1395,
+          25.8128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "schools",
+        "name": "Ramaz School",
+        "address": "60 E 78th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9606,
+          40.7756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "schools",
+        "name": "SAR Academy",
+        "address": "655 W 254th St, Bronx, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9095,
+          40.8973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "schools",
+        "name": "Yeshiva University",
+        "address": "500 W 185th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9288,
+          40.8512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "schools",
+        "name": "YULA High School",
+        "address": "9760 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4045,
+          34.0546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "schools",
+        "name": "Hebrew Academy of Miami",
+        "address": "2400 Pine Tree Dr, Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1354,
+          25.8072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "jcc",
+        "name": "92nd Street Y",
+        "address": "1395 Lexington Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9516,
+          40.7851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "jcc",
+        "name": "JCC Manhattan",
+        "address": "334 Amsterdam Ave, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9796,
+          40.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "jcc",
+        "name": "JCC of Greater Los Angeles",
+        "address": "5870 W Olympic Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3628,
+          34.0555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "jcc",
+        "name": "Michael-Ann Russell JCC",
+        "address": "18900 NE 25th Ave, North Miami Beach, FL",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1593,
+          25.9365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "judaica",
+        "name": "Eichlers",
+        "address": "5004 13th Ave, Brooklyn, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9885,
+          40.6358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "judaica",
+        "name": "West Side Judaica",
+        "address": "2412 Broadway, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9732,
+          40.7905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "judaica",
+        "name": "J. Levine Books & Judaica",
+        "address": "5 W 30th St, New York, NY",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9879,
+          40.7465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "judaica",
+        "name": "Hamakor Judaica",
+        "address": "8840 W Pico Blvd, Los Angeles, CA",
+        "weight": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3818,
+          34.0555
+        ]
+      }
+    }
+  ]
+}
