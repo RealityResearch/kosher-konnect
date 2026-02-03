@@ -24,6 +24,7 @@ const categories = [
   { id: "mikvahs", name: "Mikvahs", color: "#4fd1c5" },
   { id: "groceries", name: "Kosher Groceries", color: "#68d391" },
   { id: "judaica", name: "Judaica Shops", color: "#fc8181" },
+  { id: "vaults", name: "Vaults", color: "#fbbf24" },
 ];
 
 export default function Home() {

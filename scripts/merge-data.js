@@ -20,7 +20,7 @@ function loadJSON(filename) {
 // Valid categories
 const CATEGORIES = [
   'synagogues', 'restaurants', 'groceries', 'chabad',
-  'mikvahs', 'schools', 'jcc', 'judaica'
+  'mikvahs', 'schools', 'jcc', 'judaica', 'vaults'
 ];
 
 // Create a unique key for deduplication
