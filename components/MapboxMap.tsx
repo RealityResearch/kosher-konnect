@@ -3,10 +3,35 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import confetti from "canvas-confetti";
 
 import detailedData from "@/data/locations-detailed.json";
 import pointData from "@/data/points.json";
 import populationData from "@/data/jewish-population.json";
+
+// Mazel Tov confetti burst
+function mazelTovConfetti(x: number, y: number) {
+  const colors = ["#0038b8", "#ffffff", "#ffd700"]; // Israeli blue, white, gold
+
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { x: x / window.innerWidth, y: y / window.innerHeight },
+    colors,
+    disableForReducedMotion: true,
+  });
+
+  // Second burst for extra celebration
+  setTimeout(() => {
+    confetti({
+      particleCount: 50,
+      spread: 100,
+      origin: { x: x / window.innerWidth, y: y / window.innerHeight },
+      colors,
+      disableForReducedMotion: true,
+    });
+  }, 150);
+}
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "";
 
@@ -352,6 +377,9 @@ export default function MapboxMap({
         className: "dark-popup",
       }).setHTML(`
         <div style="font-family: system-ui; min-width: 180px; padding: 4px;">
+          <div style="font-size: 10px; color: #fbbf24; margin-bottom: 2px; letter-spacing: 1px;">
+            MAZEL TOV!
+          </div>
           <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px; color: #fff;">
             ${location.properties.name}
           </div>
@@ -365,6 +393,23 @@ export default function MapboxMap({
           ` : ""}
         </div>
       `);
+
+      // Add click/touch handler for confetti
+      const triggerConfetti = (clientX: number, clientY: number) => {
+        mazelTovConfetti(clientX, clientY);
+      };
+
+      el.addEventListener("click", (e) => {
+        triggerConfetti(e.clientX, e.clientY);
+      });
+
+      // Mobile touch support
+      el.addEventListener("touchend", (e) => {
+        if (e.changedTouches.length > 0) {
+          const touch = e.changedTouches[0];
+          triggerConfetti(touch.clientX, touch.clientY);
+        }
+      });
 
       const marker = new mapboxgl.Marker(el)
         .setLngLat([lng, lat])
