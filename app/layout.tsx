@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kosher Konnect | Find Your Jewish Community",
+  title: "JPS | Jewish Positioning System",
   description: "Discover synagogues, kosher restaurants, Chabad houses, JCCs, and more across the United States. Find your community, wherever you are.",
-  keywords: ["kosher", "synagogue", "jewish", "chabad", "jcc", "mikvah", "kosher restaurant", "jewish community"],
+  keywords: ["kosher", "synagogue", "jewish", "chabad", "jcc", "mikvah", "kosher restaurant", "jewish community", "jps"],
 };
 
 export default function RootLayout({

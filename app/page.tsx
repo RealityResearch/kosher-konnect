@@ -31,6 +31,7 @@ export default function Home() {
   const [activeCategories, setActiveCategories] = useState<string[]>(["synagogues"]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
+  const [showPopulation, setShowPopulation] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const toggleMusic = () => {
@@ -83,8 +84,8 @@ export default function Home() {
               className="w-9 h-9 rounded-lg object-cover"
             />
             <div>
-              <h1 className="text-lg font-bold text-white leading-tight">Kosher Konnect</h1>
-              <p className="text-xs text-gray-400 hidden sm:block">Find your community</p>
+              <h1 className="text-lg font-bold text-white leading-tight">JPS</h1>
+              <p className="text-xs text-gray-400 hidden sm:block">Jewish Positioning System</p>
             </div>
           </div>
 
@@ -140,6 +141,7 @@ export default function Home() {
             features={pointData.features as Feature[]}
             activeCategories={activeCategories}
             categories={categories}
+            showPopulationDensity={showPopulation}
           />
 
           {/* Legend - bottom left */}
@@ -237,8 +239,35 @@ export default function Home() {
                 })}
               </div>
 
-              {/* Selected summary */}
+              {/* Population Density Toggle */}
               <div className="mt-6 pt-4 border-t border-gray-700">
+                <label className="flex items-center gap-3 p-2.5 rounded-lg cursor-pointer transition-all hover:bg-gray-800/40">
+                  <div
+                    className={`w-5 h-5 rounded flex items-center justify-center transition-all flex-shrink-0
+                      ${showPopulation ? "border-transparent bg-amber-500" : "border-2 border-gray-600"}`}
+                  >
+                    {showPopulation && (
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    )}
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={showPopulation}
+                    onChange={() => setShowPopulation(!showPopulation)}
+                    className="sr-only"
+                  />
+                  <span className="w-2.5 h-2.5 rounded-full flex-shrink-0 bg-amber-500" />
+                  <div className="flex-1 min-w-0">
+                    <span className="text-sm text-white">Jewish Population</span>
+                    <div className="text-xs text-gray-500">Metro area density</div>
+                  </div>
+                </label>
+              </div>
+
+              {/* Selected summary */}
+              <div className="mt-4 pt-4 border-t border-gray-700">
                 <div className="text-xs text-gray-500 mb-2">
                   {activeCategories.length} of {categories.length} selected
                 </div>

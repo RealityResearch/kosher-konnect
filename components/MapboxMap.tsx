@@ -6,6 +6,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import detailedData from "@/data/locations-detailed.json";
 import pointData from "@/data/points.json";
+import populationData from "@/data/jewish-population.json";
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "";
 
@@ -33,12 +34,14 @@ interface MapboxMapProps {
   features: Feature[];
   activeCategories: string[];
   categories: Category[];
+  showPopulationDensity?: boolean;
 }
 
 export default function MapboxMap({
   features,
   activeCategories,
   categories,
+  showPopulationDensity = false,
 }: MapboxMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -115,6 +118,98 @@ export default function MapboxMap({
           ],
         },
       });
+
+      // Add population density source
+      const populationFeatures = populationData.metros.map((metro) => ({
+        type: "Feature" as const,
+        properties: {
+          name: metro.name,
+          population: metro.population,
+          weight: Math.min(metro.population / 100000, 1),
+        },
+        geometry: {
+          type: "Point" as const,
+          coordinates: metro.coordinates,
+        },
+      }));
+
+      map.current!.addSource("population-data", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: populationFeatures,
+        },
+      });
+
+      // Add population density heatmap layer
+      map.current!.addLayer({
+        id: "population-heatmap",
+        type: "heatmap",
+        source: "population-data",
+        maxzoom: 12,
+        layout: {
+          visibility: "none",
+        },
+        paint: {
+          "heatmap-weight": ["get", "weight"],
+          "heatmap-intensity": [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            0, 1,
+            12, 3,
+          ],
+          "heatmap-color": [
+            "interpolate",
+            ["linear"],
+            ["heatmap-density"],
+            0, "rgba(0,0,0,0)",
+            0.1, "rgba(255,215,0,0.2)",
+            0.3, "rgba(255,215,0,0.4)",
+            0.5, "rgba(255,165,0,0.6)",
+            0.7, "rgba(255,140,0,0.8)",
+            1, "rgba(255,215,0,1)",
+          ],
+          "heatmap-radius": [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            0, 40,
+            6, 80,
+            12, 120,
+          ],
+          "heatmap-opacity": 0.7,
+        },
+      });
+
+      // Add population labels layer
+      map.current!.addLayer({
+        id: "population-labels",
+        type: "symbol",
+        source: "population-data",
+        layout: {
+          visibility: "none",
+          "text-field": [
+            "format",
+            ["get", "name"],
+            { "font-scale": 0.8 },
+            "\n",
+            {},
+            ["concat", ["to-string", ["round", ["/", ["get", "population"], 1000]]], "k"],
+            { "font-scale": 0.7, "text-color": "#fbbf24" },
+          ],
+          "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+          "text-size": 12,
+          "text-anchor": "top",
+          "text-offset": [0, 1],
+        },
+        paint: {
+          "text-color": "#ffffff",
+          "text-halo-color": "#000000",
+          "text-halo-width": 1,
+        },
+        minzoom: 5,
+      });
     });
 
     map.current.on("zoom", () => {
@@ -180,6 +275,20 @@ export default function MapboxMap({
     });
   }, [activeCategories, categories, mapLoaded]);
 
+  // Toggle population density layer
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    const visibility = showPopulationDensity ? "visible" : "none";
+
+    if (map.current.getLayer("population-heatmap")) {
+      map.current.setLayoutProperty("population-heatmap", "visibility", visibility);
+    }
+    if (map.current.getLayer("population-labels")) {
+      map.current.setLayoutProperty("population-labels", "visibility", visibility);
+    }
+  }, [showPopulationDensity, mapLoaded]);
+
   // Update markers
   const updateMarkers = useCallback(() => {
     if (!map.current) return;
@@ -192,6 +301,7 @@ export default function MapboxMap({
     if (zoomLevel < 10) return;
 
     const bounds = map.current.getBounds();
+    if (!bounds) return;
 
     const visibleLocations = detailedData.features.filter((f) => {
       const [lng, lat] = f.geometry.coordinates;
