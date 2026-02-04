@@ -41,6 +41,10 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
 /* Prevent text selection on UI */
 button, label, aside {
   -webkit-user-select: none;
@@ -90,6 +94,7 @@ button, label, aside {
 .stagger-in > * {
   opacity: 0;
   animation: fade-in-up 0.3s ease-out forwards;
+  will-change: transform, opacity;
 }
 .stagger-in > *:nth-child(1) { animation-delay: 0.02s; }
 .stagger-in > *:nth-child(2) { animation-delay: 0.04s; }
@@ -170,6 +175,15 @@ button, label, aside {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Fade out */
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.animate-fade-out {
+  animation: fade-out 0.5s ease-out forwards;
 }
 
 /* Marker drop-in animation */

@@ -3,14 +3,20 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import confetti from "canvas-confetti";
-
 import detailedData from "@/data/locations-detailed.json";
 import pointData from "@/data/points.json";
 import populationData from "@/data/jewish-population.json";
 
-// Mazel Tov confetti burst
-function mazelTovConfetti(x: number, y: number) {
+// Lazy-loaded confetti — only fetched on first marker click
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let confettiFn: ((opts: any) => void) | null = null;
+
+async function mazelTovConfetti(x: number, y: number) {
+  if (!confettiFn) {
+    const mod = await import("canvas-confetti");
+    confettiFn = mod.default;
+  }
+  const confetti = confettiFn;
   const colors = ["#0038b8", "#ffffff", "#ffd700"]; // Israeli blue, white, gold
 
   confetti({
@@ -98,6 +104,7 @@ export default function MapboxMap({
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const [zoomLevel, setZoomLevel] = useState(4);
   const [mapLoaded, setMapLoaded] = useState(false);
+  const [showGestureHint, setShowGestureHint] = useState(false);
 
   // Initialize map
   useEffect(() => {
@@ -357,6 +364,15 @@ export default function MapboxMap({
       }
     });
 
+    // Show gesture hint for first-time mobile visitors
+    if (!localStorage.getItem("jps-visited") && window.matchMedia("(max-width: 1023px)").matches) {
+      setShowGestureHint(true);
+      setTimeout(() => {
+        setShowGestureHint(false);
+        localStorage.setItem("jps-visited", "1");
+      }, 4000);
+    }
+
     return () => {
       map.current?.remove();
       map.current = null;
@@ -506,8 +522,9 @@ export default function MapboxMap({
       return inBounds && inCategory;
     });
 
-    // Limit markers for performance
-    const maxMarkers = 200;
+    // Limit markers for performance (fewer on mobile to reduce frame drops)
+    const isMobileDevice = window.matchMedia('(max-width: 1023px)').matches;
+    const maxMarkers = isMobileDevice ? 100 : 200;
     const locationsToShow = visibleLocations.slice(0, maxMarkers);
 
     locationsToShow.forEach((location) => {
@@ -519,9 +536,12 @@ export default function MapboxMap({
       // Create marker element
       const el = document.createElement("div");
       el.className = "mapbox-marker";
+      const isMobile = window.matchMedia('(max-width: 1023px)').matches;
+      const markerSize = isMobile ? 44 : 30;
+      const innerSize = isMobile ? 12 : 8;
       el.style.cssText = `
-        width: 30px;
-        height: 30px;
+        width: ${markerSize}px;
+        height: ${markerSize}px;
         background: ${category.color};
         border: 2px solid rgba(255,255,255,0.9);
         border-radius: 50%;
@@ -533,19 +553,22 @@ export default function MapboxMap({
         transition: box-shadow 0.2s ease, border-color 0.2s ease;
       `;
 
-      el.addEventListener("mouseenter", () => {
-        el.style.boxShadow = `0 4px 20px rgba(0,0,0,0.6), 0 0 24px -4px ${category.color}`;
-        el.style.borderColor = "#ffffff";
-      });
-      el.addEventListener("mouseleave", () => {
-        el.style.boxShadow = `0 2px 12px rgba(0,0,0,0.5), 0 0 20px -8px ${category.color}80`;
-        el.style.borderColor = "rgba(255,255,255,0.9)";
-      });
+      // Only add hover effects on devices with a pointer (skip touch-only)
+      if (window.matchMedia('(hover: hover)').matches) {
+        el.addEventListener("mouseenter", () => {
+          el.style.boxShadow = `0 4px 20px rgba(0,0,0,0.6), 0 0 24px -4px ${category.color}`;
+          el.style.borderColor = "#ffffff";
+        });
+        el.addEventListener("mouseleave", () => {
+          el.style.boxShadow = `0 2px 12px rgba(0,0,0,0.5), 0 0 20px -8px ${category.color}80`;
+          el.style.borderColor = "rgba(255,255,255,0.9)";
+        });
+      }
 
       const inner = document.createElement("div");
       inner.style.cssText = `
-        width: 8px;
-        height: 8px;
+        width: ${innerSize}px;
+        height: ${innerSize}px;
         background: white;
         border-radius: 50%;
         opacity: 0.9;
@@ -558,39 +581,41 @@ export default function MapboxMap({
         closeButton: false,
         className: "dark-popup",
       }).setHTML(`
-        <div style="font-family: 'DM Sans', system-ui, sans-serif; min-width: 180px; padding: 4px;">
-          <div style="font-size: 9px; color: ${category.color}; margin-bottom: 4px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;">
+        <div style="font-family: 'DM Sans', system-ui, sans-serif; min-width: 180px; max-width: 280px; padding: 4px;">
+          <div style="font-size: 11px; color: ${category.color}; margin-bottom: 4px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;">
             ${category.name}
           </div>
-          <div style="font-weight: 600; font-size: 15px; margin-bottom: 6px; color: #fff; line-height: 1.2;">
+          <div style="font-weight: 600; font-size: 16px; margin-bottom: 6px; color: #fff; line-height: 1.2;">
             ${location.properties.name}
           </div>
           ${location.properties.address ? `
-            <div style="font-size: 11px; color: #6b7280; line-height: 1.4;">
+            <div style="font-size: 13px; color: #6b7280; line-height: 1.4;">
               ${location.properties.address}
             </div>
           ` : ""}
-          <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 9px; color: #fbbf24; letter-spacing: 1px;">
+          <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; color: #fbbf24; letter-spacing: 1px;">
             MAZEL TOV!
           </div>
         </div>
       `);
 
-      // Add click/touch handler for confetti
-      const triggerConfetti = (clientX: number, clientY: number) => {
-        mazelTovConfetti(clientX, clientY);
-      };
+      // Add click/touch handler for confetti (deduplicate touch+click on mobile)
+      let touchFired = false;
 
-      el.addEventListener("click", (e) => {
-        triggerConfetti(e.clientX, e.clientY);
-      });
-
-      // Mobile touch support
       el.addEventListener("touchend", (e) => {
         if (e.changedTouches.length > 0) {
+          touchFired = true;
           const touch = e.changedTouches[0];
-          triggerConfetti(touch.clientX, touch.clientY);
+          mazelTovConfetti(touch.clientX, touch.clientY);
         }
+      });
+
+      el.addEventListener("click", (e) => {
+        if (touchFired) {
+          touchFired = false;
+          return;
+        }
+        mazelTovConfetti(e.clientX, e.clientY);
       });
 
       const marker = new mapboxgl.Marker(el)
@@ -668,12 +693,39 @@ export default function MapboxMap({
         .mapboxgl-ctrl-group button span {
           filter: invert(1);
         }
+        @media (max-width: 1023px) {
+          .mapboxgl-ctrl-group button {
+            width: 44px !important;
+            height: 44px !important;
+          }
+          .mapboxgl-popup {
+            max-width: calc(100vw - 40px) !important;
+          }
+        }
       `}</style>
       <div ref={mapContainer} className="w-full h-full" />
 
+      {showGestureHint && (
+        <div
+          className="absolute inset-0 z-20 flex items-center justify-center bg-black/40 animate-fade-in-up"
+          onClick={() => {
+            setShowGestureHint(false);
+            localStorage.setItem("jps-visited", "1");
+          }}
+        >
+          <div className="glass rounded-2xl px-6 py-4 text-center max-w-[220px]">
+            <div className="text-2xl mb-2">
+              <span role="img" aria-label="pinch">&#x1F90F;</span>
+            </div>
+            <div className="text-sm text-white font-medium mb-1">Pinch to zoom</div>
+            <div className="text-xs text-gray-400">Drag to explore the map</div>
+          </div>
+        </div>
+      )}
+
       {zoomLevel >= 10 && (
-        <div className="absolute top-4 left-14 z-[1000] glass px-3 py-2 rounded-xl text-xs text-gray-300 animate-fade-in-up">
-          <span className="text-[10px] uppercase tracking-wider">Showing individual locations</span>
+        <div className="absolute top-4 left-14 z-30 glass px-3 py-2 rounded-xl text-xs text-gray-300 animate-fade-in-up">
+          <span className="text-[11px] lg:text-[10px] uppercase tracking-wider">Showing individual locations</span>
         </div>
       )}
     </>

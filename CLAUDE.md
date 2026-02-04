@@ -59,3 +59,13 @@ Interactive map app for discovering Jewish establishments across the US.
 
 Push to `main` on GitHub triggers Vercel deploy automatically.
 Domain: jewishpositioningsystem.com (connected via Vercel)
+
+## PM/Dev Workflow
+
+Check `docs/` folder for specs, tasks, and decisions from PM:
+- `docs/specs/` - Feature requirements to implement
+- `docs/tasks/` - Prioritized work items
+- `docs/decisions/` - Architecture decisions
+- `docs/status/` - Write your progress updates and blockers here
+
+When starting work, check `docs/tasks/` for current priorities. Write status updates to `docs/status/` when hitting blockers or completing milestones.

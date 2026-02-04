@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import pointData from "@/data/points.json";
-import surnameData from "@/data/surname-heatmaps.json";
 import type { Feature } from "@/components/MapboxMap";
 import { useNoticers } from "@/hooks/useNoticers";
 
@@ -97,8 +97,58 @@ export default function Home() {
   const [showPopulation, setShowPopulation] = useState(false);
   const [shabbatMode, setShabbatMode] = useState(false);
   const [activeSurname, setActiveSurname] = useState<string | null>(null);
+  const [surnameData, setSurnameData] = useState<Record<string, unknown> | null>(null);
+  const [sheetDragY, setSheetDragY] = useState(0);
+  const dragStartY = useRef(0);
+  const isDragging = useRef(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const noticersCount = useNoticers();
+
+  // Lazy load surname heatmap data on first surname selection
+  const loadSurnameData = useCallback(async () => {
+    if (surnameData) return surnameData;
+    const mod = await import("@/data/surname-heatmaps.json");
+    const data = mod.default;
+    setSurnameData(data);
+    return data;
+  }, [surnameData]);
+
+  // Mobile back button closes sidebar
+  useEffect(() => {
+    if (sidebarOpen) {
+      window.history.pushState({ sidebar: true }, "");
+    }
+    const onPopState = () => {
+      if (sidebarOpen) {
+        setSidebarOpen(false);
+      }
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [sidebarOpen]);
+
+  // Bottom sheet swipe-to-dismiss handlers
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    dragStartY.current = e.touches[0].clientY;
+    isDragging.current = true;
+    setSheetDragY(0);
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!isDragging.current) return;
+    const delta = e.touches[0].clientY - dragStartY.current;
+    if (delta > 0) {
+      setSheetDragY(delta);
+    }
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    isDragging.current = false;
+    if (sheetDragY > 100) {
+      setSidebarOpen(false);
+    }
+    setSheetDragY(0);
+  }, [sheetDragY]);
 
   // Check for Shabbat on mount
   useEffect(() => {
@@ -168,18 +218,21 @@ export default function Home() {
 
   return (
     <div
-      className={`h-screen bg-[#0a0a12] flex flex-col overflow-hidden transition-colors duration-700 ${shabbatMode ? 'rtl' : 'ltr'}`}
+      className={`h-[100dvh] bg-[#0a0a12] flex flex-col overflow-hidden transition-colors duration-700 ${shabbatMode ? 'rtl' : 'ltr'}`}
       dir={shabbatMode ? 'rtl' : 'ltr'}
     >
       {/* Header */}
-      <header className="flex-shrink-0 px-4 py-3 bg-[#0a0a12]/95 backdrop-blur-xl z-20 border-b border-transparent" style={{ borderImage: 'linear-gradient(to right, transparent, #1e1e30, transparent) 1' }}>
+      <header className="flex-shrink-0 px-4 py-3 bg-[#0a0a12]/95 backdrop-blur-xl z-20 border-b border-transparent safe-top" style={{ borderImage: 'linear-gradient(to right, transparent, #1e1e30, transparent) 1' }}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative group">
-              <img
+              <Image
                 src="/logo.png"
                 alt="JPS"
+                width={40}
+                height={40}
                 className="w-10 h-10 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                priority
               />
               <div className="absolute inset-0 rounded-xl bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
@@ -198,7 +251,7 @@ export default function Home() {
             {/* Shabbat mode toggle */}
             <button
               onClick={() => setShabbatMode(!shabbatMode)}
-              className={`p-2 rounded-xl transition-all duration-300 animate-bounce-click ${
+              className={`p-2.5 lg:p-2 rounded-xl transition-all duration-300 animate-bounce-click min-w-[44px] min-h-[44px] flex items-center justify-center ${
                 shabbatMode
                   ? 'bg-amber-500/20 border border-amber-500/30 text-amber-400 shadow-[0_0_16px_-4px_rgba(251,191,36,0.3)]'
                   : 'bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white hover:border-[#2a2a40]'
@@ -211,7 +264,7 @@ export default function Home() {
             {/* Music toggle */}
             <button
               onClick={toggleMusic}
-              className={`p-2 rounded-xl transition-all duration-300 animate-bounce-click ${
+              className={`p-2.5 lg:p-2 rounded-xl transition-all duration-300 animate-bounce-click min-w-[44px] min-h-[44px] flex items-center justify-center ${
                 musicPlaying
                   ? 'bg-blue-500/20 border border-blue-500/30 text-blue-400'
                   : 'bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white hover:border-[#2a2a40]'
@@ -234,7 +287,7 @@ export default function Home() {
               <div className="text-xl font-display text-white animate-count" key={totalLocations}>
                 {totalLocations.toLocaleString()}
               </div>
-              <div className={`text-[10px] uppercase tracking-widest ${shabbatMode ? 'font-hebrew text-amber-400/50' : 'text-gray-500'}`}>
+              <div className={`text-[11px] lg:text-[10px] uppercase tracking-widest ${shabbatMode ? 'font-hebrew text-amber-400/50' : 'text-gray-500'}`}>
                 {shabbatMode ? hebrewUI.locations : "locations"}
               </div>
             </div>
@@ -242,13 +295,13 @@ export default function Home() {
             {/* Mobile filter toggle */}
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="lg:hidden relative p-2 rounded-xl bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white animate-bounce-click"
+              className="lg:hidden relative p-2.5 rounded-xl bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white animate-bounce-click min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
               </svg>
               {activeFilterCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full text-[9px] font-bold text-white flex items-center justify-center">
+                <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-blue-500 rounded-full text-[11px] font-bold text-white flex items-center justify-center">
                   {activeFilterCount}
                 </span>
               )}
@@ -282,7 +335,7 @@ export default function Home() {
               href="https://x.com/i/communities/2018812340485919164"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-7 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs text-gray-400 hover:text-white border border-transparent hover:border-white/10"
+              className="flex items-center justify-center gap-1.5 px-3 py-2 min-h-[44px] lg:min-h-0 lg:h-7 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs text-gray-400 hover:text-white border border-transparent hover:border-white/10"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -293,7 +346,7 @@ export default function Home() {
               href="https://pump.fun"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-7 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 transition-all text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/30"
+              className="flex items-center justify-center gap-1.5 px-3 py-2 min-h-[44px] lg:min-h-0 lg:h-7 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 transition-all text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/30"
             >
               <span className="hidden sm:inline">Pump.fun</span>
               <span className="sm:hidden">Pump</span>
@@ -306,7 +359,7 @@ export default function Home() {
               ✡️ {hebrewUI.shabbatShalom}
             </span>
           ) : (
-            <span className="text-[10px] text-gray-600 whitespace-nowrap min-w-[100px] text-right uppercase tracking-wider">
+            <span className="text-[11px] lg:text-[10px] text-gray-500 whitespace-nowrap min-w-[100px] text-right uppercase tracking-wider">
               Data updated daily
             </span>
           )}
@@ -323,17 +376,18 @@ export default function Home() {
             categories={categories}
             showPopulationDensity={showPopulation}
             activeSurnameHeatmap={activeSurname}
-            surnameHeatmapData={activeSurname ? surnameData.metroHeatmaps[activeSurname as keyof typeof surnameData.metroHeatmaps] : null}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            surnameHeatmapData={activeSurname && surnameData ? (surnameData as any).metroHeatmaps?.[activeSurname] ?? null : null}
             surnameHeatmapColor={activeSurname ? surnameCategories.find(s => s.id === activeSurname)?.color ?? "#FFD700" : "#FFD700"}
           />
 
           {/* Legend - bottom left */}
-          <div className={`absolute bottom-4 ${shabbatMode ? 'right-4' : 'left-4'} z-[1000] glass flex items-center gap-2 px-3 py-2 rounded-xl text-xs safe-bottom`}>
-            <span className="text-gray-500 text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.less : "Less"}</span>
+          <div className={`absolute bottom-6 lg:bottom-4 ${shabbatMode ? 'right-4' : 'left-4'} z-30 glass flex items-center gap-2 px-3 py-2 rounded-xl text-xs safe-bottom`}>
+            <span className="text-gray-500 text-[11px] lg:text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.less : "Less"}</span>
             <div className="h-1.5 w-20 rounded-full overflow-hidden bg-gray-800">
               <div className={`h-full rounded-full bg-gradient-to-r ${shabbatMode ? 'from-cyan-500 to-transparent' : 'from-transparent to-cyan-500'}`} />
             </div>
-            <span className="text-gray-500 text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.more : "More"}</span>
+            <span className="text-gray-500 text-[11px] lg:text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.more : "More"}</span>
           </div>
         </main>
 
@@ -342,27 +396,35 @@ export default function Home() {
           {/* Mobile overlay backdrop */}
           {sidebarOpen && (
             <div
-              className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[1100] transition-opacity"
+              className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-40 transition-opacity"
               onClick={() => setSidebarOpen(false)}
             />
           )}
 
           {/* Sidebar */}
-          <aside className={`
-            fixed lg:relative z-[1200]
-            lg:top-0 lg:right-0 lg:h-full
-            bottom-0 left-0 right-0 lg:left-auto
-            max-h-[85vh] lg:max-h-none
-            w-full lg:w-64 flex-shrink-0
-            bg-[#0a0a12] lg:bg-[#0a0a12]/90 backdrop-blur-xl
-            border-t lg:border-t-0 lg:border-l border-[#1e1e30]
-            rounded-t-2xl lg:rounded-none
-            transform transition-transform duration-300 ease-out
-            ${sidebarOpen ? 'translate-y-0 lg:translate-x-0' : 'translate-y-full lg:translate-y-0 lg:translate-x-0'}
-            flex flex-col
-          `}>
-            {/* Mobile drag handle */}
-            <div className="lg:hidden flex justify-center pt-3 pb-1">
+          <aside
+            className={`
+              fixed lg:relative z-50
+              lg:top-0 lg:right-0 lg:h-full
+              bottom-0 left-0 right-0 lg:left-auto
+              max-h-[90dvh] lg:max-h-none
+              w-full lg:w-64 flex-shrink-0
+              bg-[#0a0a12] lg:bg-[#0a0a12]/90 backdrop-blur-xl
+              border-t lg:border-t-0 lg:border-l border-[#1e1e30]
+              rounded-t-2xl lg:rounded-none
+              ${!isDragging.current ? 'transition-transform duration-300 ease-out' : ''}
+              ${sidebarOpen ? 'lg:translate-x-0' : 'translate-y-full lg:translate-y-0 lg:translate-x-0'}
+              flex flex-col
+            `}
+            style={sidebarOpen && sheetDragY > 0 ? { transform: `translateY(${sheetDragY}px)` } : undefined}
+          >
+            {/* Mobile drag handle — swipe down to dismiss */}
+            <div
+              className="lg:hidden flex justify-center pt-3 pb-1 cursor-grab active:cursor-grabbing"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               <div className="w-10 h-1 rounded-full bg-gray-600" />
             </div>
 
@@ -373,7 +435,7 @@ export default function Home() {
               </span>
               <button
                 onClick={() => setSidebarOpen(false)}
-                className="p-1.5 text-gray-500 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                className="p-2.5 text-gray-500 hover:text-white rounded-lg hover:bg-white/5 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -381,13 +443,13 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto px-4 pb-4 lg:pt-4">
+            <div className="flex-1 overflow-y-auto overscroll-contain px-4 pb-4 lg:pt-4">
               {/* Categories header */}
               <div className="flex items-center justify-between mb-3">
-                <h2 className={`text-[10px] font-semibold uppercase tracking-[0.15em] ${shabbatMode ? 'font-hebrew text-amber-400/60' : 'text-gray-500'}`}>
+                <h2 className={`text-[11px] lg:text-[10px] font-semibold uppercase tracking-[0.15em] ${shabbatMode ? 'font-hebrew text-amber-400/60' : 'text-gray-500'}`}>
                   {shabbatMode ? hebrewUI.categories : "Categories"}
                 </h2>
-                <div className="flex gap-2 text-[10px]">
+                <div className="flex gap-2 text-[11px] lg:text-[10px]">
                   <button onClick={selectAll} className="text-blue-400 hover:text-blue-300 transition-colors">{shabbatMode ? hebrewUI.all : "All"}</button>
                   <span className="text-gray-700">|</span>
                   <button onClick={selectNone} className="text-gray-500 hover:text-gray-300 transition-colors">{shabbatMode ? hebrewUI.reset : "Reset"}</button>
@@ -431,12 +493,13 @@ export default function Home() {
                         checked={isActive}
                         onChange={() => toggleCategory(category.id)}
                         className="sr-only"
+                        aria-label={`Toggle ${category.name}`}
                       />
                       <div className="flex-1 min-w-0 flex items-center justify-between">
                         <span className={`text-sm ${isActive ? 'text-white' : 'text-gray-400'} transition-colors ${shabbatMode ? 'font-hebrew' : ''}`}>
                           {shabbatMode ? category.nameHe : category.name}
                         </span>
-                        <span className={`text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-600'} ${shabbatMode ? 'mr-2' : 'ml-2'}`}>
+                        <span className={`text-[11px] lg:text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-500'} ${shabbatMode ? 'mr-2' : 'ml-2'}`}>
                           {total.toLocaleString()}
                         </span>
                       </div>
@@ -473,12 +536,13 @@ export default function Home() {
                     checked={showPopulation}
                     onChange={() => setShowPopulation(!showPopulation)}
                     className="sr-only"
+                    aria-label="Toggle Jewish Population density"
                   />
                   <div className="flex-1 min-w-0">
                     <span className={`text-sm ${showPopulation ? 'text-white' : 'text-gray-400'} ${shabbatMode ? 'font-hebrew' : ''}`}>
                       {shabbatMode ? hebrewUI.jewishPopulation : "Jewish Population"}
                     </span>
-                    <div className={`text-[10px] ${showPopulation ? 'text-gray-400' : 'text-gray-600'} ${shabbatMode ? 'font-hebrew' : ''}`}>
+                    <div className={`text-[11px] lg:text-[10px] ${showPopulation ? 'text-gray-400' : 'text-gray-500'} ${shabbatMode ? 'font-hebrew' : ''}`}>
                       {shabbatMode ? hebrewUI.metroArea : "Metro area density"}
                     </div>
                   </div>
@@ -489,13 +553,13 @@ export default function Home() {
               <div className="mt-5 pt-4">
                 <div className="gradient-divider mb-4" />
                 <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-[10px] font-semibold text-gray-500 uppercase tracking-[0.15em]">
+                  <h2 className="text-[11px] lg:text-[10px] font-semibold text-gray-500 uppercase tracking-[0.15em]">
                     Surnames
                   </h2>
                   {activeSurname && (
                     <button
                       onClick={() => setActiveSurname(null)}
-                      className="text-[10px] text-gray-500 hover:text-gray-300 transition-colors"
+                      className="text-[11px] lg:text-[10px] text-gray-500 hover:text-gray-300 transition-colors"
                     >
                       Clear
                     </button>
@@ -507,7 +571,14 @@ export default function Home() {
                     return (
                       <button
                         key={surname.id}
-                        onClick={() => setActiveSurname(isActive ? null : surname.id)}
+                        onClick={async () => {
+                          if (isActive) {
+                            setActiveSurname(null);
+                          } else {
+                            await loadSurnameData();
+                            setActiveSurname(surname.id);
+                          }
+                        }}
                         className={`
                           w-full flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all duration-200 text-left animate-bounce-click
                           ${isActive ? "bg-white/[0.04]" : "bg-transparent hover:bg-white/[0.02]"}
@@ -526,13 +597,13 @@ export default function Home() {
                         />
                         <div className="flex-1 min-w-0">
                           <div className={`text-sm truncate transition-colors ${isActive ? 'text-white' : 'text-gray-400'}`}>{surname.names}</div>
-                          <div className={`text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-600'}`}>{surname.count.toLocaleString()}</div>
+                          <div className={`text-[11px] lg:text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-500'}`}>{surname.count.toLocaleString()}</div>
                         </div>
                       </button>
                     );
                   })}
                 </div>
-                <div className="mt-3 text-[10px] text-gray-600 px-2 uppercase tracking-wider">
+                <div className="mt-3 text-[11px] lg:text-[10px] text-gray-500 px-2 uppercase tracking-wider">
                   Source: US Census
                 </div>
               </div>
@@ -540,7 +611,7 @@ export default function Home() {
               {/* Selected summary */}
               <div className="mt-5 pt-4">
                 <div className="gradient-divider mb-4" />
-                <div className="text-[10px] text-gray-600 mb-2 uppercase tracking-wider">
+                <div className="text-[11px] lg:text-[10px] text-gray-500 mb-2 uppercase tracking-wider">
                   {shabbatMode
                     ? `${activeCategories.length} ${hebrewUI.of} ${categories.length} ${hebrewUI.selected}`
                     : `${activeCategories.length} of ${categories.length} selected`
@@ -552,7 +623,7 @@ export default function Home() {
                     return (
                       <span
                         key={catId}
-                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] transition-all"
+                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] lg:text-[10px] transition-all"
                         style={{ backgroundColor: `${cat?.color}15`, color: cat?.color }}
                       >
                         <span className="w-1 h-1 rounded-full" style={{ backgroundColor: cat?.color }} />
