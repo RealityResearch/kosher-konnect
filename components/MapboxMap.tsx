@@ -520,24 +520,36 @@ export default function MapboxMap({
       const el = document.createElement("div");
       el.className = "mapbox-marker";
       el.style.cssText = `
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         background: ${category.color};
-        border: 2px solid white;
+        border: 2px solid rgba(255,255,255,0.9);
         border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 20px -8px ${category.color}80;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        animation: marker-drop 0.4s ease-out;
       `;
+
+      el.addEventListener("mouseenter", () => {
+        el.style.transform = "scale(1.2)";
+        el.style.boxShadow = `0 4px 20px rgba(0,0,0,0.6), 0 0 24px -4px ${category.color}`;
+      });
+      el.addEventListener("mouseleave", () => {
+        el.style.transform = "scale(1)";
+        el.style.boxShadow = `0 2px 12px rgba(0,0,0,0.5), 0 0 20px -8px ${category.color}80`;
+      });
 
       const inner = document.createElement("div");
       inner.style.cssText = `
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         background: white;
         border-radius: 50%;
+        opacity: 0.9;
       `;
       el.appendChild(inner);
 
@@ -547,21 +559,21 @@ export default function MapboxMap({
         closeButton: false,
         className: "dark-popup",
       }).setHTML(`
-        <div style="font-family: system-ui; min-width: 180px; padding: 4px;">
-          <div style="font-size: 10px; color: #fbbf24; margin-bottom: 2px; letter-spacing: 1px;">
-            MAZEL TOV!
-          </div>
-          <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px; color: #fff;">
-            ${location.properties.name}
-          </div>
-          <div style="font-size: 12px; color: ${category.color}; margin-bottom: 4px;">
+        <div style="font-family: 'DM Sans', system-ui, sans-serif; min-width: 180px; padding: 4px;">
+          <div style="font-size: 9px; color: ${category.color}; margin-bottom: 4px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;">
             ${category.name}
           </div>
+          <div style="font-weight: 600; font-size: 15px; margin-bottom: 6px; color: #fff; line-height: 1.2;">
+            ${location.properties.name}
+          </div>
           ${location.properties.address ? `
-            <div style="font-size: 11px; color: #9ca3af;">
+            <div style="font-size: 11px; color: #6b7280; line-height: 1.4;">
               ${location.properties.address}
             </div>
           ` : ""}
+          <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 9px; color: #fbbf24; letter-spacing: 1px;">
+            MAZEL TOV!
+          </div>
         </div>
       `);
 
@@ -617,37 +629,42 @@ export default function MapboxMap({
     <>
       <style jsx global>{`
         .mapboxgl-popup-content {
-          background: #1f2937 !important;
+          background: rgba(12, 12, 20, 0.9) !important;
+          backdrop-filter: blur(20px) !important;
+          -webkit-backdrop-filter: blur(20px) !important;
           color: white !important;
-          border-radius: 8px !important;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
-          padding: 12px !important;
+          border-radius: 12px !important;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255,255,255,0.05) !important;
+          padding: 14px !important;
         }
         .mapboxgl-popup-tip {
-          border-top-color: #1f2937 !important;
+          border-top-color: rgba(12, 12, 20, 0.9) !important;
         }
         .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-          border-top-color: #1f2937 !important;
+          border-top-color: rgba(12, 12, 20, 0.9) !important;
         }
         .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-          border-bottom-color: #1f2937 !important;
+          border-bottom-color: rgba(12, 12, 20, 0.9) !important;
         }
         .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-          border-right-color: #1f2937 !important;
+          border-right-color: rgba(12, 12, 20, 0.9) !important;
         }
         .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-          border-left-color: #1f2937 !important;
+          border-left-color: rgba(12, 12, 20, 0.9) !important;
         }
         .mapboxgl-ctrl-group {
-          background: #1f2937 !important;
-          border: 1px solid #374151 !important;
+          background: rgba(12, 12, 20, 0.85) !important;
+          backdrop-filter: blur(12px) !important;
+          border: 1px solid rgba(255,255,255,0.06) !important;
+          border-radius: 12px !important;
+          overflow: hidden;
         }
         .mapboxgl-ctrl-group button {
-          background-color: #1f2937 !important;
-          border-color: #374151 !important;
+          background-color: transparent !important;
+          border-color: rgba(255,255,255,0.04) !important;
         }
         .mapboxgl-ctrl-group button:hover {
-          background-color: #374151 !important;
+          background-color: rgba(255,255,255,0.06) !important;
         }
         .mapboxgl-ctrl-group button span {
           filter: invert(1);
@@ -656,8 +673,8 @@ export default function MapboxMap({
       <div ref={mapContainer} className="w-full h-full" />
 
       {zoomLevel >= 10 && (
-        <div className="absolute top-4 left-14 z-[1000] px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs text-gray-300">
-          Showing individual locations
+        <div className="absolute top-4 left-14 z-[1000] glass px-3 py-2 rounded-xl text-xs text-gray-300 animate-fade-in-up">
+          <span className="text-[10px] uppercase tracking-wider">Showing individual locations</span>
         </div>
       )}
     </>

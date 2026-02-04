@@ -1,23 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0f1117;
+  --background: #0a0a12;
   --foreground: #ededed;
+  --surface: #12121e;
+  --surface-hover: #1a1a2a;
+  --border: #1e1e30;
+  --border-glow: #2a2a40;
+  --accent-gold: #fbbf24;
+  --accent-blue: #4ea8de;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
+}
+
+/* Display font for headings */
+.font-display {
+  font-family: var(--font-display), 'DM Serif Display', serif;
+}
+
+/* Hebrew font */
+.font-hebrew {
+  font-family: var(--font-hebrew), 'Heebo', sans-serif;
 }
 
 /* Safe area for notched phones */
@@ -31,21 +47,134 @@ button, label, aside {
   user-select: none;
 }
 
-/* Hide scrollbar for cleaner look */
+/* Refined scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a2e;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a5568;
-  border-radius: 4px;
+  background: #2a2a40;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #718096;
+  background: #3a3a55;
+}
+
+/* === ANIMATIONS === */
+
+/* Pulse for live indicator */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Fade in up */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+/* Stagger children */
+.stagger-in > * {
+  opacity: 0;
+  animation: fade-in-up 0.3s ease-out forwards;
+}
+.stagger-in > *:nth-child(1) { animation-delay: 0.02s; }
+.stagger-in > *:nth-child(2) { animation-delay: 0.04s; }
+.stagger-in > *:nth-child(3) { animation-delay: 0.06s; }
+.stagger-in > *:nth-child(4) { animation-delay: 0.08s; }
+.stagger-in > *:nth-child(5) { animation-delay: 0.1s; }
+.stagger-in > *:nth-child(6) { animation-delay: 0.12s; }
+.stagger-in > *:nth-child(7) { animation-delay: 0.14s; }
+.stagger-in > *:nth-child(8) { animation-delay: 0.16s; }
+.stagger-in > *:nth-child(9) { animation-delay: 0.18s; }
+.stagger-in > *:nth-child(10) { animation-delay: 0.2s; }
+
+/* Scale bounce on click */
+@keyframes bounce-click {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+.animate-bounce-click:active {
+  animation: bounce-click 0.15s ease-out;
+}
+
+/* Slide in from right */
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Slide in from bottom (mobile sheet) */
+@keyframes slide-in-bottom {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Gradient shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Spin for loading */
+@keyframes gentle-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-gentle-spin {
+  animation: gentle-spin 3s linear infinite;
+}
+
+/* Number counter fade */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-count {
+  animation: count-up 0.6s ease-out;
+}
+
+/* Gradient line divider */
+.gradient-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-glow), transparent);
+}
+
+/* Glow effect for active items */
+.glow-active {
+  box-shadow: 0 0 12px -2px var(--glow-color, rgba(78,168,222,0.3));
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(18, 18, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Marker drop-in animation */
+@keyframes marker-drop {
+  0% { transform: translateY(-20px) scale(0.8); opacity: 0; }
+  60% { transform: translateY(2px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
 }

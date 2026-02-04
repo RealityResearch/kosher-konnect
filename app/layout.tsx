@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, DM_Serif_Display, Heebo } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSerif = DM_Serif_Display({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
+});
+
+const heebo = Heebo({
+  variable: "--font-hebrew",
+  subsets: ["hebrew"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0f1117] min-h-screen`}
+        className={`${dmSans.variable} ${dmSerif.variable} ${heebo.variable} antialiased bg-[#0f1117] min-h-screen`}
       >
         {children}
       </body>

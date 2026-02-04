@@ -11,8 +11,27 @@ import { useNoticers } from "@/hooks/useNoticers";
 const MapboxMap = dynamic(() => import("@/components/MapboxMap"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-[#0f1117]">
-      <div className="text-gray-400">Loading map...</div>
+    <div className="w-full h-full flex flex-col items-center justify-center bg-[#0a0a12]">
+      {/* Animated Star of David loader */}
+      <div className="relative w-16 h-16 animate-gentle-spin">
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <polygon
+            points="50,10 90,75 10,75"
+            fill="none"
+            stroke="#4ea8de"
+            strokeWidth="2"
+            opacity="0.6"
+          />
+          <polygon
+            points="50,90 10,25 90,25"
+            fill="none"
+            stroke="#fbbf24"
+            strokeWidth="2"
+            opacity="0.6"
+          />
+        </svg>
+      </div>
+      <div className="mt-4 text-sm text-gray-500 animate-pulse">Loading map...</div>
     </div>
   ),
 });
@@ -47,12 +66,8 @@ function isShabbat(): boolean {
   const now = new Date();
   const day = now.getDay();
   const hour = now.getHours();
-
-  // Friday after 6pm (approximate sunset)
   if (day === 5 && hour >= 18) return true;
-  // All day Saturday until 9pm (approximate havdalah)
   if (day === 6 && hour < 21) return true;
-
   return false;
 }
 
@@ -88,7 +103,6 @@ export default function Home() {
   // Check for Shabbat on mount
   useEffect(() => {
     setShabbatMode(isShabbat());
-    // Check every minute
     const interval = setInterval(() => {
       setShabbatMode(isShabbat());
     }, 60000);
@@ -117,17 +131,14 @@ export default function Home() {
       document.removeEventListener("click", playOnInteraction);
       document.removeEventListener("keydown", playOnInteraction);
     };
-
     document.addEventListener("click", playOnInteraction);
     document.addEventListener("keydown", playOnInteraction);
-
     return () => {
       document.removeEventListener("click", playOnInteraction);
       document.removeEventListener("keydown", playOnInteraction);
     };
   }, [musicPlaying]);
 
-  // Toggle category selection
   const toggleCategory = (categoryId: string) => {
     setActiveCategories((prev) => {
       if (prev.includes(categoryId)) {
@@ -141,7 +152,6 @@ export default function Home() {
   const selectAll = () => setActiveCategories(categories.map((c) => c.id));
   const selectNone = () => setActiveCategories(["synagogues"]);
 
-  // Calculate totals
   const categoryTotals = categories.reduce((acc, cat) => {
     acc[cat.id] = pointData.features
       .filter((f) => f.properties.category === cat.id)
@@ -154,31 +164,45 @@ export default function Home() {
     0
   );
 
+  const activeFilterCount = categories.length - activeCategories.length;
+
   return (
-    <div className={`h-screen bg-[#0f1117] flex flex-col overflow-hidden ${shabbatMode ? 'rtl' : 'ltr'}`} dir={shabbatMode ? 'rtl' : 'ltr'}>
+    <div
+      className={`h-screen bg-[#0a0a12] flex flex-col overflow-hidden transition-colors duration-700 ${shabbatMode ? 'rtl' : 'ltr'}`}
+      dir={shabbatMode ? 'rtl' : 'ltr'}
+    >
       {/* Header */}
-      <header className="flex-shrink-0 px-4 py-3 border-b border-gray-800 bg-[#0f1117]/95 backdrop-blur z-20">
+      <header className="flex-shrink-0 px-4 py-3 bg-[#0a0a12]/95 backdrop-blur-xl z-20 border-b border-transparent" style={{ borderImage: 'linear-gradient(to right, transparent, #1e1e30, transparent) 1' }}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt="Kosher Konnect"
-              className="w-9 h-9 rounded-lg object-cover"
-            />
+            <div className="relative group">
+              <img
+                src="/logo.png"
+                alt="JPS"
+                className="w-10 h-10 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 rounded-xl bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
             <div>
-              <h1 className="text-lg font-bold text-white leading-tight">{hebrewUI.title}</h1>
-              <p className="text-xs text-gray-400 hidden sm:block">
+              <h1 className={`text-xl font-display leading-tight ${shabbatMode ? 'font-hebrew text-amber-400' : 'text-white'}`}>
+                {hebrewUI.title}
+              </h1>
+              <p className={`text-xs hidden sm:block ${shabbatMode ? 'font-hebrew text-amber-400/60' : 'text-gray-500'}`}>
                 {shabbatMode ? hebrewUI.subtitle : "Jewish Positioning System"}
               </p>
             </div>
           </div>
 
           {/* Stats + Controls */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             {/* Shabbat mode toggle */}
             <button
               onClick={() => setShabbatMode(!shabbatMode)}
-              className={`p-2 rounded-lg border transition-colors ${shabbatMode ? 'bg-amber-600 border-amber-500 text-white' : 'bg-gray-800 border-gray-700 text-white hover:bg-gray-700'}`}
+              className={`p-2 rounded-xl transition-all duration-300 animate-bounce-click ${
+                shabbatMode
+                  ? 'bg-amber-500/20 border border-amber-500/30 text-amber-400 shadow-[0_0_16px_-4px_rgba(251,191,36,0.3)]'
+                  : 'bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white hover:border-[#2a2a40]'
+              }`}
               title={shabbatMode ? "Exit Shabbat Mode" : "Enter Shabbat Mode"}
             >
               <span className="text-sm">✡️</span>
@@ -187,7 +211,11 @@ export default function Home() {
             {/* Music toggle */}
             <button
               onClick={toggleMusic}
-              className="p-2 rounded-lg bg-gray-800 border border-gray-700 text-white hover:bg-gray-700 transition-colors"
+              className={`p-2 rounded-xl transition-all duration-300 animate-bounce-click ${
+                musicPlaying
+                  ? 'bg-blue-500/20 border border-blue-500/30 text-blue-400'
+                  : 'bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white hover:border-[#2a2a40]'
+              }`}
               title={musicPlaying ? "Pause music" : "Play music"}
             >
               {musicPlaying ? (
@@ -201,67 +229,84 @@ export default function Home() {
               )}
             </button>
 
-            <div className={shabbatMode ? "text-left" : "text-right"}>
-              <div className="text-xl font-bold text-white">{totalLocations.toLocaleString()}</div>
-              <div className="text-xs text-gray-400">{shabbatMode ? hebrewUI.locations : "locations"}</div>
+            {/* Location counter */}
+            <div className={`${shabbatMode ? 'text-left' : 'text-right'} px-2`}>
+              <div className="text-xl font-display text-white animate-count" key={totalLocations}>
+                {totalLocations.toLocaleString()}
+              </div>
+              <div className={`text-[10px] uppercase tracking-widest ${shabbatMode ? 'font-hebrew text-amber-400/50' : 'text-gray-500'}`}>
+                {shabbatMode ? hebrewUI.locations : "locations"}
+              </div>
             </div>
 
             {/* Mobile filter toggle */}
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="lg:hidden p-2 rounded-lg bg-gray-800 border border-gray-700 text-white"
+              className="lg:hidden relative p-2 rounded-xl bg-[#12121e] border border-[#1e1e30] text-gray-400 hover:text-white animate-bounce-click"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
               </svg>
+              {activeFilterCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full text-[9px] font-bold text-white flex items-center justify-center">
+                  {activeFilterCount}
+                </span>
+              )}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Announcement bar with links */}
-      <div className={`flex-shrink-0 border-b ${shabbatMode ? 'bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 border-amber-700/50' : 'bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-cyan-900/50'}`}>
+      {/* Announcement bar */}
+      <div className={`flex-shrink-0 transition-colors duration-700 ${
+        shabbatMode
+          ? 'bg-gradient-to-r from-amber-950/40 via-amber-900/30 to-amber-950/40'
+          : 'bg-[#0d0d18]'
+      }`} style={{ borderBottom: '1px solid rgba(30,30,48,0.6)' }}>
         <div className="flex items-center justify-between px-4 py-2 gap-3">
-          {/* Noticers counter - left */}
+          {/* Noticers counter with live indicator */}
           <div className="flex items-center gap-2 min-w-[100px]">
-            <span className="text-cyan-400">👁️</span>
-            <span className="text-xs text-gray-300">
-              <span className="text-cyan-400 font-semibold">{noticersCount.toLocaleString()}</span>
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
+            </span>
+            <span className="text-xs text-gray-400">
+              <span className="text-cyan-400 font-semibold animate-count" key={noticersCount}>{noticersCount.toLocaleString()}</span>
               {" "}{shabbatMode ? "משגיחים" : "Noticers"}
             </span>
           </div>
 
-          {/* Social links - center */}
+          {/* Social links */}
           <div className="flex items-center gap-2">
             <a
               href="https://x.com/i/communities/2018812340485919164"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gray-800/80 hover:bg-gray-700 transition-colors text-xs text-gray-300 hover:text-white"
+              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-7 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs text-gray-400 hover:text-white border border-transparent hover:border-white/10"
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
-              <span>Twitter</span>
+              <span className="hidden sm:inline">Twitter</span>
             </a>
             <a
               href="https://pump.fun"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-8 min-w-[100px] rounded bg-gradient-to-r from-green-600/80 to-emerald-600/80 hover:from-green-500 hover:to-emerald-500 transition-colors text-xs text-white font-medium"
+              className="flex items-center justify-center gap-1.5 px-3 py-1.5 h-7 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 transition-all text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/30"
             >
-              <span>🚀</span>
-              <span>Pump.fun</span>
+              <span className="hidden sm:inline">Pump.fun</span>
+              <span className="sm:hidden">Pump</span>
             </a>
           </div>
 
-          {/* Right side - data update info or Shabbat message */}
+          {/* Right side */}
           {shabbatMode ? (
-            <span className="text-amber-400 text-xs whitespace-nowrap min-w-[100px] text-right">
+            <span className="font-hebrew text-amber-400/80 text-xs whitespace-nowrap min-w-[100px] text-right">
               ✡️ {hebrewUI.shabbatShalom}
             </span>
           ) : (
-            <span className="text-xs text-gray-500 whitespace-nowrap min-w-[100px] text-right">
+            <span className="text-[10px] text-gray-600 whitespace-nowrap min-w-[100px] text-right uppercase tracking-wider">
               Data updated daily
             </span>
           )}
@@ -283,61 +328,74 @@ export default function Home() {
           />
 
           {/* Legend - bottom left */}
-          <div className={`absolute bottom-4 ${shabbatMode ? 'right-4' : 'left-4'} z-[1000] flex items-center gap-2 px-3 py-1.5 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-700 text-xs safe-bottom`}>
-            <span className="text-gray-400">{shabbatMode ? hebrewUI.less : "Less"}</span>
-            <div className={`h-2 w-16 rounded-full bg-gradient-to-r ${shabbatMode ? 'from-white via-white/50 to-transparent' : 'from-transparent via-white/50 to-white'}`} />
-            <span className="text-gray-400">{shabbatMode ? hebrewUI.more : "More"}</span>
+          <div className={`absolute bottom-4 ${shabbatMode ? 'right-4' : 'left-4'} z-[1000] glass flex items-center gap-2 px-3 py-2 rounded-xl text-xs safe-bottom`}>
+            <span className="text-gray-500 text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.less : "Less"}</span>
+            <div className="h-1.5 w-20 rounded-full overflow-hidden bg-gray-800">
+              <div className={`h-full rounded-full bg-gradient-to-r ${shabbatMode ? 'from-cyan-500 to-transparent' : 'from-transparent to-cyan-500'}`} />
+            </div>
+            <span className="text-gray-500 text-[10px] uppercase tracking-wider">{shabbatMode ? hebrewUI.more : "More"}</span>
           </div>
         </main>
 
-        {/* Sidebar - desktop always visible, mobile as overlay */}
+        {/* Sidebar - desktop always visible, mobile as bottom sheet on small screens */}
         <>
           {/* Mobile overlay backdrop */}
           {sidebarOpen && (
             <div
-              className="lg:hidden fixed inset-0 bg-black/60 z-[1100]"
+              className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[1100] transition-opacity"
               onClick={() => setSidebarOpen(false)}
             />
           )}
 
           {/* Sidebar */}
           <aside className={`
-            fixed lg:relative top-0 right-0 h-full z-[1200]
-            w-72 lg:w-64 flex-shrink-0
-            bg-[#0f1117] lg:bg-gray-900/80 backdrop-blur
-            border-l border-gray-800
-            transform transition-transform duration-300 ease-in-out
-            ${sidebarOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
+            fixed lg:relative z-[1200]
+            lg:top-0 lg:right-0 lg:h-full
+            bottom-0 left-0 right-0 lg:left-auto
+            max-h-[85vh] lg:max-h-none
+            w-full lg:w-64 flex-shrink-0
+            bg-[#0a0a12] lg:bg-[#0a0a12]/90 backdrop-blur-xl
+            border-t lg:border-t-0 lg:border-l border-[#1e1e30]
+            rounded-t-2xl lg:rounded-none
+            transform transition-transform duration-300 ease-out
+            ${sidebarOpen ? 'translate-y-0 lg:translate-x-0' : 'translate-y-full lg:translate-y-0 lg:translate-x-0'}
             flex flex-col
           `}>
-            {/* Mobile close button */}
-            <div className="lg:hidden flex items-center justify-between p-4 border-b border-gray-800">
-              <span className="text-white font-semibold">{shabbatMode ? hebrewUI.filters : "Filters"}</span>
+            {/* Mobile drag handle */}
+            <div className="lg:hidden flex justify-center pt-3 pb-1">
+              <div className="w-10 h-1 rounded-full bg-gray-600" />
+            </div>
+
+            {/* Mobile header */}
+            <div className="lg:hidden flex items-center justify-between px-4 pb-3 pt-1">
+              <span className={`font-semibold ${shabbatMode ? 'font-hebrew text-amber-400' : 'text-white'}`}>
+                {shabbatMode ? hebrewUI.filters : "Filters"}
+              </span>
               <button
                 onClick={() => setSidebarOpen(false)}
-                className="p-1 text-gray-400 hover:text-white"
+                className="p-1.5 text-gray-500 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto p-4">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+            <div className="flex-1 overflow-y-auto px-4 pb-4 lg:pt-4">
+              {/* Categories header */}
+              <div className="flex items-center justify-between mb-3">
+                <h2 className={`text-[10px] font-semibold uppercase tracking-[0.15em] ${shabbatMode ? 'font-hebrew text-amber-400/60' : 'text-gray-500'}`}>
                   {shabbatMode ? hebrewUI.categories : "Categories"}
                 </h2>
-                <div className="flex gap-2 text-xs">
-                  <button onClick={selectAll} className="text-blue-400 hover:text-blue-300">{shabbatMode ? hebrewUI.all : "All"}</button>
-                  <span className="text-gray-600">|</span>
-                  <button onClick={selectNone} className="text-gray-400 hover:text-gray-300">{shabbatMode ? hebrewUI.reset : "Reset"}</button>
+                <div className="flex gap-2 text-[10px]">
+                  <button onClick={selectAll} className="text-blue-400 hover:text-blue-300 transition-colors">{shabbatMode ? hebrewUI.all : "All"}</button>
+                  <span className="text-gray-700">|</span>
+                  <button onClick={selectNone} className="text-gray-500 hover:text-gray-300 transition-colors">{shabbatMode ? hebrewUI.reset : "Reset"}</button>
                 </div>
               </div>
 
               {/* Category list */}
-              <div className="space-y-1">
+              <div className="space-y-0.5 stagger-in">
                 {categories.map((category) => {
                   const isActive = activeCategories.includes(category.id);
                   const total = categoryTotals[category.id] || 0;
@@ -346,17 +404,24 @@ export default function Home() {
                     <label
                       key={category.id}
                       className={`
-                        flex items-center gap-3 p-2.5 rounded-lg cursor-pointer transition-all
-                        ${isActive ? "bg-gray-800/80" : "bg-transparent hover:bg-gray-800/40"}
+                        flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all duration-200 animate-bounce-click
+                        ${isActive
+                          ? "bg-white/[0.04]"
+                          : "bg-transparent hover:bg-white/[0.02]"
+                        }
                       `}
+                      style={isActive ? {
+                        borderLeft: `2px solid ${category.color}`,
+                        boxShadow: `inset 2px 0 8px -4px ${category.color}40`,
+                      } : { borderLeft: '2px solid transparent' }}
                     >
                       <div
-                        className={`w-5 h-5 rounded flex items-center justify-center transition-all flex-shrink-0
-                          ${isActive ? "border-transparent" : "border-2 border-gray-600"}`}
+                        className={`w-4 h-4 rounded-md flex items-center justify-center transition-all duration-200 flex-shrink-0
+                          ${isActive ? "" : "border border-gray-700"}`}
                         style={{ backgroundColor: isActive ? category.color : "transparent" }}
                       >
                         {isActive && (
-                          <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}
@@ -367,10 +432,13 @@ export default function Home() {
                         onChange={() => toggleCategory(category.id)}
                         className="sr-only"
                       />
-                      <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: category.color }} />
                       <div className="flex-1 min-w-0 flex items-center justify-between">
-                        <span className="text-sm text-white">{shabbatMode ? category.nameHe : category.name}</span>
-                        <span className={`text-xs text-gray-500 ${shabbatMode ? 'mr-2' : 'ml-2'}`}>{total.toLocaleString()}</span>
+                        <span className={`text-sm ${isActive ? 'text-white' : 'text-gray-400'} transition-colors ${shabbatMode ? 'font-hebrew' : ''}`}>
+                          {shabbatMode ? category.nameHe : category.name}
+                        </span>
+                        <span className={`text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-600'} ${shabbatMode ? 'mr-2' : 'ml-2'}`}>
+                          {total.toLocaleString()}
+                        </span>
                       </div>
                     </label>
                   );
@@ -378,14 +446,24 @@ export default function Home() {
               </div>
 
               {/* Population Density Toggle */}
-              <div className="mt-6 pt-4 border-t border-gray-700">
-                <label className="flex items-center gap-3 p-2.5 rounded-lg cursor-pointer transition-all hover:bg-gray-800/40">
+              <div className="mt-5 pt-4">
+                <div className="gradient-divider mb-4" />
+                <label className={`
+                  flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all duration-200 animate-bounce-click
+                  ${showPopulation ? 'bg-amber-500/[0.08]' : 'hover:bg-white/[0.02]'}
+                `}
+                style={showPopulation ? {
+                  borderLeft: '2px solid #f59e0b',
+                  boxShadow: 'inset 2px 0 8px -4px rgba(245,158,11,0.3)',
+                } : { borderLeft: '2px solid transparent' }}
+                >
                   <div
-                    className={`w-5 h-5 rounded flex items-center justify-center transition-all flex-shrink-0
-                      ${showPopulation ? "border-transparent bg-amber-500" : "border-2 border-gray-600"}`}
+                    className={`w-4 h-4 rounded-md flex items-center justify-center transition-all duration-200 flex-shrink-0
+                      ${showPopulation ? "" : "border border-gray-700"}`}
+                    style={{ backgroundColor: showPopulation ? "#f59e0b" : "transparent" }}
                   >
                     {showPopulation && (
-                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     )}
@@ -396,30 +474,34 @@ export default function Home() {
                     onChange={() => setShowPopulation(!showPopulation)}
                     className="sr-only"
                   />
-                  <span className="w-2.5 h-2.5 rounded-full flex-shrink-0 bg-amber-500" />
                   <div className="flex-1 min-w-0">
-                    <span className="text-sm text-white">{shabbatMode ? hebrewUI.jewishPopulation : "Jewish Population"}</span>
-                    <div className="text-xs text-gray-500">{shabbatMode ? hebrewUI.metroArea : "Metro area density"}</div>
+                    <span className={`text-sm ${showPopulation ? 'text-white' : 'text-gray-400'} ${shabbatMode ? 'font-hebrew' : ''}`}>
+                      {shabbatMode ? hebrewUI.jewishPopulation : "Jewish Population"}
+                    </span>
+                    <div className={`text-[10px] ${showPopulation ? 'text-gray-400' : 'text-gray-600'} ${shabbatMode ? 'font-hebrew' : ''}`}>
+                      {shabbatMode ? hebrewUI.metroArea : "Metro area density"}
+                    </div>
                   </div>
                 </label>
               </div>
 
               {/* Surname Heatmaps */}
-              <div className="mt-6 pt-4 border-t border-gray-700">
+              <div className="mt-5 pt-4">
+                <div className="gradient-divider mb-4" />
                 <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                  <h2 className="text-[10px] font-semibold text-gray-500 uppercase tracking-[0.15em]">
                     Surnames
                   </h2>
                   {activeSurname && (
                     <button
                       onClick={() => setActiveSurname(null)}
-                      className="text-xs text-gray-400 hover:text-gray-300"
+                      className="text-[10px] text-gray-500 hover:text-gray-300 transition-colors"
                     >
                       Clear
                     </button>
                   )}
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-0.5 stagger-in">
                   {surnameCategories.map((surname) => {
                     const isActive = activeSurname === surname.id;
                     return (
@@ -427,35 +509,38 @@ export default function Home() {
                         key={surname.id}
                         onClick={() => setActiveSurname(isActive ? null : surname.id)}
                         className={`
-                          w-full flex items-center gap-3 p-2.5 rounded-lg cursor-pointer transition-all text-left
-                          ${isActive ? "bg-gray-800/80 ring-1 ring-gray-600" : "bg-transparent hover:bg-gray-800/40"}
+                          w-full flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all duration-200 text-left animate-bounce-click
+                          ${isActive ? "bg-white/[0.04]" : "bg-transparent hover:bg-white/[0.02]"}
                         `}
+                        style={isActive ? {
+                          borderLeft: `2px solid ${surname.color}`,
+                          boxShadow: `inset 2px 0 8px -4px ${surname.color}40`,
+                        } : { borderLeft: '2px solid transparent' }}
                       >
                         <span
-                          className="w-3 h-3 rounded-full flex-shrink-0"
-                          style={{ backgroundColor: surname.color }}
+                          className={`w-4 h-4 rounded-full flex-shrink-0 transition-all duration-300 ${isActive ? 'scale-110' : ''}`}
+                          style={{
+                            backgroundColor: surname.color,
+                            boxShadow: isActive ? `0 0 10px -2px ${surname.color}80` : 'none',
+                          }}
                         />
                         <div className="flex-1 min-w-0">
-                          <div className="text-sm text-white truncate">{surname.names}</div>
-                          <div className="text-xs text-gray-500">{surname.count.toLocaleString()} people</div>
+                          <div className={`text-sm truncate transition-colors ${isActive ? 'text-white' : 'text-gray-400'}`}>{surname.names}</div>
+                          <div className={`text-[10px] tabular-nums ${isActive ? 'text-gray-400' : 'text-gray-600'}`}>{surname.count.toLocaleString()}</div>
                         </div>
-                        {isActive && (
-                          <svg className="w-4 h-4 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                        )}
                       </button>
                     );
                   })}
                 </div>
-                <div className="mt-2 text-xs text-gray-500 px-2">
+                <div className="mt-3 text-[10px] text-gray-600 px-2 uppercase tracking-wider">
                   Source: US Census
                 </div>
               </div>
 
               {/* Selected summary */}
-              <div className="mt-4 pt-4 border-t border-gray-700">
-                <div className="text-xs text-gray-500 mb-2">
+              <div className="mt-5 pt-4">
+                <div className="gradient-divider mb-4" />
+                <div className="text-[10px] text-gray-600 mb-2 uppercase tracking-wider">
                   {shabbatMode
                     ? `${activeCategories.length} ${hebrewUI.of} ${categories.length} ${hebrewUI.selected}`
                     : `${activeCategories.length} of ${categories.length} selected`
@@ -467,10 +552,10 @@ export default function Home() {
                     return (
                       <span
                         key={catId}
-                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs"
-                        style={{ backgroundColor: `${cat?.color}30`, color: cat?.color }}
+                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] transition-all"
+                        style={{ backgroundColor: `${cat?.color}15`, color: cat?.color }}
                       >
-                        <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: cat?.color }} />
+                        <span className="w-1 h-1 rounded-full" style={{ backgroundColor: cat?.color }} />
                         {shabbatMode ? cat?.nameHe?.split(" ")[0] : cat?.name.split(" ")[0]}
                       </span>
                     );
