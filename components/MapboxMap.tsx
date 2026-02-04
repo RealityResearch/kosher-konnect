@@ -81,6 +81,7 @@ interface MapboxMapProps {
   showPopulationDensity?: boolean;
   activeSurnameHeatmap?: string | null;
   surnameHeatmapData?: SurnameHeatmapData | null;
+  surnameHeatmapColor?: string;
 }
 
 export default function MapboxMap({
@@ -90,6 +91,7 @@ export default function MapboxMap({
   showPopulationDensity = false,
   activeSurnameHeatmap = null,
   surnameHeatmapData = null,
+  surnameHeatmapColor = "#FFD700",
 }: MapboxMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -103,11 +105,16 @@ export default function MapboxMap({
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/dark-v11",
+      style: "mapbox://styles/mapbox/standard",
       center: [-98.5795, 39.8283],
       zoom: 4,
       minZoom: 3,
       maxZoom: 18,
+    });
+
+    map.current.on("style.load", () => {
+      map.current!.setConfigProperty("basemap", "theme", "monochrome");
+      map.current!.setConfigProperty("basemap", "lightPreset", "night");
     });
 
     map.current.addControl(new mapboxgl.NavigationControl(), "top-left");
@@ -130,6 +137,7 @@ export default function MapboxMap({
         type: "heatmap",
         source: "heatmap-data",
         maxzoom: 12,
+        slot: "top",
         paint: {
           "heatmap-weight": ["get", "weight"],
           "heatmap-intensity": [
@@ -195,6 +203,7 @@ export default function MapboxMap({
         type: "heatmap",
         source: "population-data",
         maxzoom: 12,
+        slot: "top",
         layout: {
           visibility: "none",
         },
@@ -235,6 +244,7 @@ export default function MapboxMap({
         id: "population-labels",
         type: "symbol",
         source: "population-data",
+        slot: "top",
         layout: {
           visibility: "none",
           "text-field": [
@@ -274,6 +284,7 @@ export default function MapboxMap({
         type: "heatmap",
         source: "surname-data",
         maxzoom: 12,
+        slot: "top",
         layout: {
           visibility: "none",
         },
@@ -314,6 +325,7 @@ export default function MapboxMap({
         id: "surname-labels",
         type: "symbol",
         source: "surname-data",
+        slot: "top",
         layout: {
           visibility: "none",
           "text-field": [
@@ -427,6 +439,29 @@ export default function MapboxMap({
       // Update data
       source.setData(surnameHeatmapData as GeoJSON.FeatureCollection);
 
+      // Parse the hex color into RGB
+      const hex = surnameHeatmapColor;
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+
+      // Update heatmap color to match selected surname category
+      map.current.setPaintProperty("surname-heatmap", "heatmap-color", [
+        "interpolate",
+        ["linear"],
+        ["heatmap-density"],
+        0, "rgba(0,0,0,0)",
+        0.1, `rgba(${r},${g},${b},0.15)`,
+        0.25, `rgba(${r},${g},${b},0.35)`,
+        0.4, `rgba(${r},${g},${b},0.55)`,
+        0.6, `rgba(${r},${g},${b},0.75)`,
+        0.8, `rgba(${r},${g},${b},0.9)`,
+        1, `rgba(${Math.min(255, r + 60)},${Math.min(255, g + 60)},${Math.min(255, b + 60)},1)`,
+      ]);
+
+      // Update label color to match
+      map.current.setPaintProperty("surname-labels", "text-color", hex);
+
       // Show layers
       if (map.current.getLayer("surname-heatmap")) {
         map.current.setLayoutProperty("surname-heatmap", "visibility", "visible");
@@ -448,7 +483,7 @@ export default function MapboxMap({
         map.current.setLayoutProperty("surname-labels", "visibility", "none");
       }
     }
-  }, [surnameHeatmapData, activeSurnameHeatmap, mapLoaded]);
+  }, [surnameHeatmapData, activeSurnameHeatmap, surnameHeatmapColor, mapLoaded]);
 
   // Update markers
   const updateMarkers = useCallback(() => {

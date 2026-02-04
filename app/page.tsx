@@ -33,12 +33,12 @@ const categories = [
 // Surname heatmap categories from Census data
 const surnameCategories = [
   { id: "cohen", names: "Cohen, Kohn, Cohn", color: "#FFD700", count: 108218 },
-  { id: "levy", names: "Levy, Levi, Levin, Levine", color: "#C0C0C0", count: 108063 },
-  { id: "gold", names: "Goldstein, Goldberg, Goldman", color: "#FFD700", count: 171365 },
-  { id: "silver", names: "Silver, Silverman, Silverstein", color: "#A8A8A8", count: 43264 },
-  { id: "schwartz_weiss", names: "Schwartz, Weiss", color: "#808080", count: 172817 },
-  { id: "witz", names: "Horowitz, Moskowitz, Berkowitz", color: "#9370DB", count: 37967 },
-  { id: "berg", names: "Goldberg, Greenberg, Rosenberg", color: "#228B22", count: 100629 },
+  { id: "levy", names: "Levy, Levi, Levin, Levine", color: "#00BFFF", count: 108063 },
+  { id: "gold", names: "Goldstein, Goldberg, Goldman", color: "#FF8C00", count: 171365 },
+  { id: "silver", names: "Silver, Silverman, Silverstein", color: "#C0C0C0", count: 43264 },
+  { id: "schwartz_weiss", names: "Schwartz, Weiss", color: "#FF4500", count: 172817 },
+  { id: "witz", names: "Horowitz, Moskowitz, Berkowitz", color: "#DA70D6", count: 37967 },
+  { id: "berg", names: "Goldberg, Greenberg, Rosenberg", color: "#00FF7F", count: 100629 },
   { id: "stein", names: "Goldstein, Bernstein, Epstein", color: "#4169E1", count: 82143 },
 ];
 
@@ -279,6 +279,7 @@ export default function Home() {
             showPopulationDensity={showPopulation}
             activeSurnameHeatmap={activeSurname}
             surnameHeatmapData={activeSurname ? surnameData.metroHeatmaps[activeSurname as keyof typeof surnameData.metroHeatmaps] : null}
+            surnameHeatmapColor={activeSurname ? surnameCategories.find(s => s.id === activeSurname)?.color ?? "#FFD700" : "#FFD700"}
           />
 
           {/* Legend - bottom left */}
