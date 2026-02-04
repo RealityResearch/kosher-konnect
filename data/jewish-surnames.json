@@ -1,0 +1,5690 @@
+{
+  "meta": {
+    "source": "US Census Bureau 2010",
+    "totalSurnames": 374,
+    "totalPeople": 6288717,
+    "generatedAt": "2026-02-03T23:59:09.452Z"
+  },
+  "surnames": [
+    {
+      "name": "YOUNG",
+      "rank": 32,
+      "count": 484447,
+      "per100k": 164.23,
+      "demographics": {
+        "white": 66.26,
+        "black": 24.67,
+        "asian": 3.03,
+        "native": 0.79,
+        "multiracial": 2.66,
+        "hispanic": 2.58
+      }
+    },
+    {
+      "name": "FISHER",
+      "rank": 112,
+      "count": 214703,
+      "per100k": 72.79,
+      "demographics": {
+        "white": 82.58,
+        "black": 11.79,
+        "asian": 0.55,
+        "native": 0.76,
+        "multiracial": 1.89,
+        "hispanic": 2.43
+      }
+    },
+    {
+      "name": "SNYDER",
+      "rank": 165,
+      "count": 160262,
+      "per100k": 54.33,
+      "demographics": {
+        "white": 94.07,
+        "black": 1.46,
+        "asian": 0.59,
+        "native": 0.52,
+        "multiracial": 1.45,
+        "hispanic": 1.92
+      }
+    },
+    {
+      "name": "ROSE",
+      "rank": 177,
+      "count": 153397,
+      "per100k": 52,
+      "demographics": {
+        "white": 82.08,
+        "black": 11.61,
+        "asian": 0.72,
+        "native": 0.64,
+        "multiracial": 1.99,
+        "hispanic": 2.96
+      }
+    },
+    {
+      "name": "MEYER",
+      "rank": 183,
+      "count": 150895,
+      "per100k": 51.15,
+      "demographics": {
+        "white": 94.84,
+        "black": 0.52,
+        "asian": 0.71,
+        "native": 0.29,
+        "multiracial": 1.37,
+        "hispanic": 2.28
+      }
+    },
+    {
+      "name": "SCHMIDT",
+      "rank": 185,
+      "count": 147034,
+      "per100k": 49.85,
+      "demographics": {
+        "white": 95.15,
+        "black": 0.37,
+        "asian": 0.61,
+        "native": 0.34,
+        "multiracial": 1.19,
+        "hispanic": 2.34
+      }
+    },
+    {
+      "name": "HOFFMAN",
+      "rank": 224,
+      "count": 131401,
+      "per100k": 44.55,
+      "demographics": {
+        "white": 94.08,
+        "black": 1.26,
+        "asian": 0.63,
+        "native": 0.56,
+        "multiracial": 1.34,
+        "hispanic": 2.12
+      }
+    },
+    {
+      "name": "JACOBS",
+      "rank": 257,
+      "count": 118614,
+      "per100k": 40.21,
+      "demographics": {
+        "white": 74.28,
+        "black": 16.71,
+        "asian": 0.59,
+        "native": 3.75,
+        "multiracial": 2.16,
+        "hispanic": 2.52
+      }
+    },
+    {
+      "name": "WEBER",
+      "rank": 283,
+      "count": 109433,
+      "per100k": 37.1,
+      "demographics": {
+        "white": 94.29,
+        "black": 1.29,
+        "asian": 0.63,
+        "native": 0.36,
+        "multiracial": 1.25,
+        "hispanic": 2.18
+      }
+    },
+    {
+      "name": "SCHULTZ",
+      "rank": 297,
+      "count": 104888,
+      "per100k": 35.56,
+      "demographics": {
+        "white": 94.81,
+        "black": 0.7,
+        "asian": 0.59,
+        "native": 0.41,
+        "multiracial": 1.28,
+        "hispanic": 2.22
+      }
+    },
+    {
+      "name": "NEWMAN",
+      "rank": 307,
+      "count": 101931,
+      "per100k": 34.56,
+      "demographics": {
+        "white": 83.03,
+        "black": 11.08,
+        "asian": 0.61,
+        "native": 0.69,
+        "multiracial": 1.99,
+        "hispanic": 2.6
+      }
+    },
+    {
+      "name": "SCHNEIDER",
+      "rank": 312,
+      "count": 101290,
+      "per100k": 34.34,
+      "demographics": {
+        "white": 95.35,
+        "black": 0.43,
+        "asian": 0.59,
+        "native": 0.27,
+        "multiracial": 1.2,
+        "hispanic": 2.16
+      }
+    },
+    {
+      "name": "BECK",
+      "rank": 328,
+      "count": 93786,
+      "per100k": 31.79,
+      "demographics": {
+        "white": 90.27,
+        "black": 4.53,
+        "asian": 0.74,
+        "native": 0.63,
+        "multiracial": 1.66,
+        "hispanic": 2.17
+      }
+    },
+    {
+      "name": "SCHWARTZ",
+      "rank": 345,
+      "count": 90071,
+      "per100k": 30.53,
+      "demographics": {
+        "white": 95.93,
+        "black": 0.44,
+        "asian": 0.57,
+        "native": 0.21,
+        "multiracial": 0.96,
+        "hispanic": 1.89
+      }
+    },
+    {
+      "name": "COHEN",
+      "rank": 351,
+      "count": 89091,
+      "per100k": 30.2,
+      "demographics": {
+        "white": 88.89,
+        "black": 5.97,
+        "asian": 0.66,
+        "native": 0.11,
+        "multiracial": 1.08,
+        "hispanic": 3.29
+      }
+    },
+    {
+      "name": "BECKER",
+      "rank": 357,
+      "count": 87859,
+      "per100k": 29.78,
+      "demographics": {
+        "white": 94.89,
+        "black": 0.52,
+        "asian": 0.66,
+        "native": 0.34,
+        "multiracial": 1.26,
+        "hispanic": 2.33
+      }
+    },
+    {
+      "name": "WOLFE",
+      "rank": 374,
+      "count": 83928,
+      "per100k": 28.45,
+      "demographics": {
+        "white": 90.77,
+        "black": 3.6,
+        "asian": 0.52,
+        "native": 1.37,
+        "multiracial": 1.66,
+        "hispanic": 2.09
+      }
+    },
+    {
+      "name": "ZIMMERMAN",
+      "rank": 379,
+      "count": 83265,
+      "per100k": 28.23,
+      "demographics": {
+        "white": 93.84,
+        "black": 2.32,
+        "asian": 0.52,
+        "native": 0.3,
+        "multiracial": 1.18,
+        "hispanic": 1.85
+      }
+    },
+    {
+      "name": "KLEIN",
+      "rank": 392,
+      "count": 81471,
+      "per100k": 27.62,
+      "demographics": {
+        "white": 95.41,
+        "black": 0.32,
+        "asian": 0.6,
+        "native": 0.23,
+        "multiracial": 1.13,
+        "hispanic": 2.3
+      }
+    },
+    {
+      "name": "SIMON",
+      "rank": 397,
+      "count": 80460,
+      "per100k": 27.28,
+      "demographics": {
+        "white": 65.09,
+        "black": 22.51,
+        "asian": 2.75,
+        "native": 0.67,
+        "multiracial": 1.93,
+        "hispanic": 7.06
+      }
+    },
+    {
+      "name": "GROSS",
+      "rank": 440,
+      "count": 74503,
+      "per100k": 25.26,
+      "demographics": {
+        "white": 84.87,
+        "black": 10.34,
+        "asian": 0.52,
+        "native": 0.34,
+        "multiracial": 1.48,
+        "hispanic": 2.45
+      }
+    },
+    {
+      "name": "FISCHER",
+      "rank": 455,
+      "count": 72357,
+      "per100k": 24.53,
+      "demographics": {
+        "white": 94.34,
+        "black": 0.87,
+        "asian": 0.61,
+        "native": 0.4,
+        "multiracial": 1.22,
+        "hispanic": 2.56
+      }
+    },
+    {
+      "name": "SHERMAN",
+      "rank": 469,
+      "count": 70502,
+      "per100k": 23.9,
+      "demographics": {
+        "white": 82.74,
+        "black": 11.57,
+        "asian": 0.63,
+        "native": 0.98,
+        "multiracial": 1.75,
+        "hispanic": 2.33
+      }
+    },
+    {
+      "name": "WOLF",
+      "rank": 474,
+      "count": 70031,
+      "per100k": 23.74,
+      "demographics": {
+        "white": 93.67,
+        "black": 1.07,
+        "asian": 0.61,
+        "native": 1.05,
+        "multiracial": 1.46,
+        "hispanic": 2.16
+      }
+    },
+    {
+      "name": "WISE",
+      "rank": 485,
+      "count": 68649,
+      "per100k": 23.27,
+      "demographics": {
+        "white": 78.63,
+        "black": 15.55,
+        "asian": 0.58,
+        "native": 0.71,
+        "multiracial": 2.14,
+        "hispanic": 2.38
+      }
+    },
+    {
+      "name": "KRAMER",
+      "rank": 526,
+      "count": 63936,
+      "per100k": 21.67,
+      "demographics": {
+        "white": 95.35,
+        "black": 0.34,
+        "asian": 0.61,
+        "native": 0.25,
+        "multiracial": 1.24,
+        "hispanic": 2.21
+      }
+    },
+    {
+      "name": "LANG",
+      "rank": 545,
+      "count": 61529,
+      "per100k": 20.86,
+      "demographics": {
+        "white": 81.36,
+        "black": 10.38,
+        "asian": 3.31,
+        "native": 0.59,
+        "multiracial": 1.84,
+        "hispanic": 2.52
+      }
+    },
+    {
+      "name": "HESS",
+      "rank": 564,
+      "count": 59486,
+      "per100k": 20.17,
+      "demographics": {
+        "white": 94.63,
+        "black": 0.93,
+        "asian": 0.55,
+        "native": 0.53,
+        "multiracial": 1.38,
+        "hispanic": 1.98
+      }
+    },
+    {
+      "name": "ROTH",
+      "rank": 574,
+      "count": 58278,
+      "per100k": 19.76,
+      "demographics": {
+        "white": 94.86,
+        "black": 0.5,
+        "asian": 0.9,
+        "native": 0.29,
+        "multiracial": 1.19,
+        "hispanic": 2.27
+      }
+    },
+    {
+      "name": "MEYERS",
+      "rank": 586,
+      "count": 57127,
+      "per100k": 19.37,
+      "demographics": {
+        "white": 89.78,
+        "black": 4.64,
+        "asian": 0.76,
+        "native": 0.62,
+        "multiracial": 1.82,
+        "hispanic": 2.38
+      }
+    },
+    {
+      "name": "WEISS",
+      "rank": 587,
+      "count": 57112,
+      "per100k": 19.36,
+      "demographics": {
+        "white": 95.58,
+        "black": 0.38,
+        "asian": 0.65,
+        "native": 0.2,
+        "multiracial": 0.95,
+        "hispanic": 2.24
+      }
+    },
+    {
+      "name": "GOLDEN",
+      "rank": 699,
+      "count": 49360,
+      "per100k": 16.73,
+      "demographics": {
+        "white": 74.7,
+        "black": 19.85,
+        "asian": 0.54,
+        "native": 0.61,
+        "multiracial": 2.02,
+        "hispanic": 2.28
+      }
+    },
+    {
+      "name": "BERG",
+      "rank": 712,
+      "count": 48746,
+      "per100k": 16.53,
+      "demographics": {
+        "white": 94.69,
+        "black": 0.35,
+        "asian": 0.73,
+        "native": 0.47,
+        "multiracial": 1.44,
+        "hispanic": 2.32
+      }
+    },
+    {
+      "name": "SOLOMON",
+      "rank": 745,
+      "count": 46534,
+      "per100k": 15.78,
+      "demographics": {
+        "white": 57.83,
+        "black": 32.11,
+        "asian": 3.13,
+        "native": 1.36,
+        "multiracial": 2.41,
+        "hispanic": 3.15
+      }
+    },
+    {
+      "name": "KLINE",
+      "rank": 761,
+      "count": 45390,
+      "per100k": 15.39,
+      "demographics": {
+        "white": 94.18,
+        "black": 1.62,
+        "asian": 0.51,
+        "native": 0.34,
+        "multiracial": 1.33,
+        "hispanic": 2.02
+      }
+    },
+    {
+      "name": "JACOBSON",
+      "rank": 767,
+      "count": 44808,
+      "per100k": 15.19,
+      "demographics": {
+        "white": 94.66,
+        "black": 0.4,
+        "asian": 0.76,
+        "native": 0.53,
+        "multiracial": 1.47,
+        "hispanic": 2.18
+      }
+    },
+    {
+      "name": "BERGER",
+      "rank": 785,
+      "count": 43851,
+      "per100k": 14.87,
+      "demographics": {
+        "white": 92.33,
+        "black": 2.48,
+        "asian": 0.69,
+        "native": 0.34,
+        "multiracial": 1.36,
+        "hispanic": 2.8
+      }
+    },
+    {
+      "name": "STEIN",
+      "rank": 796,
+      "count": 43389,
+      "per100k": 14.71,
+      "demographics": {
+        "white": 94.4,
+        "black": 1.02,
+        "asian": 0.7,
+        "native": 0.36,
+        "multiracial": 1.16,
+        "hispanic": 2.36
+      }
+    },
+    {
+      "name": "SLOAN",
+      "rank": 800,
+      "count": 43261,
+      "per100k": 14.67,
+      "demographics": {
+        "white": 79.42,
+        "black": 13.85,
+        "asian": 0.56,
+        "native": 1.84,
+        "multiracial": 2.09,
+        "hispanic": 2.25
+      }
+    },
+    {
+      "name": "STARK",
+      "rank": 827,
+      "count": 41735,
+      "per100k": 14.15,
+      "demographics": {
+        "white": 92.48,
+        "black": 2.25,
+        "asian": 0.58,
+        "native": 0.7,
+        "multiracial": 1.53,
+        "hispanic": 2.46
+      }
+    },
+    {
+      "name": "SMALL",
+      "rank": 861,
+      "count": 40212,
+      "per100k": 13.63,
+      "demographics": {
+        "white": 62.66,
+        "black": 30.81,
+        "asian": 0.58,
+        "native": 1.41,
+        "multiracial": 1.93,
+        "hispanic": 2.61
+      }
+    },
+    {
+      "name": "MAYER",
+      "rank": 880,
+      "count": 39555,
+      "per100k": 13.41,
+      "demographics": {
+        "white": 93.11,
+        "black": 1.25,
+        "asian": 0.91,
+        "native": 0.36,
+        "multiracial": 1.34,
+        "hispanic": 3.04
+      }
+    },
+    {
+      "name": "FRIEDMAN",
+      "rank": 901,
+      "count": 38374,
+      "per100k": 13.01,
+      "demographics": {
+        "white": 96.05,
+        "black": 0.41,
+        "asian": 0.6,
+        "native": 0.13,
+        "multiracial": 0.94,
+        "hispanic": 1.88
+      }
+    },
+    {
+      "name": "LEVY",
+      "rank": 932,
+      "count": 37228,
+      "per100k": 12.62,
+      "demographics": {
+        "white": 79.16,
+        "black": 12.97,
+        "asian": 0.85,
+        "native": 0.25,
+        "multiracial": 1.65,
+        "hispanic": 5.11
+      }
+    },
+    {
+      "name": "KAUFMAN",
+      "rank": 1007,
+      "count": 34844,
+      "per100k": 11.81,
+      "demographics": {
+        "white": 94.57,
+        "black": 1.5,
+        "asian": 0.57,
+        "native": 0.2,
+        "multiracial": 1.13,
+        "hispanic": 2.04
+      }
+    },
+    {
+      "name": "LEVINE",
+      "rank": 1032,
+      "count": 33637,
+      "per100k": 11.4,
+      "demographics": {
+        "white": 90.72,
+        "black": 4.41,
+        "asian": 0.65,
+        "native": 0.1,
+        "multiracial": 1.26,
+        "hispanic": 2.85
+      }
+    },
+    {
+      "name": "KATZ",
+      "rank": 1101,
+      "count": 31780,
+      "per100k": 10.77,
+      "demographics": {
+        "white": 95.31,
+        "black": 0.38,
+        "asian": 0.7,
+        "native": 0.07,
+        "multiracial": 0.88,
+        "hispanic": 2.65
+      }
+    },
+    {
+      "name": "WINTER",
+      "rank": 1119,
+      "count": 31310,
+      "per100k": 10.61,
+      "demographics": {
+        "white": 93.02,
+        "black": 1.95,
+        "asian": 0.63,
+        "native": 0.43,
+        "multiracial": 1.29,
+        "hispanic": 2.68
+      }
+    },
+    {
+      "name": "ABRAHAM",
+      "rank": 1120,
+      "count": 31303,
+      "per100k": 10.61,
+      "demographics": {
+        "white": 45,
+        "black": 20.48,
+        "asian": 25.64,
+        "native": 0.73,
+        "multiracial": 2.12,
+        "hispanic": 6.03
+      }
+    },
+    {
+      "name": "VOGEL",
+      "rank": 1153,
+      "count": 30470,
+      "per100k": 10.33,
+      "demographics": {
+        "white": 94.99,
+        "black": 0.49,
+        "asian": 0.64,
+        "native": 0.28,
+        "multiracial": 1.11,
+        "hispanic": 2.49
+      }
+    },
+    {
+      "name": "GOLDSTEIN",
+      "rank": 1173,
+      "count": 29938,
+      "per100k": 10.15,
+      "demographics": {
+        "white": 95.01,
+        "black": 0.74,
+        "asian": 0.68,
+        "native": 0.03,
+        "multiracial": 0.9,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "RICHTER",
+      "rank": 1178,
+      "count": 29880,
+      "per100k": 10.13,
+      "demographics": {
+        "white": 94.78,
+        "black": 0.45,
+        "asian": 0.65,
+        "native": 0.22,
+        "multiracial": 1.15,
+        "hispanic": 2.74
+      }
+    },
+    {
+      "name": "GOLDBERG",
+      "rank": 1193,
+      "count": 29603,
+      "per100k": 10.04,
+      "demographics": {
+        "white": 95.31,
+        "black": 0.45,
+        "asian": 0.7,
+        "native": 0.07,
+        "multiracial": 0.96,
+        "hispanic": 2.5
+      }
+    },
+    {
+      "name": "KAPLAN",
+      "rank": 1196,
+      "count": 29582,
+      "per100k": 10.03,
+      "demographics": {
+        "white": 94.78,
+        "black": 0.42,
+        "asian": 0.79,
+        "native": 0.1,
+        "multiracial": 1.09,
+        "hispanic": 2.82
+      }
+    },
+    {
+      "name": "KESSLER",
+      "rank": 1216,
+      "count": 29064,
+      "per100k": 9.85,
+      "demographics": {
+        "white": 94.94,
+        "black": 0.65,
+        "asian": 0.65,
+        "native": 0.27,
+        "multiracial": 1.28,
+        "hispanic": 2.21
+      }
+    },
+    {
+      "name": "FINK",
+      "rank": 1232,
+      "count": 28701,
+      "per100k": 9.73,
+      "demographics": {
+        "white": 95.55,
+        "black": 0.31,
+        "asian": 0.61,
+        "native": 0.34,
+        "multiracial": 1.11,
+        "hispanic": 2.08
+      }
+    },
+    {
+      "name": "ROSENBERG",
+      "rank": 1339,
+      "count": 26307,
+      "per100k": 8.92,
+      "demographics": {
+        "white": 95.18,
+        "black": 0.76,
+        "asian": 0.63,
+        "native": 0.19,
+        "multiracial": 1.02,
+        "hispanic": 2.22
+      }
+    },
+    {
+      "name": "SINGER",
+      "rank": 1366,
+      "count": 25828,
+      "per100k": 8.76,
+      "demographics": {
+        "white": 90.38,
+        "black": 2.09,
+        "asian": 0.93,
+        "native": 2.58,
+        "multiracial": 1.47,
+        "hispanic": 2.56
+      }
+    },
+    {
+      "name": "ABRAMS",
+      "rank": 1387,
+      "count": 25534,
+      "per100k": 8.66,
+      "demographics": {
+        "white": 71.62,
+        "black": 22.14,
+        "asian": 0.55,
+        "native": 0.57,
+        "multiracial": 1.91,
+        "hispanic": 3.21
+      }
+    },
+    {
+      "name": "MEIER",
+      "rank": 1391,
+      "count": 25486,
+      "per100k": 8.64,
+      "demographics": {
+        "white": 94.94,
+        "black": 0.28,
+        "asian": 0.75,
+        "native": 0.28,
+        "multiracial": 1.24,
+        "hispanic": 2.51
+      }
+    },
+    {
+      "name": "SCHUMACHER",
+      "rank": 1404,
+      "count": 25292,
+      "per100k": 8.57,
+      "demographics": {
+        "white": 95.71,
+        "black": 0.28,
+        "asian": 0.6,
+        "native": 0.41,
+        "multiracial": 1.26,
+        "hispanic": 1.74
+      }
+    },
+    {
+      "name": "STERN",
+      "rank": 1418,
+      "count": 25074,
+      "per100k": 8.5,
+      "demographics": {
+        "white": 93.69,
+        "black": 2.2,
+        "asian": 0.67,
+        "native": 0.18,
+        "multiracial": 1.16,
+        "hispanic": 2.11
+      }
+    },
+    {
+      "name": "SHAPIRO",
+      "rank": 1469,
+      "count": 24335,
+      "per100k": 8.25,
+      "demographics": {
+        "white": 96.05,
+        "black": 0.35,
+        "asian": 0.73,
+        "native": 0.06,
+        "multiracial": 1.05,
+        "hispanic": 1.77
+      }
+    },
+    {
+      "name": "BLOOM",
+      "rank": 1483,
+      "count": 24081,
+      "per100k": 8.16,
+      "demographics": {
+        "white": 92.98,
+        "black": 2.19,
+        "asian": 0.64,
+        "native": 0.35,
+        "multiracial": 1.37,
+        "hispanic": 2.47
+      }
+    },
+    {
+      "name": "GOLDMAN",
+      "rank": 1495,
+      "count": 23940,
+      "per100k": 8.12,
+      "demographics": {
+        "white": 91.58,
+        "black": 4.15,
+        "asian": 0.61,
+        "native": 0.33,
+        "multiracial": 1.13,
+        "hispanic": 2.21
+      }
+    },
+    {
+      "name": "STEINER",
+      "rank": 1511,
+      "count": 23735,
+      "per100k": 8.05,
+      "demographics": {
+        "white": 94.64,
+        "black": 0.87,
+        "asian": 0.64,
+        "native": 0.23,
+        "multiracial": 1.2,
+        "hispanic": 2.41
+      }
+    },
+    {
+      "name": "FELDMAN",
+      "rank": 1540,
+      "count": 23356,
+      "per100k": 7.92,
+      "demographics": {
+        "white": 95.14,
+        "black": 0.43,
+        "asian": 0.5,
+        "native": 0.08,
+        "multiracial": 0.95,
+        "hispanic": 2.9
+      }
+    },
+    {
+      "name": "POLLOCK",
+      "rank": 1543,
+      "count": 23310,
+      "per100k": 7.9,
+      "demographics": {
+        "white": 87,
+        "black": 7.12,
+        "asian": 0.68,
+        "native": 0.58,
+        "multiracial": 1.46,
+        "hispanic": 3.16
+      }
+    },
+    {
+      "name": "RUBIN",
+      "rank": 1553,
+      "count": 23165,
+      "per100k": 7.85,
+      "demographics": {
+        "white": 88.22,
+        "black": 5.92,
+        "asian": 1.36,
+        "native": 0.1,
+        "multiracial": 1.26,
+        "hispanic": 3.13
+      }
+    },
+    {
+      "name": "ROSEN",
+      "rank": 1585,
+      "count": 22596,
+      "per100k": 7.66,
+      "demographics": {
+        "white": 94.48,
+        "black": 0.63,
+        "asian": 0.83,
+        "native": 0.33,
+        "multiracial": 1.03,
+        "hispanic": 2.7
+      }
+    },
+    {
+      "name": "KAUFFMAN",
+      "rank": 1606,
+      "count": 22353,
+      "per100k": 7.58,
+      "demographics": {
+        "white": 95.92,
+        "black": 0.51,
+        "asian": 0.61,
+        "native": 0.19,
+        "multiracial": 1.06,
+        "hispanic": 1.72
+      }
+    },
+    {
+      "name": "SILVER",
+      "rank": 1632,
+      "count": 22052,
+      "per100k": 7.48,
+      "demographics": {
+        "white": 80.33,
+        "black": 11.89,
+        "asian": 0.84,
+        "native": 1.95,
+        "multiracial": 1.89,
+        "hispanic": 3.1
+      }
+    },
+    {
+      "name": "WINKLER",
+      "rank": 1640,
+      "count": 21993,
+      "per100k": 7.46,
+      "demographics": {
+        "white": 93.78,
+        "black": 1.61,
+        "asian": 0.59,
+        "native": 0.41,
+        "multiracial": 1.35,
+        "hispanic": 2.26
+      }
+    },
+    {
+      "name": "ENGEL",
+      "rank": 1644,
+      "count": 21933,
+      "per100k": 7.44,
+      "demographics": {
+        "white": 95.2,
+        "black": 0.26,
+        "asian": 0.58,
+        "native": 0.33,
+        "multiracial": 1.29,
+        "hispanic": 2.33
+      }
+    },
+    {
+      "name": "BLOCK",
+      "rank": 1658,
+      "count": 21717,
+      "per100k": 7.36,
+      "demographics": {
+        "white": 90.69,
+        "black": 4.15,
+        "asian": 0.76,
+        "native": 0.33,
+        "multiracial": 1.69,
+        "hispanic": 2.38
+      }
+    },
+    {
+      "name": "DIAMOND",
+      "rank": 1670,
+      "count": 21586,
+      "per100k": 7.32,
+      "demographics": {
+        "white": 85.02,
+        "black": 8.68,
+        "asian": 0.87,
+        "native": 0.51,
+        "multiracial": 1.85,
+        "hispanic": 3.07
+      }
+    },
+    {
+      "name": "SIEGEL",
+      "rank": 1674,
+      "count": 21536,
+      "per100k": 7.3,
+      "demographics": {
+        "white": 95.83,
+        "black": 0.38,
+        "asian": 0.69,
+        "native": 0.14,
+        "multiracial": 1.01,
+        "hispanic": 1.95
+      }
+    },
+    {
+      "name": "GREENBERG",
+      "rank": 1720,
+      "count": 20897,
+      "per100k": 7.08,
+      "demographics": {
+        "white": 95.31,
+        "black": 0.33,
+        "asian": 0.82,
+        "native": 0.13,
+        "multiracial": 0.96,
+        "hispanic": 2.44
+      }
+    },
+    {
+      "name": "SCHAFFER",
+      "rank": 1738,
+      "count": 20614,
+      "per100k": 6.99,
+      "demographics": {
+        "white": 92.55,
+        "black": 3.33,
+        "asian": 0.49,
+        "native": 0.4,
+        "multiracial": 1.19,
+        "hispanic": 2.04
+      }
+    },
+    {
+      "name": "LEVIN",
+      "rank": 1876,
+      "count": 19144,
+      "per100k": 6.49,
+      "demographics": {
+        "white": 95.35,
+        "black": 0.76,
+        "asian": 0.69,
+        "native": 0.07,
+        "multiracial": 0.91,
+        "hispanic": 2.2
+      }
+    },
+    {
+      "name": "KRAUS",
+      "rank": 1890,
+      "count": 19028,
+      "per100k": 6.45,
+      "demographics": {
+        "white": 95.51,
+        "black": 0.39,
+        "asian": 0.55,
+        "native": 0.27,
+        "multiracial": 1.17,
+        "hispanic": 2.11
+      }
+    },
+    {
+      "name": "GOLD",
+      "rank": 1928,
+      "count": 18698,
+      "per100k": 6.34,
+      "demographics": {
+        "white": 90.18,
+        "black": 3.83,
+        "asian": 1.16,
+        "native": 0.34,
+        "multiracial": 1.48,
+        "hispanic": 3.03
+      }
+    },
+    {
+      "name": "PLATT",
+      "rank": 2006,
+      "count": 18022,
+      "per100k": 6.11,
+      "demographics": {
+        "white": 86.57,
+        "black": 7.75,
+        "asian": 0.49,
+        "native": 0.55,
+        "multiracial": 2.09,
+        "hispanic": 2.55
+      }
+    },
+    {
+      "name": "BERNSTEIN",
+      "rank": 2015,
+      "count": 17916,
+      "per100k": 6.07,
+      "demographics": {
+        "white": 95.21,
+        "black": 0.69,
+        "asian": 0.75,
+        "native": 0.08,
+        "multiracial": 1.03,
+        "hispanic": 2.25
+      }
+    },
+    {
+      "name": "BERGMAN",
+      "rank": 2021,
+      "count": 17846,
+      "per100k": 6.05,
+      "demographics": {
+        "white": 94.37,
+        "black": 0.89,
+        "asian": 0.61,
+        "native": 0.53,
+        "multiracial": 1.47,
+        "hispanic": 2.14
+      }
+    },
+    {
+      "name": "MARCUS",
+      "rank": 2037,
+      "count": 17671,
+      "per100k": 5.99,
+      "demographics": {
+        "white": 76.76,
+        "black": 12.6,
+        "asian": 1.14,
+        "native": 0.6,
+        "multiracial": 1.68,
+        "hispanic": 7.22
+      }
+    },
+    {
+      "name": "NEUMANN",
+      "rank": 2067,
+      "count": 17484,
+      "per100k": 5.93,
+      "demographics": {
+        "white": 94.8,
+        "black": 0.34,
+        "asian": 0.72,
+        "native": 0.3,
+        "multiracial": 1.16,
+        "hispanic": 2.68
+      }
+    },
+    {
+      "name": "GROSSMAN",
+      "rank": 2067,
+      "count": 17484,
+      "per100k": 5.93,
+      "demographics": {
+        "white": 95.41,
+        "black": 0.39,
+        "asian": 0.74,
+        "native": 0.18,
+        "multiracial": 1.22,
+        "hispanic": 2.06
+      }
+    },
+    {
+      "name": "BLUM",
+      "rank": 2072,
+      "count": 17458,
+      "per100k": 5.92,
+      "demographics": {
+        "white": 94.86,
+        "black": 0.41,
+        "asian": 0.58,
+        "native": 0.2,
+        "multiracial": 1.09,
+        "hispanic": 2.85
+      }
+    },
+    {
+      "name": "HIRSCH",
+      "rank": 2120,
+      "count": 17072,
+      "per100k": 5.79,
+      "demographics": {
+        "white": 94.83,
+        "black": 0.93,
+        "asian": 0.6,
+        "native": 0.21,
+        "multiracial": 0.91,
+        "hispanic": 2.52
+      }
+    },
+    {
+      "name": "HOFFMANN",
+      "rank": 2136,
+      "count": 16966,
+      "per100k": 5.75,
+      "demographics": {
+        "white": 95.07,
+        "black": 0.25,
+        "asian": 0.66,
+        "native": 0.12,
+        "multiracial": 1.17,
+        "hispanic": 2.73
+      }
+    },
+    {
+      "name": "ROSENTHAL",
+      "rank": 2194,
+      "count": 16583,
+      "per100k": 5.62,
+      "demographics": {
+        "white": 92.72,
+        "black": 2.29,
+        "asian": 0.78,
+        "native": 0.24,
+        "multiracial": 1.16,
+        "hispanic": 2.82
+      }
+    },
+    {
+      "name": "ALTMAN",
+      "rank": 2217,
+      "count": 16448,
+      "per100k": 5.58,
+      "demographics": {
+        "white": 92.21,
+        "black": 2.98,
+        "asian": 0.66,
+        "native": 0.37,
+        "multiracial": 1.19,
+        "hispanic": 2.59
+      }
+    },
+    {
+      "name": "ADLER",
+      "rank": 2223,
+      "count": 16412,
+      "per100k": 5.56,
+      "demographics": {
+        "white": 94.9,
+        "black": 0.57,
+        "asian": 0.71,
+        "native": 0.15,
+        "multiracial": 1.06,
+        "hispanic": 2.61
+      }
+    },
+    {
+      "name": "GOLDSMITH",
+      "rank": 2229,
+      "count": 16346,
+      "per100k": 5.54,
+      "demographics": {
+        "white": 79,
+        "black": 16.29,
+        "asian": 0.54,
+        "native": 0.31,
+        "multiracial": 1.74,
+        "hispanic": 2.12
+      }
+    },
+    {
+      "name": "BAUM",
+      "rank": 2230,
+      "count": 16334,
+      "per100k": 5.54,
+      "demographics": {
+        "white": 93.82,
+        "black": 1.67,
+        "asian": 0.72,
+        "native": 0.28,
+        "multiracial": 1.33,
+        "hispanic": 2.18
+      }
+    },
+    {
+      "name": "SCHREIBER",
+      "rank": 2269,
+      "count": 16034,
+      "per100k": 5.44,
+      "demographics": {
+        "white": 95.75,
+        "black": 0.25,
+        "asian": 0.52,
+        "native": 0.3,
+        "multiracial": 1.05,
+        "hispanic": 2.13
+      }
+    },
+    {
+      "name": "BERMAN",
+      "rank": 2271,
+      "count": 16025,
+      "per100k": 5.43,
+      "demographics": {
+        "white": 94.12,
+        "black": 0.98,
+        "asian": 0.97,
+        "native": 0.08,
+        "multiracial": 1.2,
+        "hispanic": 2.65
+      }
+    },
+    {
+      "name": "SCHWARZ",
+      "rank": 2295,
+      "count": 15884,
+      "per100k": 5.38,
+      "demographics": {
+        "white": 94.26,
+        "black": 0.26,
+        "asian": 0.71,
+        "native": 0.18,
+        "multiracial": 1.35,
+        "hispanic": 3.23
+      }
+    },
+    {
+      "name": "ISAACS",
+      "rank": 2422,
+      "count": 14951,
+      "per100k": 5.07,
+      "demographics": {
+        "white": 83.93,
+        "black": 9.58,
+        "asian": 1.07,
+        "native": 1.1,
+        "multiracial": 2.08,
+        "hispanic": 2.23
+      }
+    },
+    {
+      "name": "SILVERMAN",
+      "rank": 2463,
+      "count": 14636,
+      "per100k": 4.96,
+      "demographics": {
+        "white": 95.09,
+        "black": 0.81,
+        "asian": 0.88,
+        "native": 0.11,
+        "multiracial": 1.09,
+        "hispanic": 2.02
+      }
+    },
+    {
+      "name": "TOBIAS",
+      "rank": 2494,
+      "count": 14482,
+      "per100k": 4.91,
+      "demographics": {
+        "white": 55.01,
+        "black": 13.35,
+        "asian": 3.78,
+        "native": 0.26,
+        "multiracial": 1.53,
+        "hispanic": 26.06
+      }
+    },
+    {
+      "name": "WEINER",
+      "rank": 2546,
+      "count": 14208,
+      "per100k": 4.82,
+      "demographics": {
+        "white": 95.77,
+        "black": 0.43,
+        "asian": 0.51,
+        "native": 0.15,
+        "multiracial": 1.07,
+        "hispanic": 2.07
+      }
+    },
+    {
+      "name": "GRUBER",
+      "rank": 2558,
+      "count": 14131,
+      "per100k": 4.79,
+      "demographics": {
+        "white": 94.25,
+        "black": 0.71,
+        "asian": 0.65,
+        "native": 0.82,
+        "multiracial": 1.35,
+        "hispanic": 2.21
+      }
+    },
+    {
+      "name": "PFEIFFER",
+      "rank": 2601,
+      "count": 13851,
+      "per100k": 4.7,
+      "demographics": {
+        "white": 95.15,
+        "black": 0.35,
+        "asian": 0.77,
+        "native": 0.27,
+        "multiracial": 1.28,
+        "hispanic": 2.19
+      }
+    },
+    {
+      "name": "STRAUSS",
+      "rank": 2604,
+      "count": 13840,
+      "per100k": 4.69,
+      "demographics": {
+        "white": 93.34,
+        "black": 1.53,
+        "asian": 0.77,
+        "native": 0.3,
+        "multiracial": 1.1,
+        "hispanic": 2.96
+      }
+    },
+    {
+      "name": "WEINSTEIN",
+      "rank": 2659,
+      "count": 13563,
+      "per100k": 4.6,
+      "demographics": {
+        "white": 95.62,
+        "black": 0.23,
+        "asian": 0.74,
+        "native": 0.12,
+        "multiracial": 0.93,
+        "hispanic": 2.36
+      }
+    },
+    {
+      "name": "ASHER",
+      "rank": 2695,
+      "count": 13371,
+      "per100k": 4.53,
+      "demographics": {
+        "white": 88.93,
+        "black": 3.19,
+        "asian": 2.46,
+        "native": 0.9,
+        "multiracial": 2.08,
+        "hispanic": 2.43
+      }
+    },
+    {
+      "name": "EPSTEIN",
+      "rank": 2786,
+      "count": 12952,
+      "per100k": 4.39,
+      "demographics": {
+        "white": 95.72,
+        "black": 0.31,
+        "asian": 0.7,
+        "native": 0.04,
+        "multiracial": 1.03,
+        "hispanic": 2.19
+      }
+    },
+    {
+      "name": "REICH",
+      "rank": 2796,
+      "count": 12891,
+      "per100k": 4.37,
+      "demographics": {
+        "white": 93.85,
+        "black": 0.5,
+        "asian": 0.53,
+        "native": 0.96,
+        "multiracial": 1.44,
+        "hispanic": 2.72
+      }
+    },
+    {
+      "name": "STEINBERG",
+      "rank": 2841,
+      "count": 12709,
+      "per100k": 4.31,
+      "demographics": {
+        "white": 95.32,
+        "black": 0.52,
+        "asian": 0.79,
+        "native": 0.16,
+        "multiracial": 0.97,
+        "hispanic": 2.25
+      }
+    },
+    {
+      "name": "GREENFIELD",
+      "rank": 3007,
+      "count": 11922,
+      "per100k": 4.04,
+      "demographics": {
+        "white": 86.29,
+        "black": 8.9,
+        "asian": 0.72,
+        "native": 0.28,
+        "multiracial": 1.54,
+        "hispanic": 2.26
+      }
+    },
+    {
+      "name": "MARX",
+      "rank": 3062,
+      "count": 11716,
+      "per100k": 3.97,
+      "demographics": {
+        "white": 94.43,
+        "black": 1.14,
+        "asian": 0.73,
+        "native": 0.46,
+        "multiracial": 1.09,
+        "hispanic": 2.14
+      }
+    },
+    {
+      "name": "SOMMER",
+      "rank": 3080,
+      "count": 11662,
+      "per100k": 3.95,
+      "demographics": {
+        "white": 94.67,
+        "black": 0.28,
+        "asian": 0.73,
+        "native": 0.63,
+        "multiracial": 1.29,
+        "hispanic": 2.4
+      }
+    },
+    {
+      "name": "FINE",
+      "rank": 3097,
+      "count": 11618,
+      "per100k": 3.94,
+      "demographics": {
+        "white": 91.71,
+        "black": 2.01,
+        "asian": 1.67,
+        "native": 0.65,
+        "multiracial": 1.64,
+        "hispanic": 2.32
+      }
+    },
+    {
+      "name": "HYMAN",
+      "rank": 3158,
+      "count": 11436,
+      "per100k": 3.88,
+      "demographics": {
+        "white": 61.91,
+        "black": 32.68,
+        "asian": 0.53,
+        "native": 0.28,
+        "multiracial": 1.72,
+        "hispanic": 2.88
+      }
+    },
+    {
+      "name": "HERZOG",
+      "rank": 3239,
+      "count": 11146,
+      "per100k": 3.78,
+      "demographics": {
+        "white": 95.75,
+        "black": 0.37,
+        "asian": 0.49,
+        "native": 0.13,
+        "multiracial": 1.09,
+        "hispanic": 2.17
+      }
+    },
+    {
+      "name": "ISRAEL",
+      "rank": 3488,
+      "count": 10245,
+      "per100k": 3.47,
+      "demographics": {
+        "white": 70.01,
+        "black": 19.64,
+        "asian": 3.13,
+        "native": 0.85,
+        "multiracial": 1.8,
+        "hispanic": 4.57
+      }
+    },
+    {
+      "name": "GLICK",
+      "rank": 3506,
+      "count": 10196,
+      "per100k": 3.46,
+      "demographics": {
+        "white": 96.32,
+        "black": 0.18,
+        "asian": 0.55,
+        "native": 0.37,
+        "multiracial": 0.92,
+        "hispanic": 1.66
+      }
+    },
+    {
+      "name": "KASPER",
+      "rank": 3545,
+      "count": 10064,
+      "per100k": 3.41,
+      "demographics": {
+        "white": 94.76,
+        "black": 0.49,
+        "asian": 0.81,
+        "native": 0.3,
+        "multiracial": 1.16,
+        "hispanic": 2.47
+      }
+    },
+    {
+      "name": "WIRTH",
+      "rank": 3592,
+      "count": 9907,
+      "per100k": 3.36,
+      "demographics": {
+        "white": 95.45,
+        "black": 0.35,
+        "asian": 0.64,
+        "native": 0.17,
+        "multiracial": 1.21,
+        "hispanic": 2.18
+      }
+    },
+    {
+      "name": "WEINBERG",
+      "rank": 3612,
+      "count": 9825,
+      "per100k": 3.33,
+      "demographics": {
+        "white": 95.41,
+        "black": 0.51,
+        "asian": 0.78,
+        "native": 0.08,
+        "multiracial": 1.07,
+        "hispanic": 2.15
+      }
+    },
+    {
+      "name": "SCHINDLER",
+      "rank": 3624,
+      "count": 9801,
+      "per100k": 3.32,
+      "demographics": {
+        "white": 95.33,
+        "black": 0.2,
+        "asian": 0.65,
+        "native": 0.93,
+        "multiracial": 1.05,
+        "hispanic": 1.84
+      }
+    },
+    {
+      "name": "WEIS",
+      "rank": 3645,
+      "count": 9750,
+      "per100k": 3.31,
+      "demographics": {
+        "white": 95.65,
+        "black": 0.37,
+        "asian": 0.69,
+        "native": 0.13,
+        "multiracial": 1.1,
+        "hispanic": 2.06
+      }
+    },
+    {
+      "name": "KOHN",
+      "rank": 3673,
+      "count": 9701,
+      "per100k": 3.29,
+      "demographics": {
+        "white": 91.46,
+        "black": 3.86,
+        "asian": 0.66,
+        "native": 0.24,
+        "multiracial": 0.82,
+        "hispanic": 2.96
+      }
+    },
+    {
+      "name": "HOROWITZ",
+      "rank": 3674,
+      "count": 9671,
+      "per100k": 3.28,
+      "demographics": {
+        "white": 96.43,
+        "black": 0.43,
+        "asian": 0.62,
+        "native": 0.05,
+        "multiracial": 0.73,
+        "hispanic": 1.73
+      }
+    },
+    {
+      "name": "COHN",
+      "rank": 3758,
+      "count": 9426,
+      "per100k": 3.2,
+      "demographics": {
+        "white": 89.61,
+        "black": 4.65,
+        "asian": 0.95,
+        "native": 0.19,
+        "multiracial": 1.19,
+        "hispanic": 3.41
+      }
+    },
+    {
+      "name": "DEUTSCH",
+      "rank": 3782,
+      "count": 9361,
+      "per100k": 3.17,
+      "demographics": {
+        "white": 95.82,
+        "black": 0.4,
+        "asian": 0.64,
+        "native": 0.16,
+        "multiracial": 0.96,
+        "hispanic": 2.02
+      }
+    },
+    {
+      "name": "ROSENBAUM",
+      "rank": 3791,
+      "count": 9333,
+      "per100k": 3.16,
+      "demographics": {
+        "white": 92.85,
+        "black": 0.39,
+        "asian": 0.45,
+        "native": 0.18,
+        "multiracial": 1.15,
+        "hispanic": 4.98
+      }
+    },
+    {
+      "name": "KLINGER",
+      "rank": 3864,
+      "count": 9179,
+      "per100k": 3.11,
+      "demographics": {
+        "white": 95.82,
+        "black": 0.34,
+        "asian": 0.6,
+        "native": 0.25,
+        "multiracial": 0.97,
+        "hispanic": 2.03
+      }
+    },
+    {
+      "name": "SCHILLER",
+      "rank": 3884,
+      "count": 9132,
+      "per100k": 3.1,
+      "demographics": {
+        "white": 94.89,
+        "black": 0.47,
+        "asian": 0.95,
+        "native": 0.31,
+        "multiracial": 1.27,
+        "hispanic": 2.11
+      }
+    },
+    {
+      "name": "RUBY",
+      "rank": 3904,
+      "count": 9091,
+      "per100k": 3.08,
+      "demographics": {
+        "white": 88.66,
+        "black": 1.83,
+        "asian": 1.37,
+        "native": 0.59,
+        "multiracial": 1.28,
+        "hispanic": 6.27
+      }
+    },
+    {
+      "name": "POLLACK",
+      "rank": 3959,
+      "count": 8977,
+      "per100k": 3.04,
+      "demographics": {
+        "white": 93.02,
+        "black": 1.85,
+        "asian": 0.8,
+        "native": 0.13,
+        "multiracial": 1.02,
+        "hispanic": 3.17
+      }
+    },
+    {
+      "name": "FREEDMAN",
+      "rank": 3985,
+      "count": 8913,
+      "per100k": 3.02,
+      "demographics": {
+        "white": 94.83,
+        "black": 1.16,
+        "asian": 0.79,
+        "native": 0.06,
+        "multiracial": 0.93,
+        "hispanic": 2.24
+      }
+    },
+    {
+      "name": "KIRSCH",
+      "rank": 4050,
+      "count": 8764,
+      "per100k": 2.97,
+      "demographics": {
+        "white": 95.86,
+        "black": 0.18,
+        "asian": 0.62,
+        "native": 0.41,
+        "multiracial": 1.06,
+        "hispanic": 1.87
+      }
+    },
+    {
+      "name": "LIEBERMAN",
+      "rank": 4282,
+      "count": 8302,
+      "per100k": 2.81,
+      "demographics": {
+        "white": 96.3,
+        "black": 0.16,
+        "asian": 0.77,
+        "native": 0.11,
+        "multiracial": 1.08,
+        "hispanic": 1.58
+      }
+    },
+    {
+      "name": "NATHAN",
+      "rank": 4284,
+      "count": 8300,
+      "per100k": 2.81,
+      "demographics": {
+        "white": 56.87,
+        "black": 27.13,
+        "asian": 9.46,
+        "native": 0.72,
+        "multiracial": 2.95,
+        "hispanic": 2.87
+      }
+    },
+    {
+      "name": "SEGAL",
+      "rank": 4451,
+      "count": 7972,
+      "per100k": 2.7,
+      "demographics": {
+        "white": 92.32,
+        "black": 1.29,
+        "asian": 1.63,
+        "native": 0.29,
+        "multiracial": 1.48,
+        "hispanic": 2.99
+      }
+    },
+    {
+      "name": "LERNER",
+      "rank": 4625,
+      "count": 7672,
+      "per100k": 2.6,
+      "demographics": {
+        "white": 94.92,
+        "black": 0.43,
+        "asian": 0.83,
+        "native": 0.09,
+        "multiracial": 1.08,
+        "hispanic": 2.65
+      }
+    },
+    {
+      "name": "PEARL",
+      "rank": 4687,
+      "count": 7570,
+      "per100k": 2.57,
+      "demographics": {
+        "white": 83.79,
+        "black": 9.92,
+        "asian": 1.11,
+        "native": 0.44,
+        "multiracial": 2.06,
+        "hispanic": 2.68
+      }
+    },
+    {
+      "name": "LEVI",
+      "rank": 4731,
+      "count": 7500,
+      "per100k": 2.54,
+      "demographics": {
+        "white": 71.68,
+        "black": 16.56,
+        "asian": 2.56,
+        "native": 2.65,
+        "multiracial": 2.65,
+        "hispanic": 3.89
+      }
+    },
+    {
+      "name": "SACHS",
+      "rank": 4866,
+      "count": 7248,
+      "per100k": 2.46,
+      "demographics": {
+        "white": 94.3,
+        "black": 0.62,
+        "asian": 0.97,
+        "native": 0.12,
+        "multiracial": 1.01,
+        "hispanic": 2.98
+      }
+    },
+    {
+      "name": "ZIMMERMANN",
+      "rank": 4942,
+      "count": 7123,
+      "per100k": 2.41,
+      "demographics": {
+        "white": 93.77,
+        "black": 0.66,
+        "asian": 0.91,
+        "native": 0.15,
+        "multiracial": 1.18,
+        "hispanic": 3.33
+      }
+    },
+    {
+      "name": "SAUL",
+      "rank": 4981,
+      "count": 7047,
+      "per100k": 2.39,
+      "demographics": {
+        "white": 80.89,
+        "black": 8.85,
+        "asian": 2.06,
+        "native": 1.66,
+        "multiracial": 2,
+        "hispanic": 4.54
+      }
+    },
+    {
+      "name": "SPITZER",
+      "rank": 5002,
+      "count": 7027,
+      "per100k": 2.38,
+      "demographics": {
+        "white": 96.04,
+        "black": 0.23,
+        "asian": 0.6,
+        "native": 0.23,
+        "multiracial": 1.04,
+        "hispanic": 1.86
+      }
+    },
+    {
+      "name": "FRIED",
+      "rank": 5012,
+      "count": 7010,
+      "per100k": 2.38,
+      "demographics": {
+        "white": 95.91,
+        "black": 0.43,
+        "asian": 0.77,
+        "native": 0.23,
+        "multiracial": 1.1,
+        "hispanic": 1.57
+      }
+    },
+    {
+      "name": "BERKOWITZ",
+      "rank": 5018,
+      "count": 7000,
+      "per100k": 2.37,
+      "demographics": {
+        "white": 96.63,
+        "black": 0.33,
+        "asian": 0.51,
+        "native": 0,
+        "multiracial": 0.53,
+        "hispanic": 2
+      }
+    },
+    {
+      "name": "FISHMAN",
+      "rank": 5040,
+      "count": 6962,
+      "per100k": 2.36,
+      "demographics": {
+        "white": 95.86,
+        "black": null,
+        "asian": 0.63,
+        "native": null,
+        "multiracial": 0.95,
+        "hispanic": 1.98
+      }
+    },
+    {
+      "name": "FARBER",
+      "rank": 5077,
+      "count": 6897,
+      "per100k": 2.34,
+      "demographics": {
+        "white": 95.33,
+        "black": 0.42,
+        "asian": 0.52,
+        "native": 0.19,
+        "multiracial": 0.91,
+        "hispanic": 2.62
+      }
+    },
+    {
+      "name": "KRAUSS",
+      "rank": 5097,
+      "count": 6865,
+      "per100k": 2.33,
+      "demographics": {
+        "white": 95.08,
+        "black": 0.6,
+        "asian": 0.45,
+        "native": 0.12,
+        "multiracial": 0.92,
+        "hispanic": 2.84
+      }
+    },
+    {
+      "name": "BRODY",
+      "rank": 5142,
+      "count": 6805,
+      "per100k": 2.31,
+      "demographics": {
+        "white": 91.61,
+        "black": 4.06,
+        "asian": 0.81,
+        "native": 0.21,
+        "multiracial": 1.18,
+        "hispanic": 2.15
+      }
+    },
+    {
+      "name": "EISENBERG",
+      "rank": 5148,
+      "count": 6798,
+      "per100k": 2.3,
+      "demographics": {
+        "white": 95.54,
+        "black": null,
+        "asian": 0.9,
+        "native": null,
+        "multiracial": 1.16,
+        "hispanic": 2.1
+      }
+    },
+    {
+      "name": "SALOMON",
+      "rank": 5182,
+      "count": 6745,
+      "per100k": 2.29,
+      "demographics": {
+        "white": 35.4,
+        "black": 17.79,
+        "asian": 3.94,
+        "native": 0.31,
+        "multiracial": 1.44,
+        "hispanic": 41.11
+      }
+    },
+    {
+      "name": "KESLER",
+      "rank": 5210,
+      "count": 6704,
+      "per100k": 2.27,
+      "demographics": {
+        "white": 92.53,
+        "black": 2.83,
+        "asian": 0.48,
+        "native": 0.7,
+        "multiracial": 1.39,
+        "hispanic": 2.07
+      }
+    },
+    {
+      "name": "MANDEL",
+      "rank": 5212,
+      "count": 6703,
+      "per100k": 2.27,
+      "demographics": {
+        "white": 92.93,
+        "black": 0.87,
+        "asian": 1.4,
+        "native": 0.18,
+        "multiracial": 0.82,
+        "hispanic": 3.8
+      }
+    },
+    {
+      "name": "WASSERMAN",
+      "rank": 5297,
+      "count": 6577,
+      "per100k": 2.23,
+      "demographics": {
+        "white": 95.97,
+        "black": 0.38,
+        "asian": 0.59,
+        "native": 0.15,
+        "multiracial": 0.67,
+        "hispanic": 2.24
+      }
+    },
+    {
+      "name": "SILVERSTEIN",
+      "rank": 5300,
+      "count": 6576,
+      "per100k": 2.23,
+      "demographics": {
+        "white": 94.59,
+        "black": 0.36,
+        "asian": 0.99,
+        "native": 0.08,
+        "multiracial": 1.22,
+        "hispanic": 2.77
+      }
+    },
+    {
+      "name": "GOTTLIEB",
+      "rank": 5345,
+      "count": 6509,
+      "per100k": 2.21,
+      "demographics": {
+        "white": 94.07,
+        "black": 0.89,
+        "asian": 0.98,
+        "native": 0.11,
+        "multiracial": 1.11,
+        "hispanic": 2.84
+      }
+    },
+    {
+      "name": "ROSENFELD",
+      "rank": 5371,
+      "count": 6484,
+      "per100k": 2.2,
+      "demographics": {
+        "white": 94.9,
+        "black": 0.35,
+        "asian": 0.68,
+        "native": 0.14,
+        "multiracial": 1.1,
+        "hispanic": 2.84
+      }
+    },
+    {
+      "name": "WEIL",
+      "rank": 5390,
+      "count": 6455,
+      "per100k": 2.19,
+      "demographics": {
+        "white": 93.49,
+        "black": 1.22,
+        "asian": 0.95,
+        "native": 0.25,
+        "multiracial": 1.21,
+        "hispanic": 2.88
+      }
+    },
+    {
+      "name": "SCHICK",
+      "rank": 5801,
+      "count": 5967,
+      "per100k": 2.02,
+      "demographics": {
+        "white": 96.08,
+        "black": 0.2,
+        "asian": 0.57,
+        "native": 0.34,
+        "multiracial": 1.11,
+        "hispanic": 1.71
+      }
+    },
+    {
+      "name": "STOLTZ",
+      "rank": 5847,
+      "count": 5912,
+      "per100k": 2,
+      "demographics": {
+        "white": 95.3,
+        "black": 0.29,
+        "asian": 0.78,
+        "native": 0.22,
+        "multiracial": 0.96,
+        "hispanic": 2.45
+      }
+    },
+    {
+      "name": "MINTZ",
+      "rank": 5896,
+      "count": 5853,
+      "per100k": 1.98,
+      "demographics": {
+        "white": 82.68,
+        "black": 12.2,
+        "asian": 0.6,
+        "native": 0.46,
+        "multiracial": 1.57,
+        "hispanic": 2.49
+      }
+    },
+    {
+      "name": "ZINN",
+      "rank": 5961,
+      "count": 5774,
+      "per100k": 1.96,
+      "demographics": {
+        "white": 91.22,
+        "black": 3.74,
+        "asian": 0.87,
+        "native": 0.54,
+        "multiracial": 1.7,
+        "hispanic": 1.94
+      }
+    },
+    {
+      "name": "HOLLANDER",
+      "rank": 6077,
+      "count": 5640,
+      "per100k": 1.91,
+      "demographics": {
+        "white": 96.1,
+        "black": 0.27,
+        "asian": 0.62,
+        "native": 0.2,
+        "multiracial": 0.83,
+        "hispanic": 1.99
+      }
+    },
+    {
+      "name": "LANDAU",
+      "rank": 6137,
+      "count": 5582,
+      "per100k": 1.89,
+      "demographics": {
+        "white": 95.72,
+        "black": null,
+        "asian": 0.81,
+        "native": null,
+        "multiracial": 0.75,
+        "hispanic": 2.33
+      }
+    },
+    {
+      "name": "STILLMAN",
+      "rank": 6307,
+      "count": 5411,
+      "per100k": 1.83,
+      "demographics": {
+        "white": 89.85,
+        "black": 2.96,
+        "asian": 0.78,
+        "native": 0.68,
+        "multiracial": 1.96,
+        "hispanic": 3.77
+      }
+    },
+    {
+      "name": "LEVITT",
+      "rank": 6311,
+      "count": 5407,
+      "per100k": 1.83,
+      "demographics": {
+        "white": 92.47,
+        "black": 2.68,
+        "asian": 1.05,
+        "native": 0.11,
+        "multiracial": 1.55,
+        "hispanic": 2.13
+      }
+    },
+    {
+      "name": "MOSKOWITZ",
+      "rank": 6412,
+      "count": 5304,
+      "per100k": 1.8,
+      "demographics": {
+        "white": 96.55,
+        "black": 0.47,
+        "asian": 0.55,
+        "native": 0.11,
+        "multiracial": 0.87,
+        "hispanic": 1.45
+      }
+    },
+    {
+      "name": "SHUMWAY",
+      "rank": 6434,
+      "count": 5278,
+      "per100k": 1.79,
+      "demographics": {
+        "white": 95.24,
+        "black": 0.4,
+        "asian": 0.53,
+        "native": 0.38,
+        "multiracial": 1.25,
+        "hispanic": 2.2
+      }
+    },
+    {
+      "name": "WIENER",
+      "rank": 6528,
+      "count": 5191,
+      "per100k": 1.76,
+      "demographics": {
+        "white": 95.43,
+        "black": null,
+        "asian": 0.46,
+        "native": null,
+        "multiracial": 0.73,
+        "hispanic": 2.87
+      }
+    },
+    {
+      "name": "LEVINSON",
+      "rank": 6579,
+      "count": 5147,
+      "per100k": 1.74,
+      "demographics": {
+        "white": 94.79,
+        "black": 0.87,
+        "asian": 0.76,
+        "native": 0.23,
+        "multiracial": 0.74,
+        "hispanic": 2.6
+      }
+    },
+    {
+      "name": "ABRAMSON",
+      "rank": 6896,
+      "count": 4875,
+      "per100k": 1.65,
+      "demographics": {
+        "white": 91.14,
+        "black": 3.1,
+        "asian": 0.92,
+        "native": 0.25,
+        "multiracial": 1.39,
+        "hispanic": 3.2
+      }
+    },
+    {
+      "name": "RUBENSTEIN",
+      "rank": 6936,
+      "count": 4833,
+      "per100k": 1.64,
+      "demographics": {
+        "white": 95.7,
+        "black": 0.41,
+        "asian": 0.77,
+        "native": 0.17,
+        "multiracial": 0.93,
+        "hispanic": 2.03
+      }
+    },
+    {
+      "name": "BLOCH",
+      "rank": 6965,
+      "count": 4817,
+      "per100k": 1.63,
+      "demographics": {
+        "white": 93.79,
+        "black": 1.45,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.98,
+        "hispanic": 3.01
+      }
+    },
+    {
+      "name": "SCHULMAN",
+      "rank": 7132,
+      "count": 4689,
+      "per100k": 1.59,
+      "demographics": {
+        "white": 95.93,
+        "black": 0.19,
+        "asian": 0.66,
+        "native": 0.13,
+        "multiracial": 0.6,
+        "hispanic": 2.5
+      }
+    },
+    {
+      "name": "RESNICK",
+      "rank": 7191,
+      "count": 4647,
+      "per100k": 1.58,
+      "demographics": {
+        "white": 95.89,
+        "black": null,
+        "asian": 0.47,
+        "native": null,
+        "multiracial": 1.1,
+        "hispanic": 2.19
+      }
+    },
+    {
+      "name": "WEISSMAN",
+      "rank": 7215,
+      "count": 4627,
+      "per100k": 1.57,
+      "demographics": {
+        "white": 95.22,
+        "black": null,
+        "asian": 0.67,
+        "native": null,
+        "multiracial": 1.25,
+        "hispanic": 2.46
+      }
+    },
+    {
+      "name": "SPECTOR",
+      "rank": 7221,
+      "count": 4622,
+      "per100k": 1.57,
+      "demographics": {
+        "white": 95.54,
+        "black": 0.32,
+        "asian": 0.8,
+        "native": 0.19,
+        "multiracial": 0.5,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "FEINBERG",
+      "rank": 7255,
+      "count": 4596,
+      "per100k": 1.56,
+      "demographics": {
+        "white": 94.93,
+        "black": null,
+        "asian": 1,
+        "native": null,
+        "multiracial": 0.96,
+        "hispanic": 2.59
+      }
+    },
+    {
+      "name": "FINKELSTEIN",
+      "rank": 7258,
+      "count": 4591,
+      "per100k": 1.56,
+      "demographics": {
+        "white": 95.49,
+        "black": 0.24,
+        "asian": 0.91,
+        "native": 0.15,
+        "multiracial": 0.72,
+        "hispanic": 2.48
+      }
+    },
+    {
+      "name": "SANDLER",
+      "rank": 7272,
+      "count": 4583,
+      "per100k": 1.55,
+      "demographics": {
+        "white": 95.09,
+        "black": 1.44,
+        "asian": 0.79,
+        "native": 0.11,
+        "multiracial": 0.83,
+        "hispanic": 1.75
+      }
+    },
+    {
+      "name": "SACKS",
+      "rank": 7281,
+      "count": 4577,
+      "per100k": 1.55,
+      "demographics": {
+        "white": 93.23,
+        "black": 1.66,
+        "asian": 0.61,
+        "native": 0.39,
+        "multiracial": 1.7,
+        "hispanic": 2.4
+      }
+    },
+    {
+      "name": "SUSSMAN",
+      "rank": 7305,
+      "count": 4565,
+      "per100k": 1.55,
+      "demographics": {
+        "white": 95.4,
+        "black": null,
+        "asian": 0.79,
+        "native": null,
+        "multiracial": 0.99,
+        "hispanic": 2.32
+      }
+    },
+    {
+      "name": "KIRSCHNER",
+      "rank": 7377,
+      "count": 4517,
+      "per100k": 1.53,
+      "demographics": {
+        "white": 95.33,
+        "black": 0.22,
+        "asian": 0.66,
+        "native": 0.4,
+        "multiracial": 0.95,
+        "hispanic": 2.44
+      }
+    },
+    {
+      "name": "CANTOR",
+      "rank": 7500,
+      "count": 4441,
+      "per100k": 1.51,
+      "demographics": {
+        "white": 69.58,
+        "black": 0.41,
+        "asian": 3.72,
+        "native": 0.14,
+        "multiracial": 1.24,
+        "hispanic": 24.93
+      }
+    },
+    {
+      "name": "MARKOWITZ",
+      "rank": 7508,
+      "count": 4435,
+      "per100k": 1.5,
+      "demographics": {
+        "white": 95.96,
+        "black": 0.2,
+        "asian": 0.7,
+        "native": 0.16,
+        "multiracial": 0.81,
+        "hispanic": 2.16
+      }
+    },
+    {
+      "name": "LAZARUS",
+      "rank": 7541,
+      "count": 4410,
+      "per100k": 1.5,
+      "demographics": {
+        "white": 83.22,
+        "black": 6.69,
+        "asian": 3.92,
+        "native": 0.23,
+        "multiracial": 2.36,
+        "hispanic": 3.58
+      }
+    },
+    {
+      "name": "COEN",
+      "rank": 7554,
+      "count": 4400,
+      "per100k": 1.49,
+      "demographics": {
+        "white": 91.8,
+        "black": 0.64,
+        "asian": 0.91,
+        "native": 0.59,
+        "multiracial": 1.89,
+        "hispanic": 4.18
+      }
+    },
+    {
+      "name": "NUSSBAUM",
+      "rank": 7684,
+      "count": 4321,
+      "per100k": 1.46,
+      "demographics": {
+        "white": 96.81,
+        "black": 0.28,
+        "asian": 0.62,
+        "native": 0.16,
+        "multiracial": 1.13,
+        "hispanic": 1
+      }
+    },
+    {
+      "name": "HERTZ",
+      "rank": 7788,
+      "count": 4257,
+      "per100k": 1.44,
+      "demographics": {
+        "white": 93.89,
+        "black": 1.5,
+        "asian": 0.42,
+        "native": 0.45,
+        "multiracial": 1.29,
+        "hispanic": 2.44
+      }
+    },
+    {
+      "name": "SPERLING",
+      "rank": 7841,
+      "count": 4224,
+      "per100k": 1.43,
+      "demographics": {
+        "white": 91.95,
+        "black": 2.82,
+        "asian": 1.02,
+        "native": 0.14,
+        "multiracial": 1.18,
+        "hispanic": 2.89
+      }
+    },
+    {
+      "name": "STRASSER",
+      "rank": 7891,
+      "count": 4196,
+      "per100k": 1.42,
+      "demographics": {
+        "white": 94.71,
+        "black": 0.76,
+        "asian": 0.86,
+        "native": 0.12,
+        "multiracial": 1.26,
+        "hispanic": 2.29
+      }
+    },
+    {
+      "name": "MARGOLIS",
+      "rank": 7912,
+      "count": 4181,
+      "per100k": 1.42,
+      "demographics": {
+        "white": 95.58,
+        "black": null,
+        "asian": 0.62,
+        "native": null,
+        "multiracial": 0.91,
+        "hispanic": 2.58
+      }
+    },
+    {
+      "name": "HALPERN",
+      "rank": 8032,
+      "count": 4121,
+      "per100k": 1.4,
+      "demographics": {
+        "white": 95.34,
+        "black": 0.44,
+        "asian": 0.58,
+        "native": 0.24,
+        "multiracial": 1.09,
+        "hispanic": 2.31
+      }
+    },
+    {
+      "name": "GINSBERG",
+      "rank": 8060,
+      "count": 4110,
+      "per100k": 1.39,
+      "demographics": {
+        "white": 95.99,
+        "black": null,
+        "asian": 0.71,
+        "native": null,
+        "multiracial": 0.9,
+        "hispanic": 2.09
+      }
+    },
+    {
+      "name": "SHULMAN",
+      "rank": 8076,
+      "count": 4104,
+      "per100k": 1.39,
+      "demographics": {
+        "white": 96.13,
+        "black": 0.85,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.83,
+        "hispanic": 1.46
+      }
+    },
+    {
+      "name": "ROSENBLUM",
+      "rank": 8114,
+      "count": 4086,
+      "per100k": 1.39,
+      "demographics": {
+        "white": 95.72,
+        "black": 0.29,
+        "asian": 0.73,
+        "native": 0,
+        "multiracial": 0.83,
+        "hispanic": 2.42
+      }
+    },
+    {
+      "name": "SCHIFF",
+      "rank": 8297,
+      "count": 3993,
+      "per100k": 1.35,
+      "demographics": {
+        "white": 96.14,
+        "black": null,
+        "asian": 0.68,
+        "native": null,
+        "multiracial": 0.93,
+        "hispanic": 1.73
+      }
+    },
+    {
+      "name": "PRESS",
+      "rank": 8308,
+      "count": 3989,
+      "per100k": 1.35,
+      "demographics": {
+        "white": 86.36,
+        "black": 6.59,
+        "asian": 1.5,
+        "native": 0.35,
+        "multiracial": 1.4,
+        "hispanic": 3.79
+      }
+    },
+    {
+      "name": "KANTOR",
+      "rank": 8322,
+      "count": 3982,
+      "per100k": 1.35,
+      "demographics": {
+        "white": 95.2,
+        "black": null,
+        "asian": 1.1,
+        "native": null,
+        "multiracial": 1.08,
+        "hispanic": 1.98
+      }
+    },
+    {
+      "name": "FLEISCHER",
+      "rank": 8323,
+      "count": 3981,
+      "per100k": 1.35,
+      "demographics": {
+        "white": 93.47,
+        "black": 0.8,
+        "asian": 1.06,
+        "native": 0.18,
+        "multiracial": 0.93,
+        "hispanic": 3.57
+      }
+    },
+    {
+      "name": "SCHLESINGER",
+      "rank": 8398,
+      "count": 3940,
+      "per100k": 1.34,
+      "demographics": {
+        "white": 93.98,
+        "black": 1.14,
+        "asian": 0.69,
+        "native": 0.15,
+        "multiracial": 1.42,
+        "hispanic": 2.61
+      }
+    },
+    {
+      "name": "STERNBERG",
+      "rank": 8405,
+      "count": 3935,
+      "per100k": 1.33,
+      "demographics": {
+        "white": 95.63,
+        "black": 0.15,
+        "asian": 0.79,
+        "native": 0.2,
+        "multiracial": 0.89,
+        "hispanic": 2.34
+      }
+    },
+    {
+      "name": "ROTHSTEIN",
+      "rank": 8458,
+      "count": 3904,
+      "per100k": 1.32,
+      "demographics": {
+        "white": 96.52,
+        "black": 0.44,
+        "asian": 0.69,
+        "native": 0,
+        "multiracial": 0.87,
+        "hispanic": 1.49
+      }
+    },
+    {
+      "name": "TELLER",
+      "rank": 8623,
+      "count": 3814,
+      "per100k": 1.29,
+      "demographics": {
+        "white": 75.93,
+        "black": 2.2,
+        "asian": 0.6,
+        "native": 14.58,
+        "multiracial": 1.81,
+        "hispanic": 4.88
+      }
+    },
+    {
+      "name": "ZUCKER",
+      "rank": 8626,
+      "count": 3813,
+      "per100k": 1.29,
+      "demographics": {
+        "white": 95.59,
+        "black": 0.6,
+        "asian": 0.79,
+        "native": 0.16,
+        "multiracial": 1.18,
+        "hispanic": 1.68
+      }
+    },
+    {
+      "name": "WEINTRAUB",
+      "rank": 8665,
+      "count": 3792,
+      "per100k": 1.29,
+      "demographics": {
+        "white": 95.57,
+        "black": 0.45,
+        "asian": 0.79,
+        "native": 0,
+        "multiracial": 1.13,
+        "hispanic": 2.06
+      }
+    },
+    {
+      "name": "WEXLER",
+      "rank": 8676,
+      "count": 3787,
+      "per100k": 1.28,
+      "demographics": {
+        "white": 95.78,
+        "black": null,
+        "asian": 0.98,
+        "native": null,
+        "multiracial": 0.84,
+        "hispanic": 1.87
+      }
+    },
+    {
+      "name": "WOLFSON",
+      "rank": 8768,
+      "count": 3740,
+      "per100k": 1.27,
+      "demographics": {
+        "white": 94.44,
+        "black": null,
+        "asian": 1.1,
+        "native": null,
+        "multiracial": 1.12,
+        "hispanic": 2.83
+      }
+    },
+    {
+      "name": "ZUCKERMAN",
+      "rank": 8789,
+      "count": 3731,
+      "per100k": 1.26,
+      "demographics": {
+        "white": 95.6,
+        "black": null,
+        "asian": 0.96,
+        "native": null,
+        "multiracial": 0.94,
+        "hispanic": 2.12
+      }
+    },
+    {
+      "name": "ZABEL",
+      "rank": 8808,
+      "count": 3717,
+      "per100k": 1.26,
+      "demographics": {
+        "white": 96.29,
+        "black": 0.22,
+        "asian": 0.27,
+        "native": 0.27,
+        "multiracial": 1.1,
+        "hispanic": 1.86
+      }
+    },
+    {
+      "name": "BLUMENTHAL",
+      "rank": 8914,
+      "count": 3673,
+      "per100k": 1.25,
+      "demographics": {
+        "white": 94.88,
+        "black": 0.54,
+        "asian": 0.71,
+        "native": 0.22,
+        "multiracial": 1.06,
+        "hispanic": 2.59
+      }
+    },
+    {
+      "name": "PERLMAN",
+      "rank": 8962,
+      "count": 3653,
+      "per100k": 1.24,
+      "demographics": {
+        "white": 95.84,
+        "black": null,
+        "asian": 0.79,
+        "native": null,
+        "multiracial": 0.9,
+        "hispanic": 2.03
+      }
+    },
+    {
+      "name": "FLEISCHMAN",
+      "rank": 9195,
+      "count": 3547,
+      "per100k": 1.2,
+      "demographics": {
+        "white": 95.63,
+        "black": 0.56,
+        "asian": 0.59,
+        "native": 0.14,
+        "multiracial": 0.82,
+        "hispanic": 2.26
+      }
+    },
+    {
+      "name": "RABINOWITZ",
+      "rank": 9203,
+      "count": 3544,
+      "per100k": 1.2,
+      "demographics": {
+        "white": 97.07,
+        "black": 0.14,
+        "asian": 0.45,
+        "native": 0,
+        "multiracial": 0.4,
+        "hispanic": 1.95
+      }
+    },
+    {
+      "name": "SALZMAN",
+      "rank": 9267,
+      "count": 3513,
+      "per100k": 1.19,
+      "demographics": {
+        "white": 94.22,
+        "black": 0.46,
+        "asian": 1,
+        "native": 0.57,
+        "multiracial": 1.05,
+        "hispanic": 2.7
+      }
+    },
+    {
+      "name": "SPITZ",
+      "rank": 9298,
+      "count": 3500,
+      "per100k": 1.19,
+      "demographics": {
+        "white": 94.46,
+        "black": 0.2,
+        "asian": 0.91,
+        "native": 0.31,
+        "multiracial": 1.91,
+        "hispanic": 2.2
+      }
+    },
+    {
+      "name": "ROSENBLATT",
+      "rank": 9332,
+      "count": 3490,
+      "per100k": 1.18,
+      "demographics": {
+        "white": 95.27,
+        "black": null,
+        "asian": 0.92,
+        "native": null,
+        "multiracial": 1.29,
+        "hispanic": 2.15
+      }
+    },
+    {
+      "name": "GOLDFARB",
+      "rank": 9347,
+      "count": 3480,
+      "per100k": 1.18,
+      "demographics": {
+        "white": 96.29,
+        "black": 0.23,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.52,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "SCHECHTER",
+      "rank": 9573,
+      "count": 3395,
+      "per100k": 1.15,
+      "demographics": {
+        "white": 96.02,
+        "black": 0.18,
+        "asian": 0.62,
+        "native": 0,
+        "multiracial": 0.5,
+        "hispanic": 2.68
+      }
+    },
+    {
+      "name": "KLEINMAN",
+      "rank": 9607,
+      "count": 3383,
+      "per100k": 1.15,
+      "demographics": {
+        "white": 96.48,
+        "black": 0.3,
+        "asian": 0.38,
+        "native": 0.15,
+        "multiracial": 1.01,
+        "hispanic": 1.68
+      }
+    },
+    {
+      "name": "EISEN",
+      "rank": 9621,
+      "count": 3377,
+      "per100k": 1.14,
+      "demographics": {
+        "white": 93.99,
+        "black": 1.15,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.66,
+        "hispanic": 2.13
+      }
+    },
+    {
+      "name": "EISNER",
+      "rank": 9830,
+      "count": 3294,
+      "per100k": 1.12,
+      "demographics": {
+        "white": 94.69,
+        "black": 0.46,
+        "asian": 0.85,
+        "native": 0.18,
+        "multiracial": 1.18,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "HORWITZ",
+      "rank": 9940,
+      "count": 3246,
+      "per100k": 1.1,
+      "demographics": {
+        "white": 95.29,
+        "black": null,
+        "asian": 1.08,
+        "native": null,
+        "multiracial": 1.17,
+        "hispanic": 1.97
+      }
+    },
+    {
+      "name": "SPIELMAN",
+      "rank": 9991,
+      "count": 3228,
+      "per100k": 1.09,
+      "demographics": {
+        "white": 95.42,
+        "black": null,
+        "asian": 0.99,
+        "native": null,
+        "multiracial": 1.12,
+        "hispanic": 1.8
+      }
+    },
+    {
+      "name": "SCHER",
+      "rank": 10006,
+      "count": 3222,
+      "per100k": 1.09,
+      "demographics": {
+        "white": 95.65,
+        "black": null,
+        "asian": 0.71,
+        "native": null,
+        "multiracial": 0.87,
+        "hispanic": 2.36
+      }
+    },
+    {
+      "name": "BIRNBAUM",
+      "rank": 10030,
+      "count": 3211,
+      "per100k": 1.09,
+      "demographics": {
+        "white": 95.14,
+        "black": null,
+        "asian": 1.06,
+        "native": null,
+        "multiracial": 1.25,
+        "hispanic": 2.46
+      }
+    },
+    {
+      "name": "FEINSTEIN",
+      "rank": 10050,
+      "count": 3205,
+      "per100k": 1.09,
+      "demographics": {
+        "white": 95.66,
+        "black": null,
+        "asian": 0.75,
+        "native": null,
+        "multiracial": 1.12,
+        "hispanic": 2.22
+      }
+    },
+    {
+      "name": "RUBINSTEIN",
+      "rank": 10125,
+      "count": 3183,
+      "per100k": 1.08,
+      "demographics": {
+        "white": 92.11,
+        "black": null,
+        "asian": 0.94,
+        "native": null,
+        "multiracial": 0.66,
+        "hispanic": 5.62
+      }
+    },
+    {
+      "name": "POSNER",
+      "rank": 10204,
+      "count": 3157,
+      "per100k": 1.07,
+      "demographics": {
+        "white": 94.81,
+        "black": 0.22,
+        "asian": 1.27,
+        "native": 0,
+        "multiracial": 1.11,
+        "hispanic": 2.6
+      }
+    },
+    {
+      "name": "LEFKOWITZ",
+      "rank": 10274,
+      "count": 3138,
+      "per100k": 1.06,
+      "demographics": {
+        "white": 96.69,
+        "black": null,
+        "asian": 0.45,
+        "native": null,
+        "multiracial": 0.7,
+        "hispanic": 1.75
+      }
+    },
+    {
+      "name": "GINSBURG",
+      "rank": 10411,
+      "count": 3093,
+      "per100k": 1.05,
+      "demographics": {
+        "white": 95.7,
+        "black": 0.39,
+        "asian": 0.97,
+        "native": 0.29,
+        "multiracial": 1.1,
+        "hispanic": 1.55
+      }
+    },
+    {
+      "name": "FINKEL",
+      "rank": 10487,
+      "count": 3060,
+      "per100k": 1.04,
+      "demographics": {
+        "white": 95.29,
+        "black": null,
+        "asian": 0.85,
+        "native": null,
+        "multiracial": 1.24,
+        "hispanic": 2.06
+      }
+    },
+    {
+      "name": "LOEB",
+      "rank": 10491,
+      "count": 3059,
+      "per100k": 1.04,
+      "demographics": {
+        "white": 92.48,
+        "black": 2.68,
+        "asian": 0.62,
+        "native": 0.2,
+        "multiracial": 1.44,
+        "hispanic": 2.58
+      }
+    },
+    {
+      "name": "NADLER",
+      "rank": 10563,
+      "count": 3034,
+      "per100k": 1.03,
+      "demographics": {
+        "white": 95.55,
+        "black": 0.63,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.32,
+        "hispanic": 1.94
+      }
+    },
+    {
+      "name": "AUERBACH",
+      "rank": 10751,
+      "count": 2968,
+      "per100k": 1.01,
+      "demographics": {
+        "white": 95.08,
+        "black": null,
+        "asian": 0.67,
+        "native": null,
+        "multiracial": 0.77,
+        "hispanic": 3.37
+      }
+    },
+    {
+      "name": "KAGAN",
+      "rank": 10891,
+      "count": 2925,
+      "per100k": 0.99,
+      "demographics": {
+        "white": 95.83,
+        "black": null,
+        "asian": 0.96,
+        "native": null,
+        "multiracial": 0.92,
+        "hispanic": 1.85
+      }
+    },
+    {
+      "name": "TEITELBAUM",
+      "rank": 11016,
+      "count": 2887,
+      "per100k": 0.98,
+      "demographics": {
+        "white": 97.58,
+        "black": 0.21,
+        "asian": 0.24,
+        "native": 0,
+        "multiracial": 0.45,
+        "hispanic": 1.52
+      }
+    },
+    {
+      "name": "FEDER",
+      "rank": 11026,
+      "count": 2884,
+      "per100k": 0.98,
+      "demographics": {
+        "white": 95.6,
+        "black": 0.8,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.9,
+        "hispanic": 2.01
+      }
+    },
+    {
+      "name": "FRIEDLANDER",
+      "rank": 11047,
+      "count": 2878,
+      "per100k": 0.98,
+      "demographics": {
+        "white": 93.61,
+        "black": 0.42,
+        "asian": 1.15,
+        "native": 1.81,
+        "multiracial": 1.25,
+        "hispanic": 1.77
+      }
+    },
+    {
+      "name": "HOLTZMAN",
+      "rank": 11142,
+      "count": 2842,
+      "per100k": 0.96,
+      "demographics": {
+        "white": 95.29,
+        "black": null,
+        "asian": 0.53,
+        "native": null,
+        "multiracial": 1.86,
+        "hispanic": 1.83
+      }
+    },
+    {
+      "name": "RAPPAPORT",
+      "rank": 11146,
+      "count": 2841,
+      "per100k": 0.96,
+      "demographics": {
+        "white": 96.3,
+        "black": 0.42,
+        "asian": 0.6,
+        "native": 0,
+        "multiracial": 0.74,
+        "hispanic": 1.94
+      }
+    },
+    {
+      "name": "HEYMAN",
+      "rank": 11154,
+      "count": 2838,
+      "per100k": 0.96,
+      "demographics": {
+        "white": 92.42,
+        "black": 2.92,
+        "asian": 0.74,
+        "native": 0.21,
+        "multiracial": 1.44,
+        "hispanic": 2.26
+      }
+    },
+    {
+      "name": "SCHNECK",
+      "rank": 11395,
+      "count": 2767,
+      "per100k": 0.94,
+      "demographics": {
+        "white": 94.54,
+        "black": null,
+        "asian": 1.3,
+        "native": null,
+        "multiracial": 1.19,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "GREENBAUM",
+      "rank": 11456,
+      "count": 2750,
+      "per100k": 0.93,
+      "demographics": {
+        "white": 95.27,
+        "black": null,
+        "asian": 0.69,
+        "native": null,
+        "multiracial": 1.16,
+        "hispanic": 2.29
+      }
+    },
+    {
+      "name": "MORGENSTERN",
+      "rank": 11493,
+      "count": 2738,
+      "per100k": 0.93,
+      "demographics": {
+        "white": 94.63,
+        "black": null,
+        "asian": 0.73,
+        "native": null,
+        "multiracial": 1.31,
+        "hispanic": 2.96
+      }
+    },
+    {
+      "name": "TAUBER",
+      "rank": 11595,
+      "count": 2708,
+      "per100k": 0.92,
+      "demographics": {
+        "white": 95.27,
+        "black": null,
+        "asian": 0.89,
+        "native": null,
+        "multiracial": 0.85,
+        "hispanic": 2.55
+      }
+    },
+    {
+      "name": "TAUB",
+      "rank": 11605,
+      "count": 2705,
+      "per100k": 0.92,
+      "demographics": {
+        "white": 96.19,
+        "black": 0.63,
+        "asian": 0.74,
+        "native": 0,
+        "multiracial": 0.55,
+        "hispanic": 1.89
+      }
+    },
+    {
+      "name": "MILLMAN",
+      "rank": 11663,
+      "count": 2688,
+      "per100k": 0.91,
+      "demographics": {
+        "white": 95.13,
+        "black": 0.33,
+        "asian": 0.74,
+        "native": 0.19,
+        "multiracial": 1.67,
+        "hispanic": 1.93
+      }
+    },
+    {
+      "name": "SHER",
+      "rank": 11669,
+      "count": 2687,
+      "per100k": 0.91,
+      "demographics": {
+        "white": 84,
+        "black": 0.6,
+        "asian": 12.69,
+        "native": 0,
+        "multiracial": 1.27,
+        "hispanic": 1.45
+      }
+    },
+    {
+      "name": "MENDEL",
+      "rank": 11846,
+      "count": 2642,
+      "per100k": 0.9,
+      "demographics": {
+        "white": 87.47,
+        "black": 0.76,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.95,
+        "hispanic": 9.95
+      }
+    },
+    {
+      "name": "TRAUB",
+      "rank": 11870,
+      "count": 2638,
+      "per100k": 0.89,
+      "demographics": {
+        "white": 94.54,
+        "black": 1.1,
+        "asian": 0.87,
+        "native": 0.19,
+        "multiracial": 1.21,
+        "hispanic": 2.08
+      }
+    },
+    {
+      "name": "DRUCKER",
+      "rank": 11928,
+      "count": 2624,
+      "per100k": 0.89,
+      "demographics": {
+        "white": 95.54,
+        "black": null,
+        "asian": 0.76,
+        "native": null,
+        "multiracial": 0.61,
+        "hispanic": 2.63
+      }
+    },
+    {
+      "name": "GLICKMAN",
+      "rank": 11957,
+      "count": 2614,
+      "per100k": 0.89,
+      "demographics": {
+        "white": 93.46,
+        "black": null,
+        "asian": 1.38,
+        "native": null,
+        "multiracial": 1.64,
+        "hispanic": 2.87
+      }
+    },
+    {
+      "name": "SCHERR",
+      "rank": 11971,
+      "count": 2609,
+      "per100k": 0.88,
+      "demographics": {
+        "white": 95.9,
+        "black": null,
+        "asian": 0.8,
+        "native": null,
+        "multiracial": 1.26,
+        "hispanic": 1.65
+      }
+    },
+    {
+      "name": "LEIBOWITZ",
+      "rank": 12017,
+      "count": 2598,
+      "per100k": 0.88,
+      "demographics": {
+        "white": 95.61,
+        "black": 0.27,
+        "asian": 0.65,
+        "native": 0,
+        "multiracial": 1.04,
+        "hispanic": 2.42
+      }
+    },
+    {
+      "name": "LIEBER",
+      "rank": 12115,
+      "count": 2573,
+      "per100k": 0.87,
+      "demographics": {
+        "white": 96.35,
+        "black": 0.47,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.58,
+        "hispanic": 2.06
+      }
+    },
+    {
+      "name": "LEVENSON",
+      "rank": 12255,
+      "count": 2538,
+      "per100k": 0.86,
+      "demographics": {
+        "white": 93.26,
+        "black": 1.89,
+        "asian": 1.38,
+        "native": 0.28,
+        "multiracial": 1.42,
+        "hispanic": 1.77
+      }
+    },
+    {
+      "name": "STRAUS",
+      "rank": 12276,
+      "count": 2533,
+      "per100k": 0.86,
+      "demographics": {
+        "white": 91.59,
+        "black": 3.63,
+        "asian": 1.11,
+        "native": 0.32,
+        "multiracial": 1.5,
+        "hispanic": 1.86
+      }
+    },
+    {
+      "name": "LIPMAN",
+      "rank": 12399,
+      "count": 2507,
+      "per100k": 0.85,
+      "demographics": {
+        "white": 95.17,
+        "black": null,
+        "asian": 0.96,
+        "native": null,
+        "multiracial": 1.4,
+        "hispanic": 1.79
+      }
+    },
+    {
+      "name": "SHAIN",
+      "rank": 12510,
+      "count": 2478,
+      "per100k": 0.84,
+      "demographics": {
+        "white": 90.23,
+        "black": 2.22,
+        "asian": 4.24,
+        "native": 0.36,
+        "multiracial": 1.01,
+        "hispanic": 1.94
+      }
+    },
+    {
+      "name": "MENDELSON",
+      "rank": 12670,
+      "count": 2439,
+      "per100k": 0.83,
+      "demographics": {
+        "white": 93.89,
+        "black": 1.31,
+        "asian": 0.86,
+        "native": null,
+        "multiracial": null,
+        "hispanic": 3.03
+      }
+    },
+    {
+      "name": "FEIN",
+      "rank": 12971,
+      "count": 2367,
+      "per100k": 0.8,
+      "demographics": {
+        "white": 95.56,
+        "black": null,
+        "asian": 0.51,
+        "native": null,
+        "multiracial": 1.14,
+        "hispanic": 2.37
+      }
+    },
+    {
+      "name": "LIPTON",
+      "rank": 13002,
+      "count": 2361,
+      "per100k": 0.8,
+      "demographics": {
+        "white": 92.5,
+        "black": 1.82,
+        "asian": null,
+        "native": null,
+        "multiracial": 2.08,
+        "hispanic": 2.03
+      }
+    },
+    {
+      "name": "PASTERNAK",
+      "rank": 13142,
+      "count": 2329,
+      "per100k": 0.79,
+      "demographics": {
+        "white": 96.05,
+        "black": null,
+        "asian": 0.56,
+        "native": null,
+        "multiracial": 1.07,
+        "hispanic": 2.1
+      }
+    },
+    {
+      "name": "PLOTKIN",
+      "rank": 13241,
+      "count": 2306,
+      "per100k": 0.78,
+      "demographics": {
+        "white": 95.45,
+        "black": null,
+        "asian": 0.56,
+        "native": null,
+        "multiracial": 0.87,
+        "hispanic": 2.69
+      }
+    },
+    {
+      "name": "ABRAMOWITZ",
+      "rank": 13376,
+      "count": 2277,
+      "per100k": 0.77,
+      "demographics": {
+        "white": 96.05,
+        "black": null,
+        "asian": 0.44,
+        "native": null,
+        "multiracial": 0.83,
+        "hispanic": 2.5
+      }
+    },
+    {
+      "name": "WEINGARTEN",
+      "rank": 13413,
+      "count": 2272,
+      "per100k": 0.77,
+      "demographics": {
+        "white": 95.86,
+        "black": null,
+        "asian": 0.44,
+        "native": null,
+        "multiracial": 0.92,
+        "hispanic": 2.51
+      }
+    },
+    {
+      "name": "THALER",
+      "rank": 13551,
+      "count": 2237,
+      "per100k": 0.76,
+      "demographics": {
+        "white": 92.71,
+        "black": 0.89,
+        "asian": 2.24,
+        "native": 0.67,
+        "multiracial": 1.07,
+        "hispanic": 2.41
+      }
+    },
+    {
+      "name": "AXELROD",
+      "rank": 13834,
+      "count": 2185,
+      "per100k": 0.74,
+      "demographics": {
+        "white": 95.01,
+        "black": null,
+        "asian": 0.92,
+        "native": null,
+        "multiracial": 1.28,
+        "hispanic": 2.56
+      }
+    },
+    {
+      "name": "OPPENHEIMER",
+      "rank": 13850,
+      "count": 2182,
+      "per100k": 0.74,
+      "demographics": {
+        "white": 86.39,
+        "black": 1.56,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.05,
+        "hispanic": 9.99
+      }
+    },
+    {
+      "name": "RABIN",
+      "rank": 13967,
+      "count": 2159,
+      "per100k": 0.73,
+      "demographics": {
+        "white": 91.8,
+        "black": 1.85,
+        "asian": 1.67,
+        "native": 0.23,
+        "multiracial": 0.93,
+        "hispanic": 3.52
+      }
+    },
+    {
+      "name": "TANNENBAUM",
+      "rank": 14374,
+      "count": 2080,
+      "per100k": 0.71,
+      "demographics": {
+        "white": 96.35,
+        "black": 0.34,
+        "asian": 0.87,
+        "native": 0.24,
+        "multiracial": 0.96,
+        "hispanic": 1.25
+      }
+    },
+    {
+      "name": "WAXMAN",
+      "rank": 14382,
+      "count": 2078,
+      "per100k": 0.7,
+      "demographics": {
+        "white": 96.29,
+        "black": 0.38,
+        "asian": 0.43,
+        "native": 0,
+        "multiracial": 0.96,
+        "hispanic": 1.92
+      }
+    },
+    {
+      "name": "WEINMAN",
+      "rank": 14591,
+      "count": 2040,
+      "per100k": 0.69,
+      "demographics": {
+        "white": 94.9,
+        "black": null,
+        "asian": 0.88,
+        "native": null,
+        "multiracial": 0.93,
+        "hispanic": 2.3
+      }
+    },
+    {
+      "name": "SPERO",
+      "rank": 14617,
+      "count": 2036,
+      "per100k": 0.69,
+      "demographics": {
+        "white": 91.11,
+        "black": 0.98,
+        "asian": 0.98,
+        "native": null,
+        "multiracial": null,
+        "hispanic": 5.94
+      }
+    },
+    {
+      "name": "NEWBERG",
+      "rank": 14656,
+      "count": 2030,
+      "per100k": 0.69,
+      "demographics": {
+        "white": 93.74,
+        "black": 0.69,
+        "asian": 0.54,
+        "native": 0.59,
+        "multiracial": 2.22,
+        "hispanic": 2.22
+      }
+    },
+    {
+      "name": "HERZBERG",
+      "rank": 15194,
+      "count": 1939,
+      "per100k": 0.66,
+      "demographics": {
+        "white": 94.79,
+        "black": null,
+        "asian": 0.57,
+        "native": null,
+        "multiracial": 1.55,
+        "hispanic": 2.68
+      }
+    },
+    {
+      "name": "ROSENSTEIN",
+      "rank": 15238,
+      "count": 1930,
+      "per100k": 0.65,
+      "demographics": {
+        "white": 95.34,
+        "black": 0.26,
+        "asian": 0.52,
+        "native": 0,
+        "multiracial": 0.57,
+        "hispanic": 3.32
+      }
+    },
+    {
+      "name": "KIRSCHBAUM",
+      "rank": 15743,
+      "count": 1852,
+      "per100k": 0.63,
+      "demographics": {
+        "white": 97.14,
+        "black": null,
+        "asian": 0.43,
+        "native": null,
+        "multiracial": 0.81,
+        "hispanic": 1.19
+      }
+    },
+    {
+      "name": "WEIN",
+      "rank": 15806,
+      "count": 1842,
+      "per100k": 0.62,
+      "demographics": {
+        "white": 94.63,
+        "black": 1.09,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.19,
+        "hispanic": 1.9
+      }
+    },
+    {
+      "name": "WECHSLER",
+      "rank": 15806,
+      "count": 1842,
+      "per100k": 0.62,
+      "demographics": {
+        "white": 93.21,
+        "black": null,
+        "asian": 0.76,
+        "native": null,
+        "multiracial": 0.76,
+        "hispanic": 4.56
+      }
+    },
+    {
+      "name": "PORTNOY",
+      "rank": 16004,
+      "count": 1814,
+      "per100k": 0.61,
+      "demographics": {
+        "white": 95.87,
+        "black": null,
+        "asian": 0.55,
+        "native": null,
+        "multiracial": 0.66,
+        "hispanic": 2.48
+      }
+    },
+    {
+      "name": "OPPENHEIM",
+      "rank": 16125,
+      "count": 1795,
+      "per100k": 0.61,
+      "demographics": {
+        "white": 94.99,
+        "black": 0.33,
+        "asian": 1.11,
+        "native": 0.56,
+        "multiracial": 1.34,
+        "hispanic": 1.67
+      }
+    },
+    {
+      "name": "SELZER",
+      "rank": 16481,
+      "count": 1743,
+      "per100k": 0.59,
+      "demographics": {
+        "white": 95.35,
+        "black": 0.29,
+        "asian": 0.57,
+        "native": 0.34,
+        "multiracial": 1.32,
+        "hispanic": 2.12
+      }
+    },
+    {
+      "name": "SOLOMAN",
+      "rank": 16679,
+      "count": 1717,
+      "per100k": 0.58,
+      "demographics": {
+        "white": 52.24,
+        "black": 33.2,
+        "asian": 2.68,
+        "native": 1.57,
+        "multiracial": 1.98,
+        "hispanic": 8.33
+      }
+    },
+    {
+      "name": "HALPERIN",
+      "rank": 16704,
+      "count": 1714,
+      "per100k": 0.58,
+      "demographics": {
+        "white": 93.47,
+        "black": 0.29,
+        "asian": 0.88,
+        "native": 0,
+        "multiracial": 1.17,
+        "hispanic": 4.2
+      }
+    },
+    {
+      "name": "APPLEBAUM",
+      "rank": 16809,
+      "count": 1698,
+      "per100k": 0.58,
+      "demographics": {
+        "white": 96.05,
+        "black": null,
+        "asian": 0.77,
+        "native": null,
+        "multiracial": 1,
+        "hispanic": 1.88
+      }
+    },
+    {
+      "name": "PRESSMAN",
+      "rank": 16909,
+      "count": 1684,
+      "per100k": 0.57,
+      "demographics": {
+        "white": 95.9,
+        "black": 0.77,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.95,
+        "hispanic": 1.78
+      }
+    },
+    {
+      "name": "ZEIGER",
+      "rank": 17014,
+      "count": 1670,
+      "per100k": 0.57,
+      "demographics": {
+        "white": 95.21,
+        "black": 0.72,
+        "asian": 0.3,
+        "native": 0.3,
+        "multiracial": 0.84,
+        "hispanic": 2.63
+      }
+    },
+    {
+      "name": "GARFINKEL",
+      "rank": 17193,
+      "count": 1647,
+      "per100k": 0.56,
+      "demographics": {
+        "white": 95.26,
+        "black": null,
+        "asian": 0.49,
+        "native": null,
+        "multiracial": 1.09,
+        "hispanic": 2.91
+      }
+    },
+    {
+      "name": "PERLMUTTER",
+      "rank": 17502,
+      "count": 1610,
+      "per100k": 0.55,
+      "demographics": {
+        "white": 95.65,
+        "black": null,
+        "asian": 0.87,
+        "native": null,
+        "multiracial": 1.37,
+        "hispanic": 1.86
+      }
+    },
+    {
+      "name": "GLANTZ",
+      "rank": 17836,
+      "count": 1569,
+      "per100k": 0.53,
+      "demographics": {
+        "white": 95.73,
+        "black": null,
+        "asian": 0.38,
+        "native": null,
+        "multiracial": 1.02,
+        "hispanic": 2.61
+      }
+    },
+    {
+      "name": "ZOBEL",
+      "rank": 17958,
+      "count": 1556,
+      "per100k": 0.53,
+      "demographics": {
+        "white": 95.05,
+        "black": null,
+        "asian": 1.29,
+        "native": null,
+        "multiracial": 1.16,
+        "hispanic": 1.8
+      }
+    },
+    {
+      "name": "HIRSCHMAN",
+      "rank": 18550,
+      "count": 1487,
+      "per100k": 0.5,
+      "demographics": {
+        "white": 93.48,
+        "black": null,
+        "asian": 0.67,
+        "native": null,
+        "multiracial": 1.88,
+        "hispanic": 3.7
+      }
+    },
+    {
+      "name": "WEITZMAN",
+      "rank": 18648,
+      "count": 1475,
+      "per100k": 0.5,
+      "demographics": {
+        "white": 95.05,
+        "black": null,
+        "asian": 0.34,
+        "native": null,
+        "multiracial": 0.88,
+        "hispanic": 3.25
+      }
+    },
+    {
+      "name": "SCHNEIDERMAN",
+      "rank": 18971,
+      "count": 1438,
+      "per100k": 0.49,
+      "demographics": {
+        "white": 97.01,
+        "black": null,
+        "asian": 0.63,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 2.09
+      }
+    },
+    {
+      "name": "SUGARMAN",
+      "rank": 19296,
+      "count": 1403,
+      "per100k": 0.48,
+      "demographics": {
+        "white": 95.15,
+        "black": null,
+        "asian": 1.14,
+        "native": null,
+        "multiracial": 0.78,
+        "hispanic": 2.35
+      }
+    },
+    {
+      "name": "BERLINER",
+      "rank": 19803,
+      "count": 1358,
+      "per100k": 0.46,
+      "demographics": {
+        "white": 92.56,
+        "black": 1.69,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.84,
+        "hispanic": 3.02
+      }
+    },
+    {
+      "name": "RUDIN",
+      "rank": 20348,
+      "count": 1306,
+      "per100k": 0.44,
+      "demographics": {
+        "white": 95.1,
+        "black": 0.46,
+        "asian": 1.07,
+        "native": 0,
+        "multiracial": 1.3,
+        "hispanic": 2.07
+      }
+    },
+    {
+      "name": "SCHWARTZMAN",
+      "rank": 20468,
+      "count": 1297,
+      "per100k": 0.44,
+      "demographics": {
+        "white": 94.29,
+        "black": null,
+        "asian": 0.54,
+        "native": null,
+        "multiracial": 0.85,
+        "hispanic": 3.86
+      }
+    },
+    {
+      "name": "LICHTER",
+      "rank": 20468,
+      "count": 1297,
+      "per100k": 0.44,
+      "demographics": {
+        "white": 92.98,
+        "black": null,
+        "asian": 0.62,
+        "native": null,
+        "multiracial": 1.62,
+        "hispanic": 4.01
+      }
+    },
+    {
+      "name": "FRIEDBERG",
+      "rank": 20574,
+      "count": 1288,
+      "per100k": 0.44,
+      "demographics": {
+        "white": 94.49,
+        "black": null,
+        "asian": 1.55,
+        "native": null,
+        "multiracial": 0.93,
+        "hispanic": 2.64
+      }
+    },
+    {
+      "name": "SEELIG",
+      "rank": 20780,
+      "count": 1271,
+      "per100k": 0.43,
+      "demographics": {
+        "white": 90.17,
+        "black": null,
+        "asian": 0.47,
+        "native": null,
+        "multiracial": 1.49,
+        "hispanic": 7.47
+      }
+    },
+    {
+      "name": "RABINOVICH",
+      "rank": 20843,
+      "count": 1266,
+      "per100k": 0.43,
+      "demographics": {
+        "white": 92.5,
+        "black": 0,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 7.19
+      }
+    },
+    {
+      "name": "ORLOFF",
+      "rank": 20926,
+      "count": 1259,
+      "per100k": 0.43,
+      "demographics": {
+        "white": 91.66,
+        "black": null,
+        "asian": null,
+        "native": 1.27,
+        "multiracial": 3.1,
+        "hispanic": 3.34
+      }
+    },
+    {
+      "name": "MANDELBAUM",
+      "rank": 21157,
+      "count": 1241,
+      "per100k": 0.42,
+      "demographics": {
+        "white": 96.13,
+        "black": null,
+        "asian": 0.4,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 3.06
+      }
+    },
+    {
+      "name": "WEINGARTNER",
+      "rank": 21459,
+      "count": 1218,
+      "per100k": 0.41,
+      "demographics": {
+        "white": 94.66,
+        "black": null,
+        "asian": 0.9,
+        "native": null,
+        "multiracial": 1.48,
+        "hispanic": 2.63
+      }
+    },
+    {
+      "name": "OSTROW",
+      "rank": 21553,
+      "count": 1211,
+      "per100k": 0.41,
+      "demographics": {
+        "white": 94.63,
+        "black": null,
+        "asian": 0.83,
+        "native": null,
+        "multiracial": 0.83,
+        "hispanic": 3.39
+      }
+    },
+    {
+      "name": "MARGULIES",
+      "rank": 21972,
+      "count": 1181,
+      "per100k": 0.4,
+      "demographics": {
+        "white": 93.73,
+        "black": null,
+        "asian": 0.76,
+        "native": null,
+        "multiracial": 1.19,
+        "hispanic": 3.81
+      }
+    },
+    {
+      "name": "FEUER",
+      "rank": 22026,
+      "count": 1177,
+      "per100k": 0.4,
+      "demographics": {
+        "white": 96.09,
+        "black": null,
+        "asian": 0.59,
+        "native": null,
+        "multiracial": 0.42,
+        "hispanic": 2.38
+      }
+    },
+    {
+      "name": "STEINFELD",
+      "rank": 22359,
+      "count": 1152,
+      "per100k": 0.39,
+      "demographics": {
+        "white": 95.49,
+        "black": 0.87,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.04,
+        "hispanic": 2.34
+      }
+    },
+    {
+      "name": "ZWEIG",
+      "rank": 22838,
+      "count": 1121,
+      "per100k": 0.38,
+      "demographics": {
+        "white": 94.56,
+        "black": 0.45,
+        "asian": 0.54,
+        "native": 0,
+        "multiracial": 0.89,
+        "hispanic": 3.57
+      }
+    },
+    {
+      "name": "FEIGENBAUM",
+      "rank": 23532,
+      "count": 1079,
+      "per100k": 0.37,
+      "demographics": {
+        "white": 96.29,
+        "black": 0.46,
+        "asian": null,
+        "native": null,
+        "multiracial": 0.56,
+        "hispanic": 2.22
+      }
+    },
+    {
+      "name": "ROTHBERG",
+      "rank": 23852,
+      "count": 1059,
+      "per100k": 0.36,
+      "demographics": {
+        "white": 95.09,
+        "black": 0,
+        "asian": 0.94,
+        "native": 0,
+        "multiracial": 1.23,
+        "hispanic": 2.74
+      }
+    },
+    {
+      "name": "SIEGAL",
+      "rank": 23943,
+      "count": 1054,
+      "per100k": 0.36,
+      "demographics": {
+        "white": 97.15,
+        "black": null,
+        "asian": 0.47,
+        "native": null,
+        "multiracial": 0.66,
+        "hispanic": 1.52
+      }
+    },
+    {
+      "name": "SCHECTER",
+      "rank": 24001,
+      "count": 1051,
+      "per100k": 0.36,
+      "demographics": {
+        "white": 94.86,
+        "black": null,
+        "asian": 0.76,
+        "native": null,
+        "multiracial": 1.33,
+        "hispanic": 2.76
+      }
+    },
+    {
+      "name": "SPEISER",
+      "rank": 24499,
+      "count": 1021,
+      "per100k": 0.35,
+      "demographics": {
+        "white": 96.08,
+        "black": null,
+        "asian": null,
+        "native": 0.88,
+        "multiracial": 0.49,
+        "hispanic": 1.96
+      }
+    },
+    {
+      "name": "SCHAPIRO",
+      "rank": 24747,
+      "count": 1007,
+      "per100k": 0.34,
+      "demographics": {
+        "white": 96.33,
+        "black": null,
+        "asian": 0.7,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 2.58
+      }
+    },
+    {
+      "name": "PERLSTEIN",
+      "rank": 24802,
+      "count": 1004,
+      "per100k": 0.34,
+      "demographics": {
+        "white": 97.51,
+        "black": null,
+        "asian": 0.6,
+        "native": null,
+        "multiracial": 1.1,
+        "hispanic": 0.7
+      }
+    },
+    {
+      "name": "PINSKY",
+      "rank": 25332,
+      "count": 977,
+      "per100k": 0.33,
+      "demographics": {
+        "white": 97.34,
+        "black": null,
+        "asian": 0.82,
+        "native": null,
+        "multiracial": 0.72,
+        "hispanic": 0.82
+      }
+    },
+    {
+      "name": "SPILKER",
+      "rank": 26598,
+      "count": 916,
+      "per100k": 0.31,
+      "demographics": {
+        "white": 95.41,
+        "black": null,
+        "asian": 0.66,
+        "native": null,
+        "multiracial": 1.53,
+        "hispanic": 2.18
+      }
+    },
+    {
+      "name": "GERSHON",
+      "rank": 26887,
+      "count": 903,
+      "per100k": 0.31,
+      "demographics": {
+        "white": 94.8,
+        "black": 1.33,
+        "asian": 0.66,
+        "native": 0.55,
+        "multiracial": 1.22,
+        "hispanic": 1.44
+      }
+    },
+    {
+      "name": "OSTROFF",
+      "rank": 27204,
+      "count": 889,
+      "per100k": 0.3,
+      "demographics": {
+        "white": 95.5,
+        "black": null,
+        "asian": 0.67,
+        "native": null,
+        "multiracial": 1.24,
+        "hispanic": 2.47
+      }
+    },
+    {
+      "name": "SAPERSTEIN",
+      "rank": 27481,
+      "count": 877,
+      "per100k": 0.3,
+      "demographics": {
+        "white": 96.12,
+        "black": null,
+        "asian": 0.57,
+        "native": null,
+        "multiracial": 1.37,
+        "hispanic": 1.6
+      }
+    },
+    {
+      "name": "CHERNOFF",
+      "rank": 27481,
+      "count": 877,
+      "per100k": 0.3,
+      "demographics": {
+        "white": 91.56,
+        "black": 0.8,
+        "asian": 0.68,
+        "native": 0.91,
+        "multiracial": 2.28,
+        "hispanic": 3.76
+      }
+    },
+    {
+      "name": "DREYFUS",
+      "rank": 29793,
+      "count": 789,
+      "per100k": 0.27,
+      "demographics": {
+        "white": 89.48,
+        "black": null,
+        "asian": 1.27,
+        "native": null,
+        "multiracial": 0.89,
+        "hispanic": 7.86
+      }
+    },
+    {
+      "name": "KONIG",
+      "rank": 31211,
+      "count": 743,
+      "per100k": 0.25,
+      "demographics": {
+        "white": 89.77,
+        "black": null,
+        "asian": null,
+        "native": 2.96,
+        "multiracial": 1.35,
+        "hispanic": 4.58
+      }
+    },
+    {
+      "name": "HIRSCHBERG",
+      "rank": 31412,
+      "count": 737,
+      "per100k": 0.25,
+      "demographics": {
+        "white": 96.2,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 1.22,
+        "hispanic": 2.04
+      }
+    },
+    {
+      "name": "SCHLOSSBERG",
+      "rank": 31754,
+      "count": 727,
+      "per100k": 0.25,
+      "demographics": {
+        "white": 96.56,
+        "black": null,
+        "asian": null,
+        "native": null,
+        "multiracial": null,
+        "hispanic": 2.34
+      }
+    },
+    {
+      "name": "WILENSKY",
+      "rank": 33810,
+      "count": 673,
+      "per100k": 0.23,
+      "demographics": {
+        "white": 93.91,
+        "black": 0.89,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.49,
+        "hispanic": 3.12
+      }
+    },
+    {
+      "name": "KESSELMAN",
+      "rank": 34574,
+      "count": 654,
+      "per100k": 0.22,
+      "demographics": {
+        "white": 97.25,
+        "black": null,
+        "asian": 1.22,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.38
+      }
+    },
+    {
+      "name": "LANDSBERG",
+      "rank": 34707,
+      "count": 651,
+      "per100k": 0.22,
+      "demographics": {
+        "white": 95.85,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 1.54,
+        "hispanic": 1.54
+      }
+    },
+    {
+      "name": "ROGOFF",
+      "rank": 34835,
+      "count": 648,
+      "per100k": 0.22,
+      "demographics": {
+        "white": 92.13,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 0.93,
+        "hispanic": 6.64
+      }
+    },
+    {
+      "name": "SALZBERG",
+      "rank": 35537,
+      "count": 633,
+      "per100k": 0.21,
+      "demographics": {
+        "white": 95.26,
+        "black": null,
+        "asian": 1.11,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 2.69
+      }
+    },
+    {
+      "name": "GROSSBERG",
+      "rank": 35582,
+      "count": 632,
+      "per100k": 0.21,
+      "demographics": {
+        "white": 96.68,
+        "black": null,
+        "asian": 0.79,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.74
+      }
+    },
+    {
+      "name": "LUBITZ",
+      "rank": 37341,
+      "count": 597,
+      "per100k": 0.2,
+      "demographics": {
+        "white": 94.97,
+        "black": null,
+        "asian": 1.17,
+        "native": 0,
+        "multiracial": 2.51,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "SHAFRAN",
+      "rank": 38050,
+      "count": 583,
+      "per100k": 0.2,
+      "demographics": {
+        "white": 96.74,
+        "black": 0,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.89
+      }
+    },
+    {
+      "name": "TANZER",
+      "rank": 38214,
+      "count": 580,
+      "per100k": 0.2,
+      "demographics": {
+        "white": 96.38,
+        "black": 0,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.55,
+        "hispanic": 1.55
+      }
+    },
+    {
+      "name": "SPEKTOR",
+      "rank": 40856,
+      "count": 534,
+      "per100k": 0.18,
+      "demographics": {
+        "white": 99.06,
+        "black": 0,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "STARKMAN",
+      "rank": 41426,
+      "count": 525,
+      "per100k": 0.18,
+      "demographics": {
+        "white": 92.76,
+        "black": 0.95,
+        "asian": 1.33,
+        "native": 0,
+        "multiracial": 1.14,
+        "hispanic": 3.81
+      }
+    },
+    {
+      "name": "KORNBLUM",
+      "rank": 41579,
+      "count": 523,
+      "per100k": 0.18,
+      "demographics": {
+        "white": 95.6,
+        "black": 0,
+        "asian": 0.96,
+        "native": null,
+        "multiracial": null,
+        "hispanic": 2.87
+      }
+    },
+    {
+      "name": "WITKIN",
+      "rank": 43077,
+      "count": 502,
+      "per100k": 0.17,
+      "demographics": {
+        "white": 94.42,
+        "black": null,
+        "asian": 1.2,
+        "native": null,
+        "multiracial": 1.2,
+        "hispanic": 2.99
+      }
+    },
+    {
+      "name": "WEINBAUM",
+      "rank": 43584,
+      "count": 495,
+      "per100k": 0.17,
+      "demographics": {
+        "white": 95.96,
+        "black": null,
+        "asian": 0,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 3.23
+      }
+    },
+    {
+      "name": "SOLOW",
+      "rank": 44356,
+      "count": 485,
+      "per100k": 0.16,
+      "demographics": {
+        "white": 96.29,
+        "black": null,
+        "asian": 1.86,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.03
+      }
+    },
+    {
+      "name": "WEISSBERG",
+      "rank": 45105,
+      "count": 475,
+      "per100k": 0.16,
+      "demographics": {
+        "white": 96,
+        "black": null,
+        "asian": null,
+        "native": null,
+        "multiracial": 1.89,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "KOBRIN",
+      "rank": 45886,
+      "count": 465,
+      "per100k": 0.16,
+      "demographics": {
+        "white": 94.19,
+        "black": null,
+        "asian": 0,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 4.3
+      }
+    },
+    {
+      "name": "SPIEGELMAN",
+      "rank": 47006,
+      "count": 452,
+      "per100k": 0.15,
+      "demographics": {
+        "white": 93.14,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 1.99,
+        "hispanic": 3.98
+      }
+    },
+    {
+      "name": "LANSKY",
+      "rank": 47429,
+      "count": 447,
+      "per100k": 0.15,
+      "demographics": {
+        "white": 96.87,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.57
+      }
+    },
+    {
+      "name": "WIESS",
+      "rank": 48160,
+      "count": 439,
+      "per100k": 0.15,
+      "demographics": {
+        "white": 93.62,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 2.73,
+        "hispanic": 2.73
+      }
+    },
+    {
+      "name": "SHANKMAN",
+      "rank": 49914,
+      "count": 420,
+      "per100k": 0.14,
+      "demographics": {
+        "white": 96.67,
+        "black": 0,
+        "asian": 1.19,
+        "native": null,
+        "multiracial": 1.19,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "ENGELBERG",
+      "rank": 51176,
+      "count": 407,
+      "per100k": 0.14,
+      "demographics": {
+        "white": 95.58,
+        "black": null,
+        "asian": 1.23,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 2.46
+      }
+    },
+    {
+      "name": "ZELDIN",
+      "rank": 51512,
+      "count": 404,
+      "per100k": 0.14,
+      "demographics": {
+        "white": 97.28,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 1.73
+      }
+    },
+    {
+      "name": "LIPSCHITZ",
+      "rank": 51723,
+      "count": 402,
+      "per100k": 0.14,
+      "demographics": {
+        "white": 95.27,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 3.23
+      }
+    },
+    {
+      "name": "SPIELBERG",
+      "rank": 53419,
+      "count": 387,
+      "per100k": 0.13,
+      "demographics": {
+        "white": 91.73,
+        "black": null,
+        "asian": 1.81,
+        "native": null,
+        "multiracial": 2.33,
+        "hispanic": 3.1
+      }
+    },
+    {
+      "name": "SHAPIRA",
+      "rank": 53419,
+      "count": 387,
+      "per100k": 0.13,
+      "demographics": {
+        "white": 91.99,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 2.58,
+        "hispanic": 3.36
+      }
+    },
+    {
+      "name": "WARSHAUER",
+      "rank": 54178,
+      "count": 381,
+      "per100k": 0.13,
+      "demographics": {
+        "white": 94.49,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 2.1,
+        "hispanic": 3.15
+      }
+    },
+    {
+      "name": "SAPIR",
+      "rank": 55386,
+      "count": 371,
+      "per100k": 0.13,
+      "demographics": {
+        "white": 91.37,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 3.23,
+        "hispanic": 4.85
+      }
+    },
+    {
+      "name": "KORNBERG",
+      "rank": 56710,
+      "count": 360,
+      "per100k": 0.12,
+      "demographics": {
+        "white": 91.94,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 2.5,
+        "hispanic": 4.44
+      }
+    },
+    {
+      "name": "MILGRAM",
+      "rank": 57101,
+      "count": 357,
+      "per100k": 0.12,
+      "demographics": {
+        "white": 91.88,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 6.72
+      }
+    },
+    {
+      "name": "OKIN",
+      "rank": 63873,
+      "count": 312,
+      "per100k": 0.11,
+      "demographics": {
+        "white": 89.42,
+        "black": 5.13,
+        "asian": null,
+        "native": null,
+        "multiracial": 2.88,
+        "hispanic": 1.6
+      }
+    },
+    {
+      "name": "ZACKS",
+      "rank": 64388,
+      "count": 309,
+      "per100k": 0.1,
+      "demographics": {
+        "white": 96.76,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": 0,
+        "hispanic": 2.27
+      }
+    },
+    {
+      "name": "BERGSTEIN",
+      "rank": 65424,
+      "count": 303,
+      "per100k": 0.1,
+      "demographics": {
+        "white": 98.35,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "KITAY",
+      "rank": 69392,
+      "count": 283,
+      "per100k": 0.1,
+      "demographics": {
+        "white": 99.29,
+        "black": null,
+        "asian": 0,
+        "native": 0,
+        "multiracial": 0,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "VOGELMAN",
+      "rank": 69793,
+      "count": 281,
+      "per100k": 0.1,
+      "demographics": {
+        "white": 91.1,
+        "black": 0,
+        "asian": null,
+        "native": null,
+        "multiracial": 3.2,
+        "hispanic": 3.91
+      }
+    },
+    {
+      "name": "HOROVITZ",
+      "rank": 70403,
+      "count": 278,
+      "per100k": 0.09,
+      "demographics": {
+        "white": 96.4,
+        "black": null,
+        "asian": 0,
+        "native": null,
+        "multiracial": 0,
+        "hispanic": 3.24
+      }
+    },
+    {
+      "name": "STERNFELD",
+      "rank": 71265,
+      "count": 274,
+      "per100k": 0.09,
+      "demographics": {
+        "white": 95.62,
+        "black": null,
+        "asian": 0,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": 2.55
+      }
+    },
+    {
+      "name": "FREEDBERG",
+      "rank": 82908,
+      "count": 227,
+      "per100k": 0.08,
+      "demographics": {
+        "white": 94.27,
+        "black": 0,
+        "asian": 0,
+        "native": 0,
+        "multiracial": 2.64,
+        "hispanic": 3.08
+      }
+    },
+    {
+      "name": "OPPEN",
+      "rank": 100302,
+      "count": 180,
+      "per100k": 0.06,
+      "demographics": {
+        "white": 93.89,
+        "black": 0,
+        "asian": null,
+        "native": null,
+        "multiracial": null,
+        "hispanic": 3.33
+      }
+    },
+    {
+      "name": "TRAUNER",
+      "rank": 117480,
+      "count": 148,
+      "per100k": 0.05,
+      "demographics": {
+        "white": 99.32,
+        "black": 0,
+        "asian": null,
+        "native": 0,
+        "multiracial": 0,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "SHARFMAN",
+      "rank": 120901,
+      "count": 143,
+      "per100k": 0.05,
+      "demographics": {
+        "white": 97.9,
+        "black": 0,
+        "asian": null,
+        "native": 0,
+        "multiracial": 0,
+        "hispanic": null
+      }
+    },
+    {
+      "name": "WARBURG",
+      "rank": 129825,
+      "count": 131,
+      "per100k": 0.04,
+      "demographics": {
+        "white": 100,
+        "black": 0,
+        "asian": 0,
+        "native": 0,
+        "multiracial": 0,
+        "hispanic": 0
+      }
+    },
+    {
+      "name": "STERNSTEIN",
+      "rank": 129825,
+      "count": 131,
+      "per100k": 0.04,
+      "demographics": {
+        "white": 94.66,
+        "black": null,
+        "asian": null,
+        "native": 0,
+        "multiracial": null,
+        "hispanic": null
+      }
+    }
+  ],
+  "categories": {
+    "cohen_tribe": {
+      "count": 108218,
+      "names": [
+        "COHEN",
+        "KOHN",
+        "COHN"
+      ]
+    },
+    "levy_tribe": {
+      "count": 108063,
+      "names": [
+        "LEVY",
+        "LEVINE",
+        "LEVIN",
+        "LEVI",
+        "LEVITT",
+        "LEVINSON"
+      ]
+    },
+    "gold_family": {
+      "count": 171365,
+      "names": [
+        "GOLDEN",
+        "GOLDSTEIN",
+        "GOLDBERG",
+        "GOLDMAN",
+        "GOLD",
+        "GOLDSMITH",
+        "GOLDFARB"
+      ]
+    },
+    "silver_family": {
+      "count": 43264,
+      "names": [
+        "SILVER",
+        "SILVERMAN",
+        "SILVERSTEIN"
+      ]
+    },
+    "berg_suffix": {
+      "count": 179078,
+      "names": [
+        "BERG",
+        "GOLDBERG",
+        "ROSENBERG",
+        "GREENBERG",
+        "STEINBERG",
+        "WEINBERG",
+        "EISENBERG",
+        "FEINBERG",
+        "GINSBERG",
+        "STERNBERG",
+        "NEWBERG",
+        "HERZBERG",
+        "FRIEDBERG",
+        "ROTHBERG",
+        "HIRSCHBERG",
+        "SCHLOSSBERG",
+        "LANDSBERG",
+        "SALZBERG",
+        "GROSSBERG",
+        "WEISSBERG",
+        "ENGELBERG",
+        "SPIELBERG",
+        "KORNBERG",
+        "FREEDBERG"
+      ]
+    },
+    "stein_suffix": {
+      "count": 148295,
+      "names": [
+        "STEIN",
+        "GOLDSTEIN",
+        "BERNSTEIN",
+        "WEINSTEIN",
+        "EPSTEIN",
+        "SILVERSTEIN",
+        "RUBENSTEIN",
+        "FINKELSTEIN",
+        "ROTHSTEIN",
+        "FEINSTEIN",
+        "RUBINSTEIN",
+        "ROSENSTEIN",
+        "PERLSTEIN",
+        "SAPERSTEIN",
+        "BERGSTEIN",
+        "STERNSTEIN"
+      ]
+    },
+    "man_suffix": {
+      "count": 729629,
+      "names": [
+        "HOFFMAN",
+        "NEWMAN",
+        "ZIMMERMAN",
+        "SHERMAN",
+        "FRIEDMAN",
+        "KAUFMAN",
+        "GOLDMAN",
+        "FELDMAN",
+        "KAUFFMAN",
+        "BERGMAN",
+        "GROSSMAN",
+        "ALTMAN",
+        "BERMAN",
+        "SILVERMAN",
+        "HYMAN",
+        "FREEDMAN",
+        "LIEBERMAN",
+        "FISHMAN",
+        "WASSERMAN",
+        "STILLMAN",
+        "SCHULMAN",
+        "WEISSMAN",
+        "SUSSMAN",
+        "SHULMAN",
+        "ZUCKERMAN",
+        "PERLMAN",
+        "FLEISCHMAN",
+        "SALZMAN",
+        "KLEINMAN",
+        "SPIELMAN",
+        "HOLTZMAN",
+        "HEYMAN",
+        "MILLMAN",
+        "GLICKMAN",
+        "LIPMAN",
+        "WAXMAN",
+        "WEINMAN",
+        "SOLOMAN",
+        "PRESSMAN",
+        "HIRSCHMAN",
+        "WEITZMAN",
+        "SCHNEIDERMAN",
+        "SUGARMAN",
+        "SCHWARTZMAN",
+        "KESSELMAN",
+        "STARKMAN",
+        "SPIEGELMAN",
+        "SHANKMAN",
+        "VOGELMAN",
+        "SHARFMAN"
+      ]
+    },
+    "witz_suffix": {
+      "count": 41213,
+      "names": [
+        "HOROWITZ",
+        "BERKOWITZ",
+        "MOSKOWITZ",
+        "MARKOWITZ",
+        "RABINOWITZ",
+        "HORWITZ",
+        "LEFKOWITZ",
+        "LEIBOWITZ",
+        "ABRAMOWITZ"
+      ]
+    },
+    "professions": {
+      "count": 898682,
+      "names": [
+        "FISHER",
+        "SNYDER",
+        "SCHNEIDER",
+        "BECKER",
+        "ZIMMERMAN",
+        "FISCHER",
+        "KRAMER",
+        "KAUFMAN",
+        "SINGER",
+        "KAUFFMAN",
+        "SCHREIBER",
+        "CANTOR",
+        "KANTOR",
+        "FLEISCHER",
+        "FLEISCHMAN"
+      ]
+    },
+    "geographic": {
+      "count": 54218,
+      "names": [
+        "POLLOCK",
+        "DEUTSCH",
+        "POLLACK",
+        "HOLLANDER",
+        "WIENER",
+        "BERLINER",
+        "WARSHAUER"
+      ]
+    }
+  },
+  "top50": [
+    {
+      "name": "YOUNG",
+      "count": 484447,
+      "rank": 32
+    },
+    {
+      "name": "FISHER",
+      "count": 214703,
+      "rank": 112
+    },
+    {
+      "name": "SNYDER",
+      "count": 160262,
+      "rank": 165
+    },
+    {
+      "name": "ROSE",
+      "count": 153397,
+      "rank": 177
+    },
+    {
+      "name": "MEYER",
+      "count": 150895,
+      "rank": 183
+    },
+    {
+      "name": "SCHMIDT",
+      "count": 147034,
+      "rank": 185
+    },
+    {
+      "name": "HOFFMAN",
+      "count": 131401,
+      "rank": 224
+    },
+    {
+      "name": "JACOBS",
+      "count": 118614,
+      "rank": 257
+    },
+    {
+      "name": "WEBER",
+      "count": 109433,
+      "rank": 283
+    },
+    {
+      "name": "SCHULTZ",
+      "count": 104888,
+      "rank": 297
+    },
+    {
+      "name": "NEWMAN",
+      "count": 101931,
+      "rank": 307
+    },
+    {
+      "name": "SCHNEIDER",
+      "count": 101290,
+      "rank": 312
+    },
+    {
+      "name": "BECK",
+      "count": 93786,
+      "rank": 328
+    },
+    {
+      "name": "SCHWARTZ",
+      "count": 90071,
+      "rank": 345
+    },
+    {
+      "name": "COHEN",
+      "count": 89091,
+      "rank": 351
+    },
+    {
+      "name": "BECKER",
+      "count": 87859,
+      "rank": 357
+    },
+    {
+      "name": "WOLFE",
+      "count": 83928,
+      "rank": 374
+    },
+    {
+      "name": "ZIMMERMAN",
+      "count": 83265,
+      "rank": 379
+    },
+    {
+      "name": "KLEIN",
+      "count": 81471,
+      "rank": 392
+    },
+    {
+      "name": "SIMON",
+      "count": 80460,
+      "rank": 397
+    },
+    {
+      "name": "GROSS",
+      "count": 74503,
+      "rank": 440
+    },
+    {
+      "name": "FISCHER",
+      "count": 72357,
+      "rank": 455
+    },
+    {
+      "name": "SHERMAN",
+      "count": 70502,
+      "rank": 469
+    },
+    {
+      "name": "WOLF",
+      "count": 70031,
+      "rank": 474
+    },
+    {
+      "name": "WISE",
+      "count": 68649,
+      "rank": 485
+    },
+    {
+      "name": "KRAMER",
+      "count": 63936,
+      "rank": 526
+    },
+    {
+      "name": "LANG",
+      "count": 61529,
+      "rank": 545
+    },
+    {
+      "name": "HESS",
+      "count": 59486,
+      "rank": 564
+    },
+    {
+      "name": "ROTH",
+      "count": 58278,
+      "rank": 574
+    },
+    {
+      "name": "MEYERS",
+      "count": 57127,
+      "rank": 586
+    },
+    {
+      "name": "WEISS",
+      "count": 57112,
+      "rank": 587
+    },
+    {
+      "name": "GOLDEN",
+      "count": 49360,
+      "rank": 699
+    },
+    {
+      "name": "BERG",
+      "count": 48746,
+      "rank": 712
+    },
+    {
+      "name": "SOLOMON",
+      "count": 46534,
+      "rank": 745
+    },
+    {
+      "name": "KLINE",
+      "count": 45390,
+      "rank": 761
+    },
+    {
+      "name": "JACOBSON",
+      "count": 44808,
+      "rank": 767
+    },
+    {
+      "name": "BERGER",
+      "count": 43851,
+      "rank": 785
+    },
+    {
+      "name": "STEIN",
+      "count": 43389,
+      "rank": 796
+    },
+    {
+      "name": "SLOAN",
+      "count": 43261,
+      "rank": 800
+    },
+    {
+      "name": "STARK",
+      "count": 41735,
+      "rank": 827
+    },
+    {
+      "name": "SMALL",
+      "count": 40212,
+      "rank": 861
+    },
+    {
+      "name": "MAYER",
+      "count": 39555,
+      "rank": 880
+    },
+    {
+      "name": "FRIEDMAN",
+      "count": 38374,
+      "rank": 901
+    },
+    {
+      "name": "LEVY",
+      "count": 37228,
+      "rank": 932
+    },
+    {
+      "name": "KAUFMAN",
+      "count": 34844,
+      "rank": 1007
+    },
+    {
+      "name": "LEVINE",
+      "count": 33637,
+      "rank": 1032
+    },
+    {
+      "name": "KATZ",
+      "count": 31780,
+      "rank": 1101
+    },
+    {
+      "name": "WINTER",
+      "count": 31310,
+      "rank": 1119
+    },
+    {
+      "name": "ABRAHAM",
+      "count": 31303,
+      "rank": 1120
+    },
+    {
+      "name": "VOGEL",
+      "count": 30470,
+      "rank": 1153
+    }
+  ]
+}

@@ -55,11 +55,32 @@ interface Category {
   color: string;
 }
 
+interface SurnameHeatmapData {
+  type: string;
+  features: Array<{
+    type: string;
+    properties: {
+      metro?: string;
+      state?: string;
+      category: string;
+      estimatedCount: number;
+      jewishPopulation: number;
+      weight: number;
+    };
+    geometry: {
+      type: string;
+      coordinates: number[];
+    };
+  }>;
+}
+
 interface MapboxMapProps {
   features: Feature[];
   activeCategories: string[];
   categories: Category[];
   showPopulationDensity?: boolean;
+  activeSurnameHeatmap?: string | null;
+  surnameHeatmapData?: SurnameHeatmapData | null;
 }
 
 export default function MapboxMap({
@@ -67,6 +88,8 @@ export default function MapboxMap({
   activeCategories,
   categories,
   showPopulationDensity = false,
+  activeSurnameHeatmap = null,
+  surnameHeatmapData = null,
 }: MapboxMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -235,6 +258,85 @@ export default function MapboxMap({
         },
         minzoom: 5,
       });
+
+      // Add surname heatmap source
+      map.current!.addSource("surname-data", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
+        },
+      });
+
+      // Add surname heatmap layer
+      map.current!.addLayer({
+        id: "surname-heatmap",
+        type: "heatmap",
+        source: "surname-data",
+        maxzoom: 12,
+        layout: {
+          visibility: "none",
+        },
+        paint: {
+          "heatmap-weight": ["get", "weight"],
+          "heatmap-intensity": [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            0, 1,
+            12, 3,
+          ],
+          "heatmap-color": [
+            "interpolate",
+            ["linear"],
+            ["heatmap-density"],
+            0, "rgba(0,0,0,0)",
+            0.1, "rgba(255,215,0,0.2)",
+            0.3, "rgba(255,215,0,0.4)",
+            0.5, "rgba(255,165,0,0.6)",
+            0.7, "rgba(255,140,0,0.8)",
+            1, "rgba(255,215,0,1)",
+          ],
+          "heatmap-radius": [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            0, 50,
+            6, 100,
+            12, 150,
+          ],
+          "heatmap-opacity": 0.8,
+        },
+      });
+
+      // Add surname labels layer
+      map.current!.addLayer({
+        id: "surname-labels",
+        type: "symbol",
+        source: "surname-data",
+        layout: {
+          visibility: "none",
+          "text-field": [
+            "format",
+            ["get", "metro"],
+            { "font-scale": 0.75 },
+            "\n",
+            {},
+            ["concat", "~", ["to-string", ["get", "estimatedCount"]]],
+            { "font-scale": 0.65, "text-color": "#fbbf24" },
+          ],
+          "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+          "text-size": 11,
+          "text-anchor": "top",
+          "text-offset": [0, 1],
+        },
+        paint: {
+          "text-color": "#ffffff",
+          "text-halo-color": "#000000",
+          "text-halo-width": 1,
+        },
+        minzoom: 5,
+      });
     });
 
     map.current.on("zoom", () => {
@@ -313,6 +415,40 @@ export default function MapboxMap({
       map.current.setLayoutProperty("population-labels", "visibility", visibility);
     }
   }, [showPopulationDensity, mapLoaded]);
+
+  // Update surname heatmap
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    const source = map.current.getSource("surname-data") as mapboxgl.GeoJSONSource;
+    if (!source) return;
+
+    if (surnameHeatmapData && activeSurnameHeatmap) {
+      // Update data
+      source.setData(surnameHeatmapData as GeoJSON.FeatureCollection);
+
+      // Show layers
+      if (map.current.getLayer("surname-heatmap")) {
+        map.current.setLayoutProperty("surname-heatmap", "visibility", "visible");
+      }
+      if (map.current.getLayer("surname-labels")) {
+        map.current.setLayoutProperty("surname-labels", "visibility", "visible");
+      }
+    } else {
+      // Hide layers and clear data
+      source.setData({
+        type: "FeatureCollection",
+        features: [],
+      });
+
+      if (map.current.getLayer("surname-heatmap")) {
+        map.current.setLayoutProperty("surname-heatmap", "visibility", "none");
+      }
+      if (map.current.getLayer("surname-labels")) {
+        map.current.setLayoutProperty("surname-labels", "visibility", "none");
+      }
+    }
+  }, [surnameHeatmapData, activeSurnameHeatmap, mapLoaded]);
 
   // Update markers
   const updateMarkers = useCallback(() => {

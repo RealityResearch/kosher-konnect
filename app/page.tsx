@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import pointData from "@/data/points.json";
+import surnameData from "@/data/surname-heatmaps.json";
 import type { Feature } from "@/components/MapboxMap";
 import { useNoticers } from "@/hooks/useNoticers";
 
@@ -27,6 +28,18 @@ const categories = [
   { id: "judaica", name: "Judaica Shops", nameHe: "חנויות יודאיקה", color: "#fc8181" },
   { id: "Tunnels", name: "Entry Points", nameHe: "נקודות כניסה", color: "#fbbf24" },
   { id: "mints", name: "US Mints", nameHe: "מטבעות ארה״ב", color: "#22c55e" },
+];
+
+// Surname heatmap categories from Census data
+const surnameCategories = [
+  { id: "cohen", names: "Cohen, Kohn, Cohn", color: "#FFD700", count: 108218 },
+  { id: "levy", names: "Levy, Levi, Levin, Levine", color: "#C0C0C0", count: 108063 },
+  { id: "gold", names: "Goldstein, Goldberg, Goldman", color: "#FFD700", count: 171365 },
+  { id: "silver", names: "Silver, Silverman, Silverstein", color: "#A8A8A8", count: 43264 },
+  { id: "schwartz_weiss", names: "Schwartz, Weiss", color: "#808080", count: 172817 },
+  { id: "witz", names: "Horowitz, Moskowitz, Berkowitz", color: "#9370DB", count: 37967 },
+  { id: "berg", names: "Goldberg, Greenberg, Rosenberg", color: "#228B22", count: 100629 },
+  { id: "stein", names: "Goldstein, Bernstein, Epstein", color: "#4169E1", count: 82143 },
 ];
 
 // Check if it's Shabbat (Friday sunset to Saturday sunset)
@@ -68,6 +81,7 @@ export default function Home() {
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [showPopulation, setShowPopulation] = useState(false);
   const [shabbatMode, setShabbatMode] = useState(false);
+  const [activeSurname, setActiveSurname] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const noticersCount = useNoticers();
 
@@ -263,6 +277,8 @@ export default function Home() {
             activeCategories={activeCategories}
             categories={categories}
             showPopulationDensity={showPopulation}
+            activeSurnameHeatmap={activeSurname}
+            surnameHeatmapData={activeSurname ? surnameData.metroHeatmaps[activeSurname as keyof typeof surnameData.metroHeatmaps] : null}
           />
 
           {/* Legend - bottom left */}
@@ -385,6 +401,55 @@ export default function Home() {
                     <div className="text-xs text-gray-500">{shabbatMode ? hebrewUI.metroArea : "Metro area density"}</div>
                   </div>
                 </label>
+              </div>
+
+              {/* Surname Heatmaps */}
+              <div className="mt-6 pt-4 border-t border-gray-700">
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                    Surnames
+                  </h2>
+                  {activeSurname && (
+                    <button
+                      onClick={() => setActiveSurname(null)}
+                      className="text-xs text-gray-400 hover:text-gray-300"
+                    >
+                      Clear
+                    </button>
+                  )}
+                </div>
+                <div className="space-y-1">
+                  {surnameCategories.map((surname) => {
+                    const isActive = activeSurname === surname.id;
+                    return (
+                      <button
+                        key={surname.id}
+                        onClick={() => setActiveSurname(isActive ? null : surname.id)}
+                        className={`
+                          w-full flex items-center gap-3 p-2.5 rounded-lg cursor-pointer transition-all text-left
+                          ${isActive ? "bg-gray-800/80 ring-1 ring-gray-600" : "bg-transparent hover:bg-gray-800/40"}
+                        `}
+                      >
+                        <span
+                          className="w-3 h-3 rounded-full flex-shrink-0"
+                          style={{ backgroundColor: surname.color }}
+                        />
+                        <div className="flex-1 min-w-0">
+                          <div className="text-sm text-white truncate">{surname.names}</div>
+                          <div className="text-xs text-gray-500">{surname.count.toLocaleString()} people</div>
+                        </div>
+                        {isActive && (
+                          <svg className="w-4 h-4 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="mt-2 text-xs text-gray-500 px-2">
+                  Source: US Census
+                </div>
               </div>
 
               {/* Selected summary */}
