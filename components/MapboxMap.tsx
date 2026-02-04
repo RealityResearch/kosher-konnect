@@ -530,17 +530,16 @@ export default function MapboxMap({
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        animation: marker-drop 0.4s ease-out;
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
       `;
 
       el.addEventListener("mouseenter", () => {
-        el.style.transform = "scale(1.2)";
         el.style.boxShadow = `0 4px 20px rgba(0,0,0,0.6), 0 0 24px -4px ${category.color}`;
+        el.style.borderColor = "#ffffff";
       });
       el.addEventListener("mouseleave", () => {
-        el.style.transform = "scale(1)";
         el.style.boxShadow = `0 2px 12px rgba(0,0,0,0.5), 0 0 20px -8px ${category.color}80`;
+        el.style.borderColor = "rgba(255,255,255,0.9)";
       });
 
       const inner = document.createElement("div");
